@@ -1,0 +1,526 @@
+"Screen2 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    BackgroundImage: ='Fondo App'
+    Fill: =RGBA(255, 255, 255, 1)
+    OnVisible: =
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutWrap: =true
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =Parent.Height/4
+            LayoutGap: =2
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Container2 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(19, 85, 110, 1)
+                BorderThickness: =2
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =100
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutMinHeight: =20
+                LayoutMinWidth: =20
+                LayoutMode: =LayoutMode.Auto
+                LayoutWrap: =true
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =Parent.Width/2
+                ZIndex: =1
+
+                Container8 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =100
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =Parent.Width/2
+                    ZIndex: =1
+
+                    Label4 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(19, 85, 110, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                        DisplayMode: =DisplayMode.View
+                        Fill: =RGBA(19, 85, 110, 1)
+                        FocusedBorderThickness: =2
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        PaddingBottom: =70
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =45
+                        Text: ="                                  Bienestar"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                Image7 As image:
+                    Height: =Parent.Height
+                    Image: ='Logo 2'
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Width: =Parent.Width/4
+                    ZIndex: =2
+
+                Image8 As image:
+                    AlignInContainer: =AlignInContainer.Center
+                    Height: =Parent.Height
+                    Image: ='Logo Final'
+                    PaddingBottom: =5
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Width: =Parent.Width/4
+                    ZIndex: =3
+
+            Container3 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =150
+                LayoutMinHeight: =100
+                LayoutMinWidth: =100
+                LayoutMode: =LayoutMode.Auto
+                LayoutWrap: =true
+                Width: =Parent.Width/8
+                ZIndex: =2
+
+            Container4 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutJustifyContent: =LayoutJustifyContent.End
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutWrap: =true
+                Width: =Parent.Width/2
+                ZIndex: =3
+
+                Container5 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.End
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    Width: =Parent.Width/2
+                    ZIndex: =1
+
+                    Label5 As label:
+                        Align: =Align.Center
+                        AlignInContainer: =AlignInContainer.Center
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height/2
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =30
+                        Size: =15
+                        Text: =User().FullName
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Label5_1 As label:
+                        Align: =Align.Right
+                        Height: =Parent.Height/3
+                        PaddingBottom: =20
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =15
+                        Text: ="Analista de Plataformas"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                Container6 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =0
+                    PaddingBottom: =4
+                    PaddingLeft: =4
+                    PaddingRight: =4
+                    PaddingTop: =4
+                    Width: =Parent.Width/3
+                    ZIndex: =2
+
+                    Image9 As image:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =4
+                        Fill: =RGBA(0, 0, 0, 1)
+                        Height: =Parent.Height/1.5
+                        Image: =User().Image
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =100
+                        RadiusBottomRight: =100
+                        RadiusTopLeft: =100
+                        RadiusTopRight: =100
+                        Width: =Parent.Width/1.50
+                        X: =10
+                        Y: =30
+                        ZIndex: =1
+
+        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height/2
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            Width: =Parent.Width
+            ZIndex: =2
+
+            ContainerFormularios As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderThickness: =2
+                ContentLanguage: =
+                FillPortions: =0
+                Height: =Parent.Height/2+200
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                Visible: |
+                    =true
+                Width: =Parent.Width/2*1.5
+                X: =1000
+                ZIndex: =2
+
+                containerVacaciones As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(202, 202, 202, 1)
+                    BorderThickness: =2
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/2+175
+                    Visible: =_ideseccion=4
+                    Width: =Parent.Width
+                    Y: =64
+                    ZIndex: =2
+
+                    Label6 As label:
+                        Align: =Align.Center
+                        Height: =87
+                        Text: |-
+                            ="Solicita un periodo de vacaciones seleccionando los tiempos de inicio y final, esta solicitud será enviada al área administrativa para aprobación.
+                            ***Recuerda siempre hablar con tu líder antes de montar una solicitud de vacaciones."
+                        Width: =952
+                        X: =40
+                        Y: =20
+                        ZIndex: =1
+
+                    DatePicker4_1 As datepicker:
+                        BorderColor: =RGBA(161, 161, 161, 1)
+                        Color: =RGBA(161,161, 161, 1)
+                        IconBackground: =RGBA(0, 0, 0, 0)
+                        IconFill: =RGBA(161, 161, 161, 1)
+                        Width: =131
+                        X: =184
+                        Y: =158
+                        ZIndex: =2
+
+                    Button1_3 As button:
+                        Fill: =RGBA(31, 140, 153, 1)
+                        Text: ="Generar"
+                        X: =762
+                        Y: =158
+                        ZIndex: =3
+
+                    DatePicker4_2 As datepicker:
+                        BorderColor: =RGBA(161, 161, 161, 1)
+                        Color: =RGBA(161,161, 161, 1)
+                        IconBackground: =RGBA(0, 0, 0, 0)
+                        IconFill: =RGBA(161, 161, 161, 1)
+                        Width: =131
+                        X: =351
+                        Y: =158
+                        ZIndex: =4
+
+                    Label10 As label:
+                        BorderColor: =RGBA(166, 166, 166, 1)
+                        BorderThickness: =1
+                        Fill: =RGBA(219, 219, 219, 1)
+                        Text: =""
+                        X: =547
+                        Y: =158
+                        ZIndex: =5
+
+                    Label12 As label:
+                        Text: ="Fecha de Inicio"
+                        Width: =131
+                        X: =184
+                        Y: =118
+                        ZIndex: =6
+
+                    Label12_1 As label:
+                        Text: ="Total dias"
+                        X: =547
+                        Y: =118
+                        ZIndex: =7
+
+                    Label12_2 As label:
+                        Text: ="Fecha Final"
+                        X: =351
+                        Y: =118
+                        ZIndex: =8
+
+                Gallery3 As gallery.galleryHorizontal:
+                    DelayItemLoading: =true
+                    Height: =Parent.Height/4
+                    Items: |
+                        =Table(
+                            {ide:1,seccion:"Colillas de pago"},
+                        {ide:2,seccion:"Carta laborales"},
+                        {ide:3,seccion:"Solicitud de permisos"},
+                        {ide:4,seccion:"Vacaciones"})
+                    LoadingSpinner: =LoadingSpinner.Data
+                    ShowScrollbar: =false
+                    TemplatePadding: =0
+                    TemplateSize: =Parent.Width/4
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                    Button5 As button:
+                        Fill: =RGBA(19, 85, 110, 1)
+                        HoverFill: =ColorFade(RGBA(31, 140, 153, 1), 0)
+                        OnSelect: =Set(_ideseccion,ThisItem.ide)
+                        Size: =14
+                        Text: =ThisItem.seccion
+                        Width: =Parent.TemplateWidth
+                        Y: =10
+                        ZIndex: =1
+
+                containerPermiso As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(202, 202, 202, 1)
+                    BorderThickness: =2
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/2+175
+                    Visible: =_ideseccion=3
+                    Width: =Parent.Width
+                    Y: =64
+                    ZIndex: =4
+
+                    Label3 As label:
+                        Align: =Align.Center
+                        Height: =77
+                        Text: |-
+                            ="Solicita un permiso seleccionando el espacio de tiempo y el motivo, se enviará un correo al área administrativa para que aprueben tu solicitud.
+                            ***Recuerda siempre hablar con tu líder antes de crear una solicitud de permiso."
+                        Width: =947
+                        X: =40
+                        Y: =28
+                        ZIndex: =1
+
+                    Label9 As label:
+                        Height: =34
+                        Text: ="Fecha"
+                        X: =227
+                        Y: =125
+                        ZIndex: =2
+
+                    DatePicker4 As datepicker:
+                        BorderColor: =RGBA(161, 161, 161, 1)
+                        Color: =RGBA(161,161, 161, 1)
+                        Height: =41
+                        IconBackground: =RGBA(0, 0, 0, 0)
+                        IconFill: =RGBA(161, 161, 161, 1)
+                        Width: =131
+                        X: =227
+                        Y: =159
+                        ZIndex: =3
+
+                    TextInput2 As text:
+                        BorderColor: =RGBA(161, 161, 161, 1)
+                        Color: =RGBA(161,161, 161, 1)
+                        Default: ="Entrada de texto"
+                        X: =227
+                        Y: =251
+                        ZIndex: =4
+
+                    ComboBox2 As combobox:
+                        BorderColor: =RGBA(161, 161, 161, 1)
+                        ChevronBackground: =RGBA(56, 96, 178, 0)
+                        ChevronFill: =RGBA(161, 161, 161, 1)
+                        InputTextPlaceholder: =""
+                        Items: =ComboBoxSample
+                        SearchItems: =Search(ComboBoxSample,ComboBox2.SearchText,"Value1")
+                        Width: =112
+                        X: =407
+                        Y: =160
+                        ZIndex: =5
+
+                    Label9_1 As label:
+                        Height: =35
+                        Text: ="Desde"
+                        X: =407
+                        Y: =125
+                        ZIndex: =6
+
+                    Label9_2 As label:
+                        Height: =35
+                        Text: ="Hasta"
+                        X: =587
+                        Y: =125
+                        ZIndex: =7
+
+                    Label9_3 As label:
+                        Height: =37
+                        Text: ="Motivo"
+                        X: =227
+                        Y: =214
+                        ZIndex: =8
+
+                    ComboBox2_1 As combobox:
+                        BorderColor: =RGBA(161, 161, 161, 1)
+                        ChevronBackground: =RGBA(56, 96, 178, 0)
+                        ChevronFill: =RGBA(161, 161, 161, 1)
+                        InputTextPlaceholder: =""
+                        Items: =ComboBoxSample
+                        SearchItems: =Search(ComboBoxSample,ComboBox2_1.SearchText,"Value1")
+                        Width: =112
+                        X: =587
+                        Y: =160
+                        ZIndex: =9
+
+                    Button1_2 As button:
+                        Fill: =RGBA(31, 140, 153, 1)
+                        Text: ="Generar"
+                        X: =737
+                        Y: =251
+                        ZIndex: =10
+
+                    Label13 As label:
+                        Text: =User().Email
+                        X: =20
+                        Y: =112
+                        ZIndex: =11
+
+                containerCartaLaboral As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(202, 202, 202, 1)
+                    BorderThickness: =2
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/2+175
+                    Visible: =_ideseccion=2
+                    Width: =Parent.Width
+                    Y: =64
+                    ZIndex: =5
+
+                    Label2 As label:
+                        Height: =61
+                        Text: ="Genera una carta laboral en formato PDF con fecha actual y la recibirás en tu correo corporativo. "
+                        Width: =801
+                        X: =110
+                        Y: =40
+                        ZIndex: =1
+
+                    Button1_1 As button:
+                        Fill: =RGBA(31, 140, 153, 1)
+                        OnSelect: =
+                        Text: ="Generar"
+                        X: =430
+                        Y: =204
+                        ZIndex: =2
+
+                    Checkbox1 As checkbox:
+                        Text: ="Incluir Salario"
+                        Width: =180
+                        X: =430
+                        Y: =127
+                        ZIndex: =3
+
+                containerColillas As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(202, 202, 202, 1)
+                    BorderThickness: =2
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/2+170
+                    Visible: =_ideseccion=1
+                    Width: =Parent.Width
+                    Y: =70
+                    ZIndex: =6
+
+                    Label1 As label:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Semibold
+                        Height: =69
+                        Text: ="Selecciona el mes correspondiente a la colilla de pago que deseas solicitar y esta será enviada a tu correo corporativo."
+                        Width: =762
+                        X: =130
+                        Y: =20
+                        ZIndex: =1
+
+                    Button1 As button:
+                        Fill: =RGBA(31, 140, 153, 1)
+                        Text: ="Generar"
+                        X: =760
+                        Y: =140
+                        ZIndex: =3
+
+                    Label7 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Text: ="Año"
+                        Width: =55
+                        X: =172
+                        Y: =140
+                        ZIndex: =6
+
+                    Label7_1 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Text: ="Mes"
+                        Width: =64
+                        X: =351
+                        Y: =140
+                        ZIndex: =7
+
+                    ComboBox1 As combobox:
+                        BorderColor: =RGBA(202, 202, 202, 1)
+                        ChevronBackground: =RGBA(56, 96, 178, 0)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 0)
+                        ChevronFill: =RGBA(161, 161, 161, 1)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 0)
+                        Height: =42
+                        InputTextPlaceholder: =""
+                        Items: =ComboBoxSample
+                        SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+                        Width: =95
+                        X: =227
+                        Y: =140
+                        ZIndex: =8
+
+                    ComboBox1_1 As combobox:
+                        BorderColor: =RGBA(202, 202, 202, 1)
+                        ChevronBackground: =RGBA(56, 96, 178, 0)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 0)
+                        ChevronFill: =RGBA(161, 161, 161, 1)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 0)
+                        Height: =42
+                        InputTextPlaceholder: =""
+                        Items: =ComboBoxSample
+                        SearchItems: =Search(ComboBoxSample,ComboBox1_1.SearchText,"Value1")
+                        Width: =190
+                        X: =415
+                        Y: =140
+                        ZIndex: =9
+
