@@ -79,7 +79,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/22/2023 01:31:17",
+  "HeaderLastSavedDateTimeUTC": "04/22/2023 20:02:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "4d7fcff4-6f5f-45c2-9b25-c6b482d89763": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/df5c8c2f115f4c4480b2fa5deeec4966\"",
@@ -97,10 +97,10 @@
     "ruddy": "52a5ea63-50e0-4e1a-a3e1-addb80e9ef1a.jpeg"
   },
   "LocalResourceRootPaths": {
-    "Fondo App": "https://docserverpwaprodsbr.blob.core.windows.net/22cac743-8d90-4453-bde0-072f0f87df0a-1/resource/Assets0Images02f7dd5b7-79b3-43fa-b6bf-2d0ff76f1310.png?sv=2018-03-28&sr=b&sig=0W%2FESPv2Wy0p%2BttBP5mJApR8KTrmHOzSrU2gb%2BLG2MI%3D&spr=https&se=2023-04-23T01%3A43%3A16Z&sp=r",
-    "Logo 2": "https://docserverpwaprodsbr.blob.core.windows.net/22cac743-8d90-4453-bde0-072f0f87df0a-1/resource/Assets0Images0f6789e2e-94dd-42bd-bbed-a1d8ec37010b.png?sv=2018-03-28&sr=b&sig=I%2Bg3nx9PCy2vq2Yoc4jnFFwm0zEfmHnBLoiR8lg9l2w%3D&spr=https&se=2023-04-23T01%3A43%3A16Z&sp=r",
-    "Logo Final": "https://docserverpwaprodsbr.blob.core.windows.net/22cac743-8d90-4453-bde0-072f0f87df0a-1/resource/Assets0Images06e8e6289-3f7d-43eb-a20d-ad611766561a.png?sv=2018-03-28&sr=b&sig=7tZRVKBMFf1uhe8bB9Yt7cZOPEQWyPLjgedjtXizqEU%3D&spr=https&se=2023-04-23T01%3A43%3A16Z&sp=r",
-    "ruddy": "https://docserverpwaprodsbr.blob.core.windows.net/22cac743-8d90-4453-bde0-072f0f87df0a-1/resource/Assets0Images052a5ea63-50e0-4e1a-a3e1-addb80e9ef1a.jpeg?sv=2018-03-28&sr=b&sig=9w%2FWChLEOLRg80KNvNQozG8Z5jk5xwHVxVDIYda5fDg%3D&spr=https&se=2023-04-23T01%3A43%3A16Z&sp=r"
+    "Fondo App": "https://docserverpwaprodsbr.blob.core.windows.net/faf2add8-9889-445b-828e-faa1067e4d18-1/resource/Assets0Images02f7dd5b7-79b3-43fa-b6bf-2d0ff76f1310.png?sv=2018-03-28&sr=b&sig=up8sV5jGyRS4fi86o1NVorcYMv4GRtWvUXmyvviVeXM%3D&spr=https&se=2023-04-23T19%3A57%3A23Z&sp=r",
+    "Logo 2": "https://docserverpwaprodsbr.blob.core.windows.net/faf2add8-9889-445b-828e-faa1067e4d18-1/resource/Assets0Images0f6789e2e-94dd-42bd-bbed-a1d8ec37010b.png?sv=2018-03-28&sr=b&sig=s%2F7y2zwS4MXXf%2BqnSb8wv3aFjP%2FJsKxKwASSjRHgPdc%3D&spr=https&se=2023-04-23T19%3A57%3A23Z&sp=r",
+    "Logo Final": "https://docserverpwaprodsbr.blob.core.windows.net/faf2add8-9889-445b-828e-faa1067e4d18-1/resource/Assets0Images06e8e6289-3f7d-43eb-a20d-ad611766561a.png?sv=2018-03-28&sr=b&sig=hpMMHXvYozaNVaZ5kia41edIPjU9rbHoLSZ0H6W54Xs%3D&spr=https&se=2023-04-23T19%3A57%3A23Z&sp=r",
+    "ruddy": "https://docserverpwaprodsbr.blob.core.windows.net/faf2add8-9889-445b-828e-faa1067e4d18-1/resource/Assets0Images052a5ea63-50e0-4e1a-a3e1-addb80e9ef1a.jpeg?sv=2018-03-28&sr=b&sig=Fn%2FeHbdNC1QQngBybC5IKe%2BhM8DpGPkDpza1JHpmpi0%3D&spr=https&se=2023-04-23T19%3A57%3A23Z&sp=r"
   },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
@@ -110,6 +110,7 @@
     "Crear_pdf": 1,
     "CustomGallerySample": 3,
     "datosColaboradores2": 10,
+    "diaFestivoColombia": 12,
     "Documentos": 5,
     "DropDownSample": 9,
     "MyPeople": 11,
@@ -298,7 +299,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.3669948,
+    "AnalysisLoadTime": 0.3450164,
     "ControlCount": {
       "button": 5,
       "checkbox": 1,
@@ -314,7 +315,7 @@
       "screen": 2,
       "text": 2
     },
-    "DeserializationLoadTime": 0.913598,
+    "DeserializationLoadTime": 2.1143619,
     "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
