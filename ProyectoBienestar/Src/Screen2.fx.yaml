@@ -149,7 +149,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =15
-                        Text: ="Analista de Plataformas"
+                        Text: =UsuariosdeOffice365.MyProfile().JobTitle
                         Width: =Parent.Width
                         ZIndex: =2
 
@@ -239,7 +239,19 @@
                         IconFill: =RGBA(161, 161, 161, 1)
                         OnSelect: |-
                             =ClearCollect(diaFestivoColombia,
-                                {Dia:"Dia del Trabajo",FechaFestivo:"1/3/2023"})
+                                {Dia:"Dia del Trabajo",FechaFestivo:"1/5/2023"},
+                                {Dia:"Día de la Ascensión",FechaFestivo:"22/5/2023"},
+                                {Dia:"Corpus Christi",FechaFestivo:"12/6/2023"},
+                                {Dia:"Sagrado Corazón",FechaFestivo:"19/6/2023"},
+                                {Dia:"San Pedro y San Pablo",FechaFestivo:"3/7/2023"},
+                                {Dia:"Día de la Independencia",FechaFestivo:"20/7/2023"},
+                                {Dia:"Batalla de Boyacá",FechaFestivo:"7/8/2023"},
+                                {Dia:"La asunción de la Virgen",FechaFestivo:"21/8/2023"},
+                                {Dia:"Día de la Raza",FechaFestivo:"16/10/2023"},
+                                {Dia:"Todos los Santos",FechaFestivo:"6/11/2023"},
+                                {Dia:"Independencia de Cartagena",FechaFestivo:"13/11/2023"},
+                                {Dia:"Día de la Inmaculada Concepción",FechaFestivo:"8/12/2023"},
+                                {Dia:"Día de Navidad",FechaFestivo:"25/12/2023"})
                         Width: =131
                         X: =184
                         Y: =158
@@ -270,7 +282,7 @@
                             =1+((DateDiff(DatePicker4_1.SelectedDate,DatePicker4_2.SelectedDate))*5-((Weekday(DatePicker4_1.SelectedDate)-Weekday(DatePicker4_2.SelectedDate))*2))/7-
                             CountIf(
                                 diaFestivoColombia,
-                                    DateValue(FechaFestivo) <=DatePicker4_1.SelectedDate,
+                                    DateValue(FechaFestivo) >=DatePicker4_1.SelectedDate,
                                     DateValue(FechaFestivo) <=DatePicker4_2.SelectedDate)
                         X: =547
                         Y: =158
@@ -312,6 +324,7 @@
                     ZIndex: =3
 
                     Button5 As button:
+                        BorderThickness: =1
                         Fill: =RGBA(19, 85, 110, 1)
                         HoverFill: =ColorFade(RGBA(31, 140, 153, 1), 0)
                         OnSelect: =Set(_ideseccion,ThisItem.ide)
@@ -419,12 +432,6 @@
                         X: =737
                         Y: =251
                         ZIndex: =10
-
-                    Label13 As label:
-                        Text: =User().Email
-                        X: =20
-                        Y: =112
-                        ZIndex: =11
 
                 containerCartaLaboral As groupContainer.manualLayoutContainer:
                     BorderColor: =RGBA(202, 202, 202, 1)
