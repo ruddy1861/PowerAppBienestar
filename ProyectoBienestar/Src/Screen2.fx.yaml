@@ -453,13 +453,14 @@
 
                     Button1_1 As button:
                         Fill: =RGBA(31, 140, 153, 1)
-                        OnSelect: =Set(_pdfArchivo,PDF(ArchivosPdf));Navigate(VisorPdf)
+                        OnSelect: =Navigate(ArchivosPdf)
                         Text: ="Generar"
                         X: =430
                         Y: =204
                         ZIndex: =2
 
                     Checkbox1 As checkbox:
+                        OnSelect: =Set(_Salary,true)
                         Text: ="Incluir Salario"
                         Width: =180
                         X: =430
