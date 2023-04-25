@@ -1,0 +1,85 @@
+ArchivosPdf As screen:
+    BackgroundImage: ='Fondo App'
+    OnVisible: =
+
+    Label8 As label:
+        Height: =49
+        Size: =25
+        Text: =Today()
+        Width: =312
+        X: =289
+        Y: =91
+        ZIndex: =1
+
+    Image1 As image:
+        Height: =160
+        Image: ='Logo Final (1)'
+        Width: =167
+        X: =981
+        Y: =35
+        ZIndex: =2
+
+    Label11 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =15
+        Text: ="BG GROUP"
+        Width: =180
+        X: =588
+        Y: =236
+        ZIndex: =3
+
+    Label13 As label:
+        Height: =39
+        Size: =15
+        Text: ="El Sr."
+        Width: =65
+        X: =263
+        Y: =351
+        ZIndex: =4
+
+    Label14 As label:
+        Size: =15
+        Text: =User().FullName
+        Width: =293
+        X: =370
+        Y: =350
+        ZIndex: =5
+
+    Label13_1 As label:
+        Size: =15
+        Text: ="Identificado con C.C.        1035228963"
+        Width: =401
+        X: =663
+        Y: =350
+        ZIndex: =6
+
+    Label13_2 As label:
+        Height: =34
+        Size: =15
+        Text: ="Actualmente se encuentra vinculado a nuestra compañia desempeñando el cargo "
+        Width: =829
+        X: =263
+        Y: =390
+        ZIndex: =7
+
+    Label14_1 As label:
+        Height: =34
+        Size: =15
+        Text: =UsuariosdeOffice365.MyProfile().JobTitle
+        Width: =293
+        X: =263
+        Y: =424
+        ZIndex: =8
+
+    Label13_3 As label:
+        Height: =34
+        Size: =15
+        Text: ="Con un contrato de prestacion de servicios, desde 27 de marzo."
+        Width: =829
+        X: =480
+        Y: =424
+        ZIndex: =9
+

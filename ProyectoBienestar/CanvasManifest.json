@@ -73,7 +73,7 @@
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
       "parallelcodegen": false,
-      "pdffunction": false,
+      "pdffunction": true,
       "powerfxdecimal": false,
       "projectionmapping": true,
       "reactformulabar": false,
@@ -126,6 +126,8 @@
   },
   "ScreenOrder": [
     "Screen2",
-    "Screen1"
+    "Screen1",
+    "ArchivosPdf",
+    "VisorPdf"
   ]
 }
