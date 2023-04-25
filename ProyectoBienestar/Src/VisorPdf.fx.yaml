@@ -2,6 +2,7 @@ VisorPdf As screen:
 
     PdfViewer1 As pdfViewer:
         BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =_pdfArchivo
         Fill: =RGBA(0, 0, 0, 0.5)
         Height: =510
         Width: =542

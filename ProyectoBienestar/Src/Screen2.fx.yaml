@@ -453,7 +453,7 @@
 
                     Button1_1 As button:
                         Fill: =RGBA(31, 140, 153, 1)
-                        OnSelect: =PDF(Screen1);Navigate(VisorPdf)
+                        OnSelect: =Set(_pdfArchivo,PDF(ArchivosPdf));Navigate(VisorPdf)
                         Text: ="Generar"
                         X: =430
                         Y: =204

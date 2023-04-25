@@ -175,7 +175,14 @@
     "PdfViewer1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Document",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "SamplePdf",
+          "InvariantPropertyName": "Document",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Zoom",
         "DisplayMode",
         "Width",
