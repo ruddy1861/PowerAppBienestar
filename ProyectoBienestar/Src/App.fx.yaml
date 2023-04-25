@@ -1,4 +1,5 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value)
     StartScreen: =
 

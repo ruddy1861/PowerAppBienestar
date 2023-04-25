@@ -26,10 +26,13 @@
       "parameterHintsV2": {}
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "Office365Outlook"
+    ],
     "dependencies": {},
     "dependents": [
-      "dcae6d10-d2c7-4392-b050-e48ceb7ad01d"
+      "dcae6d10-d2c7-4392-b050-e48ceb7ad01d",
+      "eb22c6c6-d343-4caf-a59f-c88624991db7"
     ],
     "id": "66eb3c18-72fa-4ead-ad1a-26a0d6e0b581"
   },
@@ -42,38 +45,8 @@
       "parameterHints": {},
       "parameterHintsV2": {}
     },
-    "datasets": {
-      "https://bgroupti.sharepoint.com/sites/Bienestar": {
-        "dataSources": {
-          "Colaboradores": {
-            "tableName": "8d0cf63a-07a0-4e19-bde7-df5356255720"
-          },
-          "datosColaboradores2": {
-            "tableName": "1c12aebe-2a41-44ba-b48f-87324d25f7a8"
-          },
-          "Documentos": {
-            "tableName": "12176afc-6e65-4a76-a182-375e020a478e"
-          },
-          "Registro de Permiso": {
-            "tableName": "5637fb94-595d-4ccd-9d24-5d5137c5f3ec"
-          },
-          "Registro de Vacaciones": {
-            "tableName": "f0077b0e-428b-4c0e-b80b-f583829cfc8b"
-          },
-          "Solicitud colilla de pago": {
-            "tableName": "9b9c2306-df1c-47c5-b969-feef1fd6e8df"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Colaboradores",
-      "Documentos",
-      "Registro de Permiso",
-      "Registro de Vacaciones",
-      "Solicitud colilla de pago",
-      "datosColaboradores2"
-    ],
+    "datasets": {},
+    "dataSources": [],
     "dependencies": {},
     "dependents": [
       "dcae6d10-d2c7-4392-b050-e48ceb7ad01d"
@@ -169,5 +142,39 @@
     },
     "dependents": [],
     "id": "dcae6d10-d2c7-4392-b050-e48ceb7ad01d"
+  },
+  "eb22c6c6-d343-4caf-a59f-c88624991db7": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "66eb3c18-72fa-4ead-ad1a-26a0d6e0b581": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "912457de-899f-4a0f-8b93-fd534444c4aa"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "66eb3c18-72fa-4ead-ad1a-26a0d6e0b581"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "912457de-899f-4a0f-8b93-fd534444c4aa"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Pruebapdf"
+    ],
+    "dependencies": {
+      "shared_office365": "66eb3c18-72fa-4ead-ad1a-26a0d6e0b581"
+    },
+    "dependents": [],
+    "id": "eb22c6c6-d343-4caf-a59f-c88624991db7"
   }
 }

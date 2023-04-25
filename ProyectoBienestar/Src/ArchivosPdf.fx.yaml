@@ -83,10 +83,85 @@ ArchivosPdf As screen:
         Y: =424
         ZIndex: =9
 
-    Icon2 As icon.Send:
-        Icon: =Icon.Send
-        OnSelect: =Set(_pdfArchivo,PDF(ArchivosPdf));Navigate(VisorPdf)
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        BorderThickness: =2
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =509
+        Visible: =_popUpEnviarCorreo
+        Width: =627
+        X: =370
+        Y: =104
+        ZIndex: =11
+
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        ChevronBackground: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        Items: =colUsuarios
+        PressedFill: =ColorFade(Self.Fill, -20%)
+        SelectionFill: =ColorFade(Self.Fill, -20%)
+        Visible: =_popUpEnviarCorreo
+        X: =517
+        Y: =181
+        ZIndex: =12
+
+    TextInput1 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Entrada de texto"
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =517
+        Y: =236
+        ZIndex: =13
+
+    TextInput3 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Entrada de texto"
+        Height: =130
+        LineHeight: =0
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =517
+        Y: =294
+        ZIndex: =14
+
+    Button2 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail,TextInput1.Text,TextInput3.Text);
+            Set(_popUpEnviarCorreo, false);
+            Navigate(Screen2)
+        Text: ="Enviar Correo"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =517
+        Y: =458
+        ZIndex: =15
+
+    Button3 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Set(_popUpEnviarCorreo, true)
+        Text: ="Aprobar"
         X: =40
         Y: =40
-        ZIndex: =10
+        ZIndex: =16
+
+    Button2_1 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Navigate(Screen2)
+        Text: ="Cancelar"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =519
+        Y: =513
+        ZIndex: =17
 
