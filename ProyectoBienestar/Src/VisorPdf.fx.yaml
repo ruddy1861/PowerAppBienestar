@@ -12,7 +12,7 @@ VisorPdf As screen:
 
     Icon1 As icon.ChevronLeft:
         Icon: =Icon.ChevronLeft
-        OnSelect: =Back()
+        OnSelect: =Navigate(Screen2)
         X: =56
         Y: =20
         ZIndex: =2
