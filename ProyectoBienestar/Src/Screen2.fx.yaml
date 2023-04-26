@@ -128,7 +128,7 @@
                     ZIndex: =1
 
                     Label5 As label:
-                        Align: =Align.Center
+                        Align: =Align.Right
                         AlignInContainer: =AlignInContainer.Center
                         FontWeight: =FontWeight.Bold
                         Height: =Parent.Height/2
