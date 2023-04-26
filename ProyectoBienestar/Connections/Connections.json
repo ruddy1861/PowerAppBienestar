@@ -45,8 +45,18 @@
       "parameterHints": {},
       "parameterHintsV2": {}
     },
-    "datasets": {},
-    "dataSources": [],
+    "datasets": {
+      "https://bgroupti.sharepoint.com/sites/Bienestar": {
+        "dataSources": {
+          "DB_Bienestar1": {
+            "tableName": "c07709aa-3df7-4d32-9a71-097fd86b8009"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "DB_Bienestar1"
+    ],
     "dependencies": {},
     "dependents": [
       "dcae6d10-d2c7-4392-b050-e48ceb7ad01d"

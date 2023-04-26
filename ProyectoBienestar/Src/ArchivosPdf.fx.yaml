@@ -294,8 +294,8 @@ ArchivosPdf As screen:
         Size: =15
         Text: ="Alexander Bogota Ortiz"
         Width: =256
-        X: =268
-        Y: =669
+        X: =273
+        Y: =629
         ZIndex: =30
 
     Label13_9 As label:
@@ -303,8 +303,8 @@ ArchivosPdf As screen:
         Size: =15
         Text: ="Adrian Guerrero Taborda"
         Width: =270
-        X: =932
-        Y: =669
+        X: =849
+        Y: =629
         ZIndex: =31
 
     Label17 As label:
@@ -316,11 +316,11 @@ ArchivosPdf As screen:
         ZIndex: =32
 
     Label8_2 As label:
-        Height: =49
+        Height: =35
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().Department
-        Width: =118
+        Width: =186
         X: =407
-        Y: =99
+        Y: =104
         ZIndex: =33
 
