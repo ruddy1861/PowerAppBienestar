@@ -4,17 +4,17 @@ ArchivosPdf As screen:
 
     Label8 As label:
         Height: =49
-        Size: =25
+        Size: =15
         Text: =Today()
-        Width: =312
+        Width: =118
         X: =289
-        Y: =91
+        Y: =99
         ZIndex: =1
 
     Image1 As image:
-        Height: =160
+        Height: =128
         Image: ='Logo Final (1)'
-        Width: =167
+        Width: =111
         X: =981
         Y: =35
         ZIndex: =2
@@ -27,8 +27,8 @@ ArchivosPdf As screen:
         Size: =15
         Text: ="BG GROUP"
         Width: =180
-        X: =588
-        Y: =236
+        X: =593
+        Y: =167
         ZIndex: =3
 
     Label13 As label:
@@ -36,24 +36,26 @@ ArchivosPdf As screen:
         Size: =15
         Text: ="El Sr."
         Width: =65
-        X: =263
-        Y: =351
+        X: =265
+        Y: =271
         ZIndex: =4
 
     Label14 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        OnSelect: =
         Size: =15
         Text: =User().FullName
-        Width: =293
-        X: =370
-        Y: =350
+        Width: =273
+        X: =320
+        Y: =270
         ZIndex: =5
 
     Label13_1 As label:
         Size: =15
-        Text: ="Identificado con C.C.        1035228963"
-        Width: =401
-        X: =663
-        Y: =350
+        Text: ="Identificado con C.C.   "
+        Width: =213
+        X: =593
+        Y: =271
         ZIndex: =6
 
     Label13_2 As label:
@@ -62,25 +64,26 @@ ArchivosPdf As screen:
         Text: ="Actualmente se encuentra vinculado a nuestra compañia desempeñando el cargo "
         Width: =829
         X: =263
-        Y: =390
+        Y: =311
         ZIndex: =7
 
     Label14_1 As label:
+        Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().JobTitle
-        Width: =293
-        X: =263
-        Y: =424
+        Width: =254
+        X: =268
+        Y: =345
         ZIndex: =8
 
     Label13_3 As label:
         Height: =34
         Size: =15
-        Text: ="Con un contrato de prestacion de servicios, desde 27 de marzo."
-        Width: =829
-        X: =480
-        Y: =424
+        Text: ="Con un contrato por"
+        Width: =210
+        X: =522
+        Y: =344
         ZIndex: =9
 
     Rectangle3 As rectangle:
@@ -108,7 +111,7 @@ ArchivosPdf As screen:
 
     TextInput1 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
-        Default: ="Entrada de texto"
+        Default: ="Asunto"
         Height: =42
         Visible: =_popUpEnviarCorreo
         Width: =328
@@ -118,7 +121,7 @@ ArchivosPdf As screen:
 
     TextInput3 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
-        Default: ="Entrada de texto"
+        Default: ="Cuerpo del mail"
         Height: =130
         LineHeight: =0
         PaddingBottom: =0
@@ -164,4 +167,160 @@ ArchivosPdf As screen:
         X: =519
         Y: =513
         ZIndex: =17
+
+    Label16 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Text: =""
+        Width: =180
+        X: =822
+        Y: =270
+        ZIndex: =18
+
+    Label14_2 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =34
+        Size: =15
+        Text: =
+        Width: =254
+        X: =727
+        Y: =345
+        ZIndex: =19
+
+    Label13_4 As label:
+        Height: =34
+        Size: =15
+        Text: ="desde "
+        Width: =76
+        X: =979
+        Y: =344
+        ZIndex: =20
+
+    Label14_3 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =34
+        Size: =15
+        Text: =
+        Width: =254
+        X: =267
+        Y: =378
+        ZIndex: =21
+
+    Label13_5 As label:
+        Height: =34
+        Size: =15
+        Text: =",devegando un salario de"
+        Width: =249
+        X: =524
+        Y: =379
+        ZIndex: =22
+
+    Label16_1 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =34
+        Text: =""
+        Width: =180
+        X: =768
+        Y: =378
+        ZIndex: =23
+
+    Label11_1 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =15
+        Text: =""
+        Width: =180
+        X: =591
+        Y: =265
+        ZIndex: =24
+
+    Label11_2 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =15
+        Text: =""
+        Width: =180
+        X: =593
+        Y: =265
+        ZIndex: =25
+
+    Label11_3 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =15
+        Text: |-
+            ="CERTIFICA QUE:"
+        Width: =180
+        X: =588
+        Y: =209
+        ZIndex: =26
+
+    Label13_6 As label:
+        Height: =34
+        Size: =15
+        Text: ="correspondientes a Honorarios por actividad ejercida."
+        Width: =535
+        X: =268
+        Y: =412
+        ZIndex: =27
+
+    Label13_7 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Size: =15
+        Text: ="Se expide este certificado a  peticion del interesado el dia"
+        Width: =582
+        X: =267
+        Y: =494
+        ZIndex: =28
+
+    Label8_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Size: =15
+        Text: =Today()
+        Width: =134
+        X: =849
+        Y: =494
+        ZIndex: =29
+
+    Label13_8 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =15
+        Text: ="Alexander Bogota Ortiz"
+        Width: =256
+        X: =268
+        Y: =669
+        ZIndex: =30
+
+    Label13_9 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =15
+        Text: ="Adrian Guerrero Taborda"
+        Width: =270
+        X: =932
+        Y: =669
+        ZIndex: =31
+
+    Label17 As label:
+        Height: =35
+        Text: =","
+        Width: =12
+        X: =395
+        Y: =106
+        ZIndex: =32
+
+    Label8_2 As label:
+        Height: =49
+        Size: =15
+        Text: =UsuariosdeOffice365.MyProfile().Department
+        Width: =118
+        X: =407
+        Y: =99
+        ZIndex: =33
 

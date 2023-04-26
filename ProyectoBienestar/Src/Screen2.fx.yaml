@@ -453,6 +453,7 @@
 
                     Button1_1 As button:
                         Fill: =RGBA(31, 140, 153, 1)
+                        HoverFill: =ColorFade(Self.Fill, -20%)
                         OnSelect: |-
                             =Navigate(ArchivosPdf);
                             Set(_popUpEnviarCorreo, false)
