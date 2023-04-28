@@ -7,7 +7,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =Today()
         Width: =118
-        X: =289
+        X: =235
         Y: =99
         ZIndex: =1
 
@@ -92,7 +92,7 @@ pdfPermisos As screen:
         Height: =35
         Text: =","
         Width: =12
-        X: =395
+        X: =341
         Y: =106
         ZIndex: =32
 
@@ -101,7 +101,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().Department
         Width: =186
-        X: =407
+        X: =344
         Y: =104
         ZIndex: =33
 
