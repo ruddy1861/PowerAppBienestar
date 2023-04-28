@@ -139,7 +139,7 @@ pdfPermisos As screen:
         Height: =33
         OnSelect: =
         Size: =15
-        Text: =_jsonArregloSelectedHoraInicial
+        Text: =horaInicialPermiso.Selected.Value
         Width: =49
         X: =949
         Y: =310
@@ -183,7 +183,7 @@ pdfPermisos As screen:
         Height: =33
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
-        Text: =_jsonArregloSelectedMinutoInicial
+        Text: =minutoInicialPermiso.Selected.Value
         Width: =49
         X: =1014
         Y: =310
@@ -203,7 +203,7 @@ pdfPermisos As screen:
         Height: =29
         OnSelect: =
         Size: =15
-        Text: =_jsonArregloSelectedHoraFinal
+        Text: =horaPermisoFinal.Selected.Value
         Width: =46
         X: =295
         Y: =345
@@ -224,7 +224,7 @@ pdfPermisos As screen:
         Height: =32
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
-        Text: =_jsonArregloSelectedMinutoFinal
+        Text: =minutoPermisoFinal.Selected.Value
         Width: =49
         X: =364
         Y: =342
