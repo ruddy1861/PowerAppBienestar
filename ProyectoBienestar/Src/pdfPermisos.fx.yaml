@@ -61,10 +61,10 @@ pdfPermisos As screen:
     Label13_22 As label:
         Height: =32
         Size: =15
-        Text: =", agradeciendo una pronta respuesta."
+        Text: ="Agradeciendo una pronta respuesta."
         Width: =368
-        X: =341
-        Y: =346
+        X: =235
+        Y: =345
         ZIndex: =9
 
     Button3_2 As button:
@@ -109,8 +109,8 @@ pdfPermisos As screen:
         Height: =34
         Size: =15
         Text: =_Motivo
-        Width: =254
-        X: =407
+        Width: =209
+        X: =398
         Y: =310
         ZIndex: =41
 
@@ -119,7 +119,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", el dia "
         Width: =86
-        X: =643
+        X: =607
         Y: =310
         ZIndex: =42
 
@@ -128,7 +128,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", desde"
         Width: =82
-        X: =849
+        X: =777
         Y: =313
         ZIndex: =43
 
@@ -139,7 +139,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =horaInicialPermiso.Selected.Value
         Width: =41
-        X: =913
+        X: =868
         Y: =310
         ZIndex: =44
 
@@ -148,7 +148,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =_FechaPermiso
         Width: =133
-        X: =714
+        X: =660
         Y: =310
         ZIndex: =45
 
@@ -170,7 +170,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =953
+        X: =899
         Y: =312
         ZIndex: =48
 
@@ -180,17 +180,17 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoInicialPermiso.Selected.Value
         Width: =43
-        X: =960
+        X: =906
         Y: =312
         ZIndex: =49
 
     Label13_31 As label:
         Height: =33
         Size: =15
-        Text: =","
+        Text: ="."
         Width: =26
-        X: =1003
-        Y: =315
+        X: =1109
+        Y: =310
         ZIndex: =50
 
     Label14_18 As label:
@@ -200,18 +200,19 @@ pdfPermisos As screen:
         Size: =15
         Text: =horaPermisoFinal.Selected.Value
         Width: =34
-        X: =271
-        Y: =342
+        X: =1032
+        Y: =315
         ZIndex: =51
 
     Label13_32 As label:
+        Align: =Align.Center
         Height: =33
         Size: =15
         Text: |-
             =":"
         Width: =14
-        X: =305
-        Y: =346
+        X: =1066
+        Y: =312
         ZIndex: =52
 
     Label14_19 As label:
@@ -220,17 +221,17 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoPermisoFinal.Selected.Value
         Width: =35
-        X: =310
-        Y: =342
+        X: =1083
+        Y: =312
         ZIndex: =53
 
     Label13_33 As label:
-        Height: =34
+        Height: =36
         Size: =15
-        Text: ="hasta"
-        Width: =63
-        X: =226
-        Y: =342
+        Text: =", hasta"
+        Width: =83
+        X: =949
+        Y: =313
         ZIndex: =54
 
     Rectangle3_2 As rectangle:
