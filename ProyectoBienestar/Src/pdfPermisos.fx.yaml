@@ -287,6 +287,19 @@ pdfPermisos As screen:
         OnSelect: |-
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
             Set(_popUpEnviarCorreo, false);
+            Reset(minutoInicialPermiso);
+            Reset(horaInicialPermiso);
+            Reset(minutoPermisoFinal);
+            Reset(horaPermisoFinal);
+            Reset(DatePickerPermiso);
+            Reset(TextInputMotivo);
+            
+            Set(_FechaPermiso, Blank());
+            Set(_jsonArregloSelectedHoraFinal, Blank());
+            Set(_jsonArregloSelectedHoraInicial, Blank());
+            Set(_jsonArregloSelectedMinutoFinal, Blank());
+            Set(_jsonArregloSelectedMinutoInicial, Blank());
+            Set(_Motivo, Blank());
             Navigate(Screen2)
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo

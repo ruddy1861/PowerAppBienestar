@@ -376,6 +376,7 @@
                         ZIndex: =3
 
                     TextInputMotivo As text:
+                        Align: =Align.Center
                         BorderColor: =RGBA(161, 161, 161, 1)
                         Color: =RGBA(161,161, 161, 1)
                         Default: =
