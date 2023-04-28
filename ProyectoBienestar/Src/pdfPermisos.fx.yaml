@@ -64,7 +64,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", agradeciendo una pronta respuesta."
         Width: =368
-        X: =413
+        X: =395
         Y: =346
         ZIndex: =9
 
@@ -135,13 +135,14 @@ pdfPermisos As screen:
         ZIndex: =43
 
     Label14_13 As label:
+        Align: =Align.Right
         Fill: =RGBA(186, 202, 226, 1)
         Height: =33
         OnSelect: =
         Size: =15
         Text: =horaInicialPermiso.Selected.Value
-        Width: =49
-        X: =949
+        Width: =30
+        X: =940
         Y: =310
         ZIndex: =44
 
@@ -174,7 +175,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =998
+        X: =971
         Y: =312
         ZIndex: =48
 
@@ -184,8 +185,8 @@ pdfPermisos As screen:
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
         Text: =minutoInicialPermiso.Selected.Value
-        Width: =49
-        X: =1014
+        Width: =30
+        X: =987
         Y: =310
         ZIndex: =49
 
@@ -194,18 +195,19 @@ pdfPermisos As screen:
         Size: =15
         Text: =","
         Width: =26
-        X: =1066
+        X: =1012
         Y: =315
         ZIndex: =50
 
     Label14_18 As label:
+        Align: =Align.Right
         Fill: =RGBA(186, 202, 226, 1)
         Height: =29
         OnSelect: =
         Size: =15
         Text: =horaPermisoFinal.Selected.Value
         Width: =46
-        X: =295
+        X: =286
         Y: =345
         ZIndex: =51
 
@@ -215,7 +217,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =341
+        X: =332
         Y: =346
         ZIndex: =52
 
@@ -226,7 +228,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoPermisoFinal.Selected.Value
         Width: =49
-        X: =364
+        X: =346
         Y: =342
         ZIndex: =53
 
