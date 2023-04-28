@@ -126,6 +126,7 @@
     "Screen2",
     "Screen1",
     "ArchivosPdf",
-    "VisorPdf"
+    "ArchivosPdfSinSalario",
+    "pdfPermisos"
   ]
 }
