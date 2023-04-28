@@ -175,7 +175,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =971
+        X: =962
         Y: =312
         ZIndex: =48
 
@@ -186,7 +186,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoInicialPermiso.Selected.Value
         Width: =30
-        X: =987
+        X: =978
         Y: =310
         ZIndex: =49
 
@@ -195,7 +195,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =","
         Width: =26
-        X: =1012
+        X: =1003
         Y: =315
         ZIndex: =50
 
