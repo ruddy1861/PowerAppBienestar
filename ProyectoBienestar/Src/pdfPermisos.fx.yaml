@@ -92,7 +92,7 @@ pdfPermisos As screen:
         Height: =35
         Text: =","
         Width: =12
-        X: =341
+        X: =350
         Y: =106
         ZIndex: =32
 
@@ -101,8 +101,8 @@ pdfPermisos As screen:
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().Department
         Width: =186
-        X: =344
-        Y: =104
+        X: =362
+        Y: =106
         ZIndex: =33
 
     Label14_12 As label:
