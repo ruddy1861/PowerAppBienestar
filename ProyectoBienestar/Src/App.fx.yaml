@@ -3,3 +3,10 @@ App As appinfo:
     OnStart: =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value)
     StartScreen: =
 
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
