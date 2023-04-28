@@ -63,7 +63,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", agradeciendo una pronta respuesta."
         Width: =368
-        X: =368
+        X: =341
         Y: =346
         ZIndex: =9
 
@@ -119,7 +119,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", el dia "
         Width: =86
-        X: =661
+        X: =643
         Y: =310
         ZIndex: =42
 
@@ -128,7 +128,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", desde"
         Width: =82
-        X: =867
+        X: =849
         Y: =313
         ZIndex: =43
 
@@ -139,7 +139,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =horaInicialPermiso.Selected.Value
         Width: =41
-        X: =931
+        X: =913
         Y: =310
         ZIndex: =44
 
@@ -148,7 +148,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =_FechaPermiso
         Width: =133
-        X: =732
+        X: =714
         Y: =310
         ZIndex: =45
 
@@ -170,7 +170,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =971
+        X: =953
         Y: =312
         ZIndex: =48
 
@@ -180,7 +180,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoInicialPermiso.Selected.Value
         Width: =43
-        X: =987
+        X: =960
         Y: =312
         ZIndex: =49
 
@@ -189,7 +189,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =","
         Width: =26
-        X: =1021
+        X: =1003
         Y: =315
         ZIndex: =50
 
@@ -200,7 +200,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =horaPermisoFinal.Selected.Value
         Width: =34
-        X: =289
+        X: =271
         Y: =342
         ZIndex: =51
 
@@ -210,7 +210,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =323
+        X: =305
         Y: =346
         ZIndex: =52
 
@@ -220,7 +220,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoPermisoFinal.Selected.Value
         Width: =35
-        X: =337
+        X: =310
         Y: =342
         ZIndex: =53
 
@@ -228,7 +228,7 @@ pdfPermisos As screen:
         Height: =34
         Size: =15
         Text: ="hasta"
-        Width: =76
+        Width: =63
         X: =226
         Y: =342
         ZIndex: =54
