@@ -107,12 +107,12 @@ pdfPermisos As screen:
 
     Label14_12 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Height: =34
+        Height: =28
         Size: =15
         Text: =_Motivo
         Width: =141
         X: =398
-        Y: =310
+        Y: =315
         ZIndex: =41
 
     Label13_28 As label:
@@ -120,7 +120,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", el dia "
         Width: =86
-        X: =530
+        X: =525
         Y: =312
         ZIndex: =42
 
@@ -140,19 +140,19 @@ pdfPermisos As screen:
         OnSelect: =
         Size: =15
         Text: =horaInicialPermiso.Selected.Value
-        Width: =41
+        Width: =35
         X: =752
         Y: =311
         ZIndex: =44
 
     Label14_14 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Height: =36
+        Height: =28
         Size: =15
         Text: =_FechaPermiso
         Width: =118
         X: =591
-        Y: =310
+        Y: =315
         ZIndex: =45
 
     Label14_15 As label:
@@ -173,28 +173,28 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =787
-        Y: =312
+        X: =784
+        Y: =310
         ZIndex: =48
 
     Label14_17 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Height: =31
+        Height: =33
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
         Text: =minutoInicialPermiso.Selected.Value
-        Width: =43
-        X: =798
+        Width: =33
+        X: =792
         Y: =310
         ZIndex: =49
 
     Label13_31 As label:
-        Height: =33
+        Height: =25
         Size: =15
         Text: ="."
-        Width: =14
-        X: =967
-        Y: =311
+        Width: =22
+        X: =942
+        Y: =322
         ZIndex: =50
 
     Label14_18 As label:
@@ -204,9 +204,9 @@ pdfPermisos As screen:
         OnSelect: =
         Size: =15
         Text: =horaPermisoFinal.Selected.Value
-        Width: =34
-        X: =901
-        Y: =311
+        Width: =24
+        X: =923
+        Y: =314
         ZIndex: =51
 
     Label13_32 As label:
@@ -216,19 +216,19 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =929
+        X: =911
         Y: =312
         ZIndex: =52
 
     Label14_19 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Height: =34
+        Height: =32
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
         Text: =minutoPermisoFinal.Selected.Value
-        Width: =35
-        X: =935
-        Y: =311
+        Width: =24
+        X: =890
+        Y: =315
         ZIndex: =53
 
     Label13_33 As label:
@@ -236,8 +236,8 @@ pdfPermisos As screen:
         Size: =15
         Text: =", hasta"
         Width: =74
-        X: =833
-        Y: =316
+        X: =816
+        Y: =314
         ZIndex: =54
 
     Rectangle3_2 As rectangle:
