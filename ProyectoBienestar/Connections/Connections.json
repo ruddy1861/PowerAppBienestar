@@ -97,6 +97,32 @@
     ],
     "id": "a91ce6cf-3dc2-4222-b403-e64753ce25df"
   },
+  "d581bf5f-31bd-4882-ad3b-6535b5451719": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://bgroupti.sharepoint.com/sites/Bienestar": {
+        "dataSources": {
+          "correosColaboradores": {
+            "tableName": "67349b4c-de6c-4d05-bc38-505aaecd9572"
+          },
+          "datosColaboradores2": {
+            "tableName": "1c12aebe-2a41-44ba-b48f-87324d25f7a8"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "correosColaboradores",
+      "datosColaboradores2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d581bf5f-31bd-4882-ad3b-6535b5451719"
+  },
   "dcae6d10-d2c7-4392-b050-e48ceb7ad01d": {
     "connectionRef": {
       "apiTier": "Standard",
