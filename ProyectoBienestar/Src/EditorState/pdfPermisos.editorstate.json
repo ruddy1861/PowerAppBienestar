@@ -931,7 +931,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"City\"}",
+          "NameMap": "{\"Value\":\"aboutMe\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

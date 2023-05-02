@@ -266,12 +266,16 @@ ArchivosPdf As screen:
         BorderColor: =RGBA(19, 85, 110, 1)
         ChevronBackground: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        Items: |-
+        Items: |
             =/*Search(
                 Filter(datosColaboradores2;
                 Nombre= User().FullName;
-                Cargo = UsuariosdeOffice365.MyProfile().JobTitle);*/
-            correosColaboradores.correo
+                Cargo = UsuariosdeOffice365.MyProfile().JobTitle*/
+                correosColaboradores.correo
+        OnChange: |-
+            =
+            Set(_correo,true)
+        OnSelect: =true
         PressedFill: =ColorFade(Self.Fill, -20%)
         SelectionFill: =ColorFade(Self.Fill, -20%)
         Visible: =_popUpEnviarCorreo
@@ -308,8 +312,7 @@ ArchivosPdf As screen:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
-            Set(_popUpEnviarCorreo, false);
+            =Set(_popUpEnviarCorreo, false);
             PDF(ArchivosPdf);
             Navigate(Screen2)
         Text: ="Enviar Correo"
