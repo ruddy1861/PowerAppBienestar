@@ -132,7 +132,7 @@ ArchivosPdf As screen:
         Text: =UsuariosdeOffice365.MyProfile().OfficeLocation
         Width: =136
         X: =271
-        Y: =414
+        Y: =398
         ZIndex: =21
 
     Label13_5 As label:
@@ -140,18 +140,18 @@ ArchivosPdf As screen:
         Size: =15
         Text: =",devegando un salario de"
         Width: =249
-        X: =400
-        Y: =415
+        X: =395
+        Y: =396
         ZIndex: =22
 
     Label16_1 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Height: =34
+        Height: =35
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().mobilePhone
-        Width: =180
+        Width: =143
         X: =642
-        Y: =414
+        Y: =398
         ZIndex: =23
 
     Label11_3 As label:
@@ -170,10 +170,10 @@ ArchivosPdf As screen:
     Label13_6 As label:
         Height: =34
         Size: =15
-        Text: ="correspondientes a Honorarios por actividad ejercida."
-        Width: =535
-        X: =271
-        Y: =451
+        Text: ="por actividad ejercida."
+        Width: =250
+        X: =267
+        Y: =433
         ZIndex: =27
 
     Label13_7 As label:
@@ -304,4 +304,13 @@ ArchivosPdf As screen:
         X: =537
         Y: =196
         ZIndex: =40
+
+    Label13_20 As label:
+        Height: =35
+        Size: =15
+        Text: ="correspondientes a Honorarios "
+        Width: =309
+        X: =768
+        Y: =398
+        ZIndex: =41
 
