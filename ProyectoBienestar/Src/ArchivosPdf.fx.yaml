@@ -97,7 +97,7 @@ ArchivosPdf As screen:
 
     Label16 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Text: =""
+        Text: =
         Width: =180
         X: =822
         Y: =270
@@ -262,27 +262,6 @@ ArchivosPdf As screen:
         Y: =124
         ZIndex: =34
 
-    CorreosColaboradores As dropdown:
-        BorderColor: =RGBA(19, 85, 110, 1)
-        ChevronBackground: =RGBA(19, 85, 110, 1)
-        HoverFill: =ColorFade(Self.Fill, -20%)
-        Items: |
-            =/*Search(
-                Filter(datosColaboradores2;
-                Nombre= User().FullName;
-                Cargo = UsuariosdeOffice365.MyProfile().JobTitle*/
-                correosColaboradores.correo
-        OnChange: |-
-            =
-            Set(_correo,true)
-        OnSelect: =true
-        PressedFill: =ColorFade(Self.Fill, -20%)
-        SelectionFill: =ColorFade(Self.Fill, -20%)
-        Visible: =_popUpEnviarCorreo
-        X: =537
-        Y: =201
-        ZIndex: =35
-
     TextInput1 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
         Default: ="Asunto"
@@ -312,8 +291,9 @@ ArchivosPdf As screen:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
-            =Set(_popUpEnviarCorreo, false);
-            PDF(ArchivosPdf);
+            =//Office365Outlook.SendEmailV2();;
+            Set(_popUpEnviarCorreo, false);
+            pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"cartaLaboral.pdf",contentBytes: PDF(ArchivosPdf)}}));
             Navigate(Screen2)
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
@@ -332,4 +312,15 @@ ArchivosPdf As screen:
         X: =539
         Y: =533
         ZIndex: =39
+
+    TextInput1_3 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: =User().Email
+        Height: =42
+        OnSelect: =User().Email
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =196
+        ZIndex: =40
 

@@ -369,7 +369,8 @@
                         Height: =41
                         IconBackground: =RGBA(0, 0, 0, 0)
                         IconFill: =RGBA(161, 161, 161, 1)
-                        OnChange: =Set(_FechaPermiso, Self.SelectedDate)
+                        OnChange: =
+                        OnSelect: =Set(_FechaPermiso, Self.SelectedDate)
                         Width: =131
                         X: =227
                         Y: =159
@@ -533,15 +534,16 @@
                     Button1_1 As button:
                         Fill: =RGBA(31, 140, 153, 1)
                         HoverFill: =ColorFade(Self.Fill, -20%)
-                        OnSelect: |-
+                        OnSelect: |+
                             =Navigate(ArchivosPdf);
                             Set(_popUpEnviarCorreo, false)
+                            
                         Text: ="Generar"
                         X: =430
                         Y: =204
                         ZIndex: =2
 
-                    Checkbox1 As checkbox:
+                    CheckboxSalario As checkbox:
                         OnSelect: =Set(_Salary,true)
                         Text: ="Incluir Salario"
                         Width: =180

@@ -1,8 +1,8 @@
 [
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
-    "FlowNameId": "c70cb750-097b-40ca-8041-8c1ce52928f4",
-    "Name": "envipdf",
+    "FlowNameId": "21c012a3-a4a5-4a58-87b0-d99bca14fa62",
+    "Name": "pdfcl",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null

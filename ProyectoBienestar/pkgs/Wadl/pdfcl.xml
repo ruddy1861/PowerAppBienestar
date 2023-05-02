@@ -1,7 +1,10 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://brazil-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Pruebapdf" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Prueba pdf" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://brazil-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="pdfcl" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="pdfcl" />
   <grammars>
     <jsonTypes targetNamespace="https://brazil-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_email_def" />
+      <string name="ManualTriggerInput_text_def" />
+      <string name="ManualTriggerInput_text_1_def" />
       <string name="ManualTriggerInput_file_def_name_def" />
       <base64Binary name="ManualTriggerInput_file_def_contentBytes_def" />
       <object name="ManualTriggerInput_file_def">
@@ -9,6 +12,9 @@
         <property name="contentBytes" typeRef="ManualTriggerInput_file_def_contentBytes_def" />
       </object>
       <object name="ManualTriggerInput">
+        <property name="email" type="string" />
+        <property name="text" type="string" />
+        <property name="text_1" type="string" />
         <property name="file" typeRef="ManualTriggerInput_file_def" />
       </object>
     </jsonTypes>
@@ -23,8 +29,17 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
+            <param style="plain" name="email" path="/email" type="xs:string" required="true">
+              <doc title="Correo electrónico" />
+            </param>
+            <param style="plain" name="text" path="/text" type="xs:string" required="true">
+              <doc title="asunto" />
+            </param>
+            <param style="plain" name="text_1" path="/text_1" type="xs:string" required="true">
+              <doc title="cuerpo" />
+            </param>
             <param style="plain" name="file" path="/file" type="service:ManualTriggerInput_file_def">
-              <doc title="Contenido del archivo" />
+              <doc title="pdf" />
             </param>
           </representation>
         </request>
