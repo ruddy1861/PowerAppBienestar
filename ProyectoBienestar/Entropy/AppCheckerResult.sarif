@@ -3625,6 +3625,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App._BotonAprobado"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._BotonAprobado",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_BotonAprobado",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.ruddy"
                 }
               ],

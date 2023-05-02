@@ -12,10 +12,10 @@ pdfPermisos As screen:
         ZIndex: =1
 
     Image1_2 As image:
-        Height: =128
+        Height: =166
         Image: ='Logo Final (1)'
-        Width: =111
-        X: =981
+        Width: =172
+        X: =947
         Y: =35
         ZIndex: =2
 

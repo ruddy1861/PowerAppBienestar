@@ -1,6 +1,12 @@
 "Screen2 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     BackgroundImage: ='Fondo App'
-    Fill: =RGBA(255, 255, 255, 1)
+    Fill: |-
+        =RGBA(
+            255,
+            255,
+            255,
+            1
+        )
     LoadingSpinnerColor: =RGBA(19, 85, 110, 1)
     OnVisible: =
 

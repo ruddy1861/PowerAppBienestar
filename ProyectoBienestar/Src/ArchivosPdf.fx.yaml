@@ -12,11 +12,11 @@ ArchivosPdf As screen:
         ZIndex: =1
 
     Image1 As image:
-        Height: =128
+        Height: =174
         Image: ='Logo Final (1)'
-        Width: =111
-        X: =981
-        Y: =35
+        Width: =181
+        X: =948
+        Y: =40
         ZIndex: =2
 
     Label11 As label:
@@ -89,7 +89,9 @@ ArchivosPdf As screen:
     Button3 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: =Set(_popUpEnviarCorreo, true)
+        OnSelect: |
+            =Set(_popUpEnviarCorreo, true);
+            Set(_BotonAprobado,false);
         Text: ="Aprobar"
         X: =40
         Y: =40
@@ -97,7 +99,7 @@ ArchivosPdf As screen:
 
     Label16 As label:
         Fill: =RGBA(186, 202, 226, 1)
-        Text: =
+        Text: =UsuariosdeOffice365.MyProfile().PostalCode
         Width: =180
         X: =822
         Y: =270
@@ -107,7 +109,7 @@ ArchivosPdf As screen:
         Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
-        Text: =
+        Text: =UsuariosdeOffice365.MyProfile().City
         Width: =254
         X: =727
         Y: =345
@@ -126,7 +128,7 @@ ArchivosPdf As screen:
         Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
-        Text: =
+        Text: =UsuariosdeOffice365.MyProfile().OfficeLocation
         Width: =254
         X: =267
         Y: =378
@@ -144,7 +146,7 @@ ArchivosPdf As screen:
     Label16_1 As label:
         Fill: =RGBA(186, 202, 226, 1)
         Height: =34
-        Text: =""
+        Text: =UsuariosdeOffice365.MyProfile().mobilePhone
         Width: =180
         X: =768
         Y: =378
@@ -222,7 +224,7 @@ ArchivosPdf As screen:
         Text: ="Alexander Bogota Ortiz"
         Width: =256
         X: =273
-        Y: =629
+        Y: =709
         ZIndex: =30
 
     Label13_9 As label:
@@ -230,8 +232,8 @@ ArchivosPdf As screen:
         Size: =15
         Text: ="Adrian Guerrero Taborda"
         Width: =270
-        X: =849
-        Y: =629
+        X: =859
+        Y: =709
         ZIndex: =31
 
     Label17 As label:
@@ -292,6 +294,7 @@ ArchivosPdf As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =//Office365Outlook.SendEmailV2();;
+            Set(_BotonAprobado,false);
             Set(_popUpEnviarCorreo, false);
             pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"cartaLaboral.pdf",contentBytes: PDF(ArchivosPdf)}}));
             Navigate(Screen2)
