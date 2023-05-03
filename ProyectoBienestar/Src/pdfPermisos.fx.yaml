@@ -281,9 +281,8 @@ pdfPermisos As screen:
     Button2_4 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |-
+        OnSelect: |
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
-            Set(_popUpLoading, true);
             Set(_BotonAprobado, false);
             Set(_popUpEnviarCorreo, false);
             Permiso.Run(TextInput1_2.Text,TextInput3_2.Text,User().Email,({file:{name:"solicitudPermiso.pdf",contentBytes:PDF(pdfPermisos)}}));
@@ -301,7 +300,6 @@ pdfPermisos As screen:
             Set(_jsonArregloSelectedMinutoInicial, Blank());
             Set(_Motivo, Blank());
             Navigate(Screen2);
-            Set(_popUpLoading, false);
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
         Width: =328
@@ -329,31 +327,4 @@ pdfPermisos As screen:
         X: =537
         Y: =201
         ZIndex: =61
-
-    Rectangle4_2 As rectangle:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =763
-        Visible: =_popUpLoading
-        Width: =1366
-        ZIndex: =62
-
-    Image4_2 As image:
-        Height: =280
-        Image: =Walk
-        Visible: =_popUpLoading
-        Width: =130
-        X: =638
-        Y: =245
-        ZIndex: =63
-
-    Label18_2 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =44
-        Size: =20
-        Text: ="Loading...."
-        Visible: =_popUpLoading
-        Width: =250
-        X: =517
-        Y: =407
-        ZIndex: =64
 

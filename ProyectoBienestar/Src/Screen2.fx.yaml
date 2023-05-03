@@ -8,7 +8,7 @@
             1
         )
     LoadingSpinnerColor: =RGBA(19, 85, 110, 1)
-    OnVisible: =Set(_popUpLoading, false);
+    OnVisible: =
 
     ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -537,7 +537,7 @@
                         Fill: =RGBA(31, 140, 153, 1)
                         HoverFill: =ColorFade(Self.Fill, -20%)
                         OnSelect: |+
-                            =Navigate(ArchivosPdf);
+                            =If(CheckboxSalario.Value,Navigate(ArchivosPdf),Navigate(ArchivosPdfSinSalario));
                             Set(_popUpEnviarCorreo, false);
                             Set(_BotonAprobado, true);
                             
@@ -547,10 +547,12 @@
                         ZIndex: =2
 
                     CheckboxSalario As checkbox:
+                        Height: =51
                         OnCheck: =true
                         OnSelect: =true
-                        Text: ="Incluir Salario"
-                        Width: =180
+                        Text: |
+                            ="Incluir Salario"
+                        Width: =160
                         X: =430
                         Y: =127
                         ZIndex: =3
