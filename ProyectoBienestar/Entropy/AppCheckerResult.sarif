@@ -2070,35 +2070,71 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 6
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 6
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
             }
           ]
         }
       ],
       "results": [
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ArchivosPdfSinSalario.TextInput1_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ArchivosPdfSinSalario.TextInput1_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ArchivosPdfSinSalario",
+                "type": "ArchivosPdfSinSalario.TextInput1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ArchivosPdfSinSalario.TextInput3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ArchivosPdfSinSalario.TextInput3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ArchivosPdfSinSalario",
+                "type": "ArchivosPdfSinSalario.TextInput3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
         {
           "locations": [
             {
@@ -2117,66 +2153,6 @@
                 "member": "AccessibleLabel",
                 "module": "ArchivosPdfSinSalario",
                 "type": "ArchivosPdfSinSalario.Rectangle3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ArchivosPdfSinSalario.Rectangle3_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ArchivosPdfSinSalario.Rectangle3_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ArchivosPdfSinSalario",
-                "type": "ArchivosPdfSinSalario.Rectangle3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ArchivosPdfSinSalario.Dropdown1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ArchivosPdfSinSalario.Dropdown1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ArchivosPdfSinSalario",
-                "type": "ArchivosPdfSinSalario.Dropdown1_1"
               }
             }
           ],
@@ -2224,19 +2200,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ArchivosPdfSinSalario.TextInput3_1.AccessibleLabel"
+                  "fullyQualifiedName": "ArchivosPdfSinSalario.Rectangle3_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ArchivosPdfSinSalario.TextInput3_1.AccessibleLabel",
+                  "fullyQualifiedName": "ArchivosPdfSinSalario.Rectangle3_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "ArchivosPdfSinSalario",
-                "type": "ArchivosPdfSinSalario.TextInput3_1"
+                "type": "ArchivosPdfSinSalario.Rectangle3_1"
               }
             }
           ],
@@ -2246,8 +2222,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -3272,96 +3248,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ArchivosPdf",
-                "type": "ArchivosPdf.Rectangle3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ArchivosPdf",
-                "type": "ArchivosPdf.Rectangle3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ArchivosPdf.TextInput1_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ArchivosPdf.TextInput1_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ArchivosPdf",
-                "type": "ArchivosPdf.TextInput1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ArchivosPdf.TextInput1.AccessibleLabel"
                 }
               ],
@@ -3422,18 +3308,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3"
+                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3",
+                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "module": "Screen3",
-                "type": "Screen3"
+                "member": "AccessibleLabel",
+                "module": "ArchivosPdf",
+                "type": "ArchivosPdf.Rectangle3"
               }
             }
           ],
@@ -3441,10 +3328,70 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "Medium"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 2
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ArchivosPdf.TextInput1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ArchivosPdf.TextInput1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ArchivosPdf",
+                "type": "ArchivosPdf.TextInput1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ArchivosPdf.Rectangle3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ArchivosPdf",
+                "type": "ArchivosPdf.Rectangle3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [

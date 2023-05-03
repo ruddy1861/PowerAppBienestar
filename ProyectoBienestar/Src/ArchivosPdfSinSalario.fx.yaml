@@ -91,6 +91,7 @@ ArchivosPdfSinSalario As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: =Set(_popUpEnviarCorreo, true)
         Text: ="Aprobar"
+        Visible: =_BotonAprobado
         X: =40
         Y: =40
         ZIndex: =16
@@ -225,6 +226,15 @@ ArchivosPdfSinSalario As screen:
         Y: =104
         ZIndex: =33
 
+    Label13_15 As label:
+        Height: =33
+        Size: =15
+        Text: ="."
+        Width: =36
+        X: =522
+        Y: =379
+        ZIndex: =40
+
     Rectangle3_1 As rectangle:
         BorderColor: =RGBA(19, 85, 110, 1)
         BorderThickness: =2
@@ -234,19 +244,7 @@ ArchivosPdfSinSalario As screen:
         Width: =627
         X: =390
         Y: =124
-        ZIndex: =34
-
-    Dropdown1_1 As dropdown:
-        BorderColor: =RGBA(19, 85, 110, 1)
-        ChevronBackground: =RGBA(19, 85, 110, 1)
-        HoverFill: =ColorFade(Self.Fill, -20%)
-        Items: =colUsuarios
-        PressedFill: =ColorFade(Self.Fill, -20%)
-        SelectionFill: =ColorFade(Self.Fill, -20%)
-        Visible: =_popUpEnviarCorreo
-        X: =537
-        Y: =201
-        ZIndex: =35
+        ZIndex: =41
 
     TextInput1_1 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
@@ -256,7 +254,7 @@ ArchivosPdfSinSalario As screen:
         Width: =328
         X: =537
         Y: =256
-        ZIndex: =36
+        ZIndex: =42
 
     TextInput3_1 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
@@ -271,7 +269,7 @@ ArchivosPdfSinSalario As screen:
         Width: =328
         X: =537
         Y: =314
-        ZIndex: =37
+        ZIndex: =43
 
     Button2_3 As button:
         Fill: =RGBA(19, 85, 110, 1)
@@ -279,13 +277,14 @@ ArchivosPdfSinSalario As screen:
         OnSelect: |-
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
             Set(_popUpEnviarCorreo, false);
+            Set(_BotonAprobado, false);
             Navigate(Screen2)
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
         Width: =328
         X: =537
         Y: =478
-        ZIndex: =38
+        ZIndex: =44
 
     Button2_2 As button:
         Fill: =RGBA(19, 85, 110, 1)
@@ -296,14 +295,15 @@ ArchivosPdfSinSalario As screen:
         Width: =328
         X: =539
         Y: =533
-        ZIndex: =39
+        ZIndex: =45
 
-    Label13_15 As label:
-        Height: =33
-        Size: =15
-        Text: ="."
-        Width: =36
-        X: =522
-        Y: =379
-        ZIndex: =40
+    TextInput1_5 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Asunto"
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =539
+        Y: =204
+        ZIndex: =46
 

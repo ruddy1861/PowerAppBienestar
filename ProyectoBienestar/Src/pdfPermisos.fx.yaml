@@ -72,6 +72,7 @@ pdfPermisos As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: =Set(_popUpEnviarCorreo, true)
         Text: ="Aprobar"
+        Visible: =_BotonAprobado
         X: =40
         Y: =40
         ZIndex: =16

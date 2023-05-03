@@ -417,7 +417,9 @@
                     Button1_2 As button:
                         Fill: =RGBA(31, 140, 153, 1)
                         HoverFill: =RGBA(19, 85, 110, 1)
-                        OnSelect: =Navigate(pdfPermisos)
+                        OnSelect: |-
+                            =Navigate(pdfPermisos);
+                            Set(_BotonAprobado,true);
                         Text: ="Generar"
                         X: =737
                         Y: =251

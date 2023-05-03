@@ -231,6 +231,15 @@ ArchivosPdf As screen:
         Y: =62
         ZIndex: =33
 
+    Label13_20 As label:
+        Height: =35
+        Size: =15
+        Text: ="correspondientes a Honorarios "
+        Width: =309
+        X: =768
+        Y: =398
+        ZIndex: =41
+
     Rectangle3 As rectangle:
         BorderColor: =RGBA(19, 85, 110, 1)
         BorderThickness: =2
@@ -240,7 +249,7 @@ ArchivosPdf As screen:
         Width: =627
         X: =390
         Y: =124
-        ZIndex: =34
+        ZIndex: =42
 
     TextInput1 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
@@ -250,7 +259,7 @@ ArchivosPdf As screen:
         Width: =328
         X: =539
         Y: =251
-        ZIndex: =36
+        ZIndex: =43
 
     TextInput3 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
@@ -265,7 +274,7 @@ ArchivosPdf As screen:
         Width: =328
         X: =537
         Y: =314
-        ZIndex: =37
+        ZIndex: =44
 
     Button2 As button:
         Fill: =RGBA(19, 85, 110, 1)
@@ -281,7 +290,7 @@ ArchivosPdf As screen:
         Width: =328
         X: =537
         Y: =478
-        ZIndex: =38
+        ZIndex: =45
 
     Button2_1 As button:
         Fill: =RGBA(19, 85, 110, 1)
@@ -292,7 +301,7 @@ ArchivosPdf As screen:
         Width: =328
         X: =539
         Y: =533
-        ZIndex: =39
+        ZIndex: =46
 
     TextInput1_3 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
@@ -303,14 +312,5 @@ ArchivosPdf As screen:
         Width: =328
         X: =537
         Y: =196
-        ZIndex: =40
-
-    Label13_20 As label:
-        Height: =35
-        Size: =15
-        Text: ="correspondientes a Honorarios "
-        Width: =309
-        X: =768
-        Y: =398
-        ZIndex: =41
+        ZIndex: =47
 
