@@ -1,0 +1,329 @@
+pdfPermisos_1 As screen:
+    BackgroundImage: ='Fondo App'
+    OnVisible: =
+
+    Label8_8 As label:
+        Height: =49
+        Size: =15
+        Text: =Today()
+        Width: =118
+        X: =235
+        Y: =99
+        ZIndex: =1
+
+    Image1_3 As image:
+        Height: =166
+        Image: ='Logo Final (1)'
+        Width: =172
+        X: =947
+        Y: =35
+        ZIndex: =2
+
+    Label11_10 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =15
+        Text: ="BG GROUP"
+        Width: =180
+        X: =591
+        Y: =148
+        ZIndex: =3
+
+    Label13_23 As label:
+        Height: =37
+        Size: =15
+        Text: ="El motivo de la presente es para solicitar respetuosamente permiso para ausentarme de la oficina, "
+        Width: =950
+        X: =226
+        Y: =278
+        ZIndex: =4
+
+    Label13_24 As label:
+        Height: =31
+        Size: =15
+        Text: ="por procedente a "
+        Width: =187
+        X: =226
+        Y: =313
+        ZIndex: =7
+
+    Label14_10 As label:
+        Height: =34
+        Size: =15
+        Text: =UsuariosdeOffice365.MyProfile().JobTitle
+        Width: =254
+        X: =226
+        Y: =612
+        ZIndex: =8
+
+    Label13_25 As label:
+        Height: =32
+        Size: =15
+        Text: ="Agradeciendo una pronta respuesta."
+        Width: =368
+        X: =222
+        Y: =349
+        ZIndex: =9
+
+    Button3_3 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Set(_popUpEnviarCorreo, true)
+        Text: ="Aprobar"
+        Visible: =_BotonAprobado
+        X: =40
+        Y: =40
+        ZIndex: =16
+
+    Label11_11 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =49
+        Size: =20
+        Text: ="Solicitud de permiso."
+        Width: =411
+        X: =488
+        Y: =201
+        ZIndex: =26
+
+    Label17_3 As label:
+        Height: =35
+        Text: =","
+        Width: =12
+        X: =350
+        Y: =106
+        ZIndex: =32
+
+    Label8_9 As label:
+        Height: =35
+        Size: =15
+        Text: =UsuariosdeOffice365.MyProfile().Department
+        Width: =186
+        X: =362
+        Y: =106
+        ZIndex: =33
+
+    Label14_22 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =28
+        Size: =15
+        Text: =_Motivo
+        Width: =141
+        X: =398
+        Y: =315
+        ZIndex: =41
+
+    Label13_35 As label:
+        Height: =34
+        Size: =15
+        Text: =", el dia "
+        Width: =86
+        X: =525
+        Y: =312
+        ZIndex: =42
+
+    Label13_38 As label:
+        Height: =34
+        Size: =15
+        Text: =", desde"
+        Width: =82
+        X: =681
+        Y: =315
+        ZIndex: =43
+
+    Label14_16 As label:
+        Align: =Align.Right
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =31
+        OnSelect: =
+        Size: =15
+        Text: =horaInicialPermiso.Selected.Value
+        Width: =34
+        X: =752
+        Y: =315
+        ZIndex: =44
+
+    Label14_23 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =30
+        Size: =15
+        Text: =_FechaPermiso
+        Width: =118
+        X: =591
+        Y: =315
+        ZIndex: =45
+
+    Label14_25 As label:
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Semibold
+        Height: =67
+        Italic: =true
+        Size: =30
+        Text: =User().FullName
+        Width: =487
+        X: =222
+        Y: =545
+        ZIndex: =46
+
+    Label13_34 As label:
+        Height: =33
+        Size: =15
+        Text: |-
+            =":"
+        Width: =14
+        X: =784
+        Y: =310
+        ZIndex: =48
+
+    Label14_20 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =30
+        OnSelect: =_jsonArregloSelectedHoraInicial
+        Size: =15
+        Text: =minutoInicialPermiso.Selected.Value
+        Width: =33
+        X: =793
+        Y: =315
+        ZIndex: =49
+
+    Label13_39 As label:
+        Height: =25
+        Size: =15
+        Text: ="."
+        Width: =22
+        X: =966
+        Y: =322
+        ZIndex: =50
+
+    Label14_21 As label:
+        Align: =Align.Right
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =32
+        OnSelect: =
+        Size: =15
+        Text: =horaPermisoFinal.Selected.Value
+        Width: =35
+        X: =931
+        Y: =315
+        ZIndex: =51
+
+    Label13_36 As label:
+        Align: =Align.Center
+        Height: =33
+        Size: =15
+        Text: |-
+            =":"
+        Width: =14
+        X: =919
+        Y: =312
+        ZIndex: =52
+
+    Label14_24 As label:
+        Fill: =RGBA(186, 202, 226, 1)
+        Height: =32
+        OnSelect: =_jsonArregloSelectedHoraInicial
+        Size: =15
+        Text: =minutoPermisoFinal.Selected.Value
+        Width: =32
+        X: =886
+        Y: =315
+        ZIndex: =53
+
+    Label13_37 As label:
+        Height: =30
+        Size: =15
+        Text: =", hasta"
+        Width: =74
+        X: =816
+        Y: =314
+        ZIndex: =54
+
+    Rectangle3_3 As rectangle:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        BorderThickness: =2
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =509
+        Visible: =_popUpEnviarCorreo
+        Width: =627
+        X: =390
+        Y: =124
+        ZIndex: =55
+
+    TextInput1_7 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Asunto"
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =256
+        ZIndex: =57
+
+    TextInput3_3 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Cuerpo del mail"
+        Height: =130
+        LineHeight: =0
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =314
+        ZIndex: =58
+
+    Button2_6 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
+            Set(_BotonAprobado, false);
+            Set(_popUpEnviarCorreo, false);
+            Permiso.Run(TextInput1_7.Text,TextInput3_3.Text,User().Email,({file:{name:"solicitudPermiso.pdf",contentBytes:PDF(pdfPermisos)}}));
+            Reset(minutoInicialPermiso);
+            Reset(horaInicialPermiso);
+            Reset(minutoPermisoFinal);
+            Reset(horaPermisoFinal);
+            Reset(DatePickerPermiso);
+            Reset(TextInputMotivo);
+            
+            Set(_FechaPermiso, Blank());
+            Set(_jsonArregloSelectedHoraFinal, Blank());
+            Set(_jsonArregloSelectedHoraInicial, Blank());
+            Set(_jsonArregloSelectedMinutoFinal, Blank());
+            Set(_jsonArregloSelectedMinutoInicial, Blank());
+            Set(_Motivo, Blank());
+            Navigate(Screen2)
+        Text: ="Enviar Correo"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =478
+        ZIndex: =59
+
+    Button2_7 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Navigate(Screen2)
+        Text: ="Cancelar"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =539
+        Y: =533
+        ZIndex: =60
+
+    TextInput1_6 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: =User().Email
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =201
+        ZIndex: =61
+
