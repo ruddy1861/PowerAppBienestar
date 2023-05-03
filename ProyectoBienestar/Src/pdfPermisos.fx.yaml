@@ -193,7 +193,7 @@ pdfPermisos As screen:
         Size: =15
         Text: ="."
         Width: =22
-        X: =942
+        X: =966
         Y: =322
         ZIndex: =50
 
@@ -204,8 +204,8 @@ pdfPermisos As screen:
         OnSelect: =
         Size: =15
         Text: =horaPermisoFinal.Selected.Value
-        Width: =24
-        X: =923
+        Width: =35
+        X: =931
         Y: =315
         ZIndex: =51
 
@@ -216,7 +216,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =911
+        X: =919
         Y: =312
         ZIndex: =52
 
@@ -226,8 +226,8 @@ pdfPermisos As screen:
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
         Text: =minutoPermisoFinal.Selected.Value
-        Width: =24
-        X: =890
+        Width: =32
+        X: =886
         Y: =315
         ZIndex: =53
 
@@ -250,18 +250,6 @@ pdfPermisos As screen:
         X: =390
         Y: =124
         ZIndex: =55
-
-    Dropdown1_2 As dropdown:
-        BorderColor: =RGBA(19, 85, 110, 1)
-        ChevronBackground: =RGBA(19, 85, 110, 1)
-        HoverFill: =ColorFade(Self.Fill, -20%)
-        Items: =colUsuarios
-        PressedFill: =ColorFade(Self.Fill, -20%)
-        SelectionFill: =ColorFade(Self.Fill, -20%)
-        Visible: =_popUpEnviarCorreo
-        X: =537
-        Y: =201
-        ZIndex: =56
 
     TextInput1_2 As text:
         BorderColor: =RGBA(19, 85, 110, 1)
@@ -293,7 +281,9 @@ pdfPermisos As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
+            Set(_BotonAprobado, false);
             Set(_popUpEnviarCorreo, false);
+            Permiso.Run(TextInput1_2.Text,TextInput3_2.Text,User().Email,({file:{name:"solicitudPermiso.pdf",contentBytes:PDF(pdfPermisos)}}));
             Reset(minutoInicialPermiso);
             Reset(horaInicialPermiso);
             Reset(minutoPermisoFinal);
@@ -325,4 +315,14 @@ pdfPermisos As screen:
         X: =539
         Y: =533
         ZIndex: =60
+
+    TextInput1_4 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: =User().Email
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =201
+        ZIndex: =61
 

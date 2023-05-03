@@ -386,7 +386,7 @@
                         Align: =Align.Center
                         BorderColor: =RGBA(161, 161, 161, 1)
                         Color: =RGBA(161,161, 161, 1)
-                        Default: =
+                        Default: ="CIta Medica"
                         MaxLength: =20
                         OnChange: =Set(_Motivo, Self.Text)
                         X: =227
@@ -468,12 +468,6 @@
                             Y: =3
                             ZIndex: =2
 
-                    Label18 As label:
-                        Text: =horaInicialPermiso.Selected.Value
-                        X: =77
-                        Y: =325
-                        ZIndex: =13
-
                     Container7_1 As groupContainer.manualLayoutContainer:
                         Height: =41
                         Width: =150
@@ -542,7 +536,8 @@
                         HoverFill: =ColorFade(Self.Fill, -20%)
                         OnSelect: |+
                             =Navigate(ArchivosPdf);
-                            Set(_popUpEnviarCorreo, false)
+                            Set(_popUpEnviarCorreo, false);
+                            Set(_BotonAprobado, true);
                             
                         Text: ="Generar"
                         X: =430

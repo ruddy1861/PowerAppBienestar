@@ -2094,18 +2094,6 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 6
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -3074,19 +3062,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "pdfPermisos.Dropdown1_2.AccessibleLabel"
+                  "fullyQualifiedName": "pdfPermisos.TextInput1_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "pdfPermisos.Dropdown1_2.AccessibleLabel",
+                  "fullyQualifiedName": "pdfPermisos.TextInput1_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "pdfPermisos",
-                "type": "pdfPermisos.Dropdown1_2"
+                "type": "pdfPermisos.TextInput1_4"
               }
             }
           ],
@@ -3594,36 +3582,6 @@
               },
               "properties": {
                 "member": "_Salary",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App._BotonAprobado"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App._BotonAprobado",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "_BotonAprobado",
                 "module": "App",
                 "type": "App"
               }

@@ -91,8 +91,8 @@ ArchivosPdf As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =Set(_popUpEnviarCorreo, true);
-            Set(_BotonAprobado,false);
         Text: ="Aprobar"
+        Visible: =_BotonAprobado
         X: =40
         Y: =40
         ZIndex: =16
@@ -192,7 +192,7 @@ ArchivosPdf As screen:
         Size: =15
         Text: =Today()
         Width: =134
-        X: =849
+        X: =855
         Y: =567
         ZIndex: =29
 
@@ -248,8 +248,8 @@ ArchivosPdf As screen:
         Height: =42
         Visible: =_popUpEnviarCorreo
         Width: =328
-        X: =537
-        Y: =256
+        X: =539
+        Y: =251
         ZIndex: =36
 
     TextInput3 As text:
