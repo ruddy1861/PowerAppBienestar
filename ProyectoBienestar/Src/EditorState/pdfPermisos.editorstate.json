@@ -1952,7 +1952,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13_21",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2490,7 +2490,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13_28",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3573,7 +3573,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13_32",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3849,7 +3849,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13_33",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4125,7 +4125,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_12",
-      "ParentIndex": 17,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5860,7 +5860,14 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        "Align",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Align",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "VerticalAlign",
         {
           "AFDDataSourceName": "",
@@ -8134,7 +8141,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput3_2",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
