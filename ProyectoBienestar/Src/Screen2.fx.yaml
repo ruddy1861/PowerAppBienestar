@@ -267,6 +267,7 @@
 
                     Button1_3 As button:
                         Fill: =RGBA(31, 140, 153, 1)
+                        HoverFill: =ColorFade(RGBA(19, 85, 110, 1), -20%)
                         OnSelect: |-
                             =Navigate(Vacaciones);
                             Set(_BotonAprobado,true);
@@ -587,6 +588,8 @@
 
                     Button1 As button:
                         Fill: =RGBA(31, 140, 153, 1)
+                        HoverFill: =ColorFade(RGBA(19, 85, 110, 1), -20%)
+                        OnSelect: =Navigate(ColillaPago)
                         Text: ="Generar"
                         X: =760
                         Y: =140
@@ -613,11 +616,17 @@
                         ChevronBackground: =RGBA(56, 96, 178, 0)
                         ChevronDisabledFill: =RGBA(244, 244, 244, 0)
                         ChevronFill: =RGBA(161, 161, 161, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(19, 85, 110, 1), -20%)
                         ChevronHoverFill: =RGBA(0, 0, 0, 0)
+                        DisplayFields: =["Value"]
                         Height: =42
                         InputTextPlaceholder: =""
-                        Items: =ComboBoxSample
-                        SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+                        IsSearchable: =false
+                        Items: =["2016","2017","2019","2020","2021","2022","2023"]
+                        PressedFill: =RGBA(19, 85, 110, 1)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(19, 85, 110, 1)
                         Width: =95
                         X: =227
                         Y: =140
@@ -628,11 +637,17 @@
                         ChevronBackground: =RGBA(56, 96, 178, 0)
                         ChevronDisabledFill: =RGBA(244, 244, 244, 0)
                         ChevronFill: =RGBA(161, 161, 161, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(19, 85, 110, 1), -20%)
                         ChevronHoverFill: =RGBA(0, 0, 0, 0)
+                        DisplayFields: =["Value"]
                         Height: =42
                         InputTextPlaceholder: =""
-                        Items: =ComboBoxSample
-                        SearchItems: =Search(ComboBoxSample,ComboBox1_1.SearchText,"Value1")
+                        IsSearchable: =false
+                        Items: =["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+                        PressedFill: =RGBA(19, 85, 110, 1)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectionFill: =ColorFade(Self.Fill, -15%)
                         Width: =190
                         X: =415
                         Y: =140

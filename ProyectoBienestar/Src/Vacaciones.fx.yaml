@@ -98,7 +98,6 @@ Vacaciones As screen:
         ZIndex: =33
 
     Label14_20 As label:
-        Fill: =RGBA(241, 244, 249, 1)
         Height: =34
         Size: =15
         Text: =_FechaInicioVacaciones
@@ -148,7 +147,6 @@ Vacaciones As screen:
         ZIndex: =65
 
     Label14_22 As label:
-        Fill: =RGBA(241, 244, 249, 1)
         Height: =34
         Size: =15
         Text: =_FechaFinalVacaciones

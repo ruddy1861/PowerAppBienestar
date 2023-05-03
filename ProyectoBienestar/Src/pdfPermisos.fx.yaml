@@ -107,21 +107,22 @@ pdfPermisos As screen:
         ZIndex: =33
 
     Label14_12 As label:
+        Align: =Align.Center
         Height: =33
         Size: =15
         Text: =_Motivo
-        Width: =174
-        X: =397
+        Width: =216
+        X: =390
         Y: =312
         ZIndex: =41
 
     Label13_28 As label:
-        Height: =34
+        Height: =33
         Size: =15
         Text: =", el dia "
-        Width: =86
-        X: =549
-        Y: =312
+        Width: =79
+        X: =598
+        Y: =315
         ZIndex: =42
 
     Label13_29 As label:
@@ -129,7 +130,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", desde"
         Width: =82
-        X: =729
+        X: =771
         Y: =315
         ZIndex: =43
 
@@ -140,17 +141,17 @@ pdfPermisos As screen:
         Size: =15
         Text: =horaInicialPermiso.Selected.Value
         Width: =34
-        X: =800
+        X: =842
         Y: =315
         ZIndex: =44
 
     Label14_14 As label:
-        Height: =30
+        Height: =41
         Size: =15
         Text: =_FechaPermiso
         Width: =118
-        X: =615
-        Y: =315
+        X: =663
+        Y: =310
         ZIndex: =45
 
     Label14_15 As label:
@@ -171,7 +172,7 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =824
+        X: =873
         Y: =310
         ZIndex: =48
 
@@ -181,7 +182,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =minutoInicialPermiso.Selected.Value
         Width: =33
-        X: =841
+        X: =883
         Y: =315
         ZIndex: =49
 
@@ -190,7 +191,7 @@ pdfPermisos As screen:
         Size: =15
         Text: ="."
         Width: =22
-        X: =1014
+        X: =1042
         Y: =322
         ZIndex: =50
 
@@ -201,8 +202,8 @@ pdfPermisos As screen:
         Size: =15
         Text: =horaPermisoFinal.Selected.Value
         Width: =35
-        X: =979
-        Y: =315
+        X: =972
+        Y: =313
         ZIndex: =51
 
     Label13_32 As label:
@@ -212,19 +213,19 @@ pdfPermisos As screen:
         Text: |-
             =":"
         Width: =14
-        X: =967
+        X: =1002
         Y: =312
         ZIndex: =52
 
     Label14_19 As label:
-        Align: =Align.Right
-        Height: =32
+        Align: =Align.Center
+        Height: =39
         OnSelect: =_jsonArregloSelectedHoraInicial
         Size: =15
         Text: =minutoPermisoFinal.Selected.Value
-        Width: =36
-        X: =931
-        Y: =315
+        Width: =35
+        X: =1007
+        Y: =310
         ZIndex: =53
 
     Label13_33 As label:
@@ -232,7 +233,7 @@ pdfPermisos As screen:
         Size: =15
         Text: =", hasta"
         Width: =74
-        X: =864
+        X: =913
         Y: =314
         ZIndex: =54
 
@@ -253,8 +254,8 @@ pdfPermisos As screen:
         Height: =42
         Visible: =_popUpEnviarCorreo
         Width: =328
-        X: =537
-        Y: =256
+        X: =539
+        Y: =215
         ZIndex: =57
 
     TextInput3_2 As text:
@@ -268,8 +269,8 @@ pdfPermisos As screen:
         PaddingTop: =0
         Visible: =_popUpEnviarCorreo
         Width: =328
-        X: =537
-        Y: =314
+        X: =539
+        Y: =272
         ZIndex: =58
 
     Button2_4 As button:
@@ -297,8 +298,8 @@ pdfPermisos As screen:
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
         Width: =328
-        X: =537
-        Y: =478
+        X: =538
+        Y: =453
         ZIndex: =59
 
     Button2_5 As button:
@@ -308,17 +309,7 @@ pdfPermisos As screen:
         Text: ="Cancelar"
         Visible: =_popUpEnviarCorreo
         Width: =328
-        X: =539
-        Y: =533
-        ZIndex: =60
-
-    TextInput1_4 As text:
-        BorderColor: =RGBA(19, 85, 110, 1)
-        Default: =User().Email
-        Height: =42
-        Visible: =_popUpEnviarCorreo
-        Width: =328
         X: =537
-        Y: =201
-        ZIndex: =61
+        Y: =505
+        ZIndex: =60
 
