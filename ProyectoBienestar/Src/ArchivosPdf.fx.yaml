@@ -113,12 +113,12 @@ ArchivosPdf As screen:
         ZIndex: =19
 
     Label13_4 As label:
-        Height: =34
+        Height: =37
         Size: =15
-        Text: ="desde "
-        Width: =76
+        Text: ="desde el dia"
+        Width: =128
         X: =931
-        Y: =363
+        Y: =360
         ZIndex: =20
 
     Label14_3 As label:
