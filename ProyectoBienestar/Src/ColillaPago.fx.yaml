@@ -73,6 +73,10 @@ ColillaPago As screen:
             Default: =""
             Fill: =RGBA(19, 85, 110, 1)
             Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =15
             Width: =122
             X: =564
@@ -84,6 +88,10 @@ ColillaPago As screen:
             Default: =""
             Fill: =RGBA(19, 85, 110, 1)
             Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =15
             Width: =122
             X: =564
@@ -96,6 +104,10 @@ ColillaPago As screen:
             Default: =""
             Fill: =RGBA(19, 85, 110, 1)
             Height: =44
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =15
             Width: =122
             X: =564
