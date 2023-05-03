@@ -8,7 +8,7 @@
             1
         )
     LoadingSpinnerColor: =RGBA(19, 85, 110, 1)
-    OnVisible: =
+    OnVisible: =Set(_popUpLoading, false);
 
     ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -547,7 +547,8 @@
                         ZIndex: =2
 
                     CheckboxSalario As checkbox:
-                        OnSelect: =Set(_Salary,true)
+                        OnCheck: =true
+                        OnSelect: =true
                         Text: ="Incluir Salario"
                         Width: =180
                         X: =430
