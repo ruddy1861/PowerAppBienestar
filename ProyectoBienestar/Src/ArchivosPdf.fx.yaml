@@ -41,7 +41,6 @@ ArchivosPdf As screen:
         ZIndex: =4
 
     Label14 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         OnSelect: =
         Size: =15
         Text: =User().FullName
@@ -68,7 +67,6 @@ ArchivosPdf As screen:
         ZIndex: =7
 
     Label14_1 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().JobTitle
@@ -98,7 +96,6 @@ ArchivosPdf As screen:
         ZIndex: =16
 
     Label16 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().PostalCode
         Width: =180
@@ -107,7 +104,6 @@ ArchivosPdf As screen:
         ZIndex: =18
 
     Label14_2 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().City
@@ -126,7 +122,6 @@ ArchivosPdf As screen:
         ZIndex: =20
 
     Label14_3 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =35
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().OfficeLocation
@@ -145,7 +140,6 @@ ArchivosPdf As screen:
         ZIndex: =22
 
     Label16_1 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =35
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().mobilePhone

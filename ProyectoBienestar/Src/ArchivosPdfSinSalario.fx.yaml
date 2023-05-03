@@ -41,7 +41,6 @@ ArchivosPdfSinSalario As screen:
         ZIndex: =4
 
     Label14_4 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         OnSelect: =
         Size: =15
         Text: =User().FullName
@@ -68,7 +67,6 @@ ArchivosPdfSinSalario As screen:
         ZIndex: =7
 
     Label14_5 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().JobTitle
@@ -97,7 +95,6 @@ ArchivosPdfSinSalario As screen:
         ZIndex: =16
 
     Label16_2 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =39
         Text: =UsuariosdeOffice365.MyProfile().PostalCode
         Width: =211
@@ -106,11 +103,10 @@ ArchivosPdfSinSalario As screen:
         ZIndex: =18
 
     Label14_6 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().City
-        Width: =254
+        Width: =232
         X: =727
         Y: =345
         ZIndex: =19
@@ -120,16 +116,15 @@ ArchivosPdfSinSalario As screen:
         Size: =15
         Text: ="desde "
         Width: =76
-        X: =979
+        X: =963
         Y: =344
         ZIndex: =20
 
     Label14_7 As label:
-        Fill: =RGBA(186, 202, 226, 1)
         Height: =34
         Size: =15
         Text: =UsuariosdeOffice365.MyProfile().OfficeLocation
-        Width: =254
+        Width: =140
         X: =267
         Y: =378
         ZIndex: =21
@@ -231,7 +226,7 @@ ArchivosPdfSinSalario As screen:
         Size: =15
         Text: ="."
         Width: =36
-        X: =522
+        X: =386
         Y: =379
         ZIndex: =40
 

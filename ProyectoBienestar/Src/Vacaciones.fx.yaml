@@ -1,0 +1,240 @@
+Vacaciones As screen:
+    BackgroundImage: ='Fondo App'
+    OnVisible: =
+
+    Label8_8 As label:
+        Height: =49
+        Size: =15
+        Text: =Today()
+        Width: =118
+        X: =235
+        Y: =99
+        ZIndex: =1
+
+    Image1_3 As image:
+        Height: =166
+        Image: ='Logo Final (1)'
+        Width: =172
+        X: =947
+        Y: =35
+        ZIndex: =2
+
+    Label11_10 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =15
+        Text: ="BG GROUP"
+        Width: =180
+        X: =591
+        Y: =148
+        ZIndex: =3
+
+    Label13_23 As label:
+        Height: =37
+        Size: =15
+        Text: ="Por medio de la presente y para que quede constancia, solicito de manera formal con la debida "
+        Width: =950
+        X: =226
+        Y: =278
+        ZIndex: =4
+
+    Label13_24 As label:
+        Height: =32
+        Size: =15
+        Text: ="antelacion los dias de vacaciones correspondientes al año en curso, dias que irian desde "
+        Width: =893
+        X: =226
+        Y: =315
+        ZIndex: =7
+
+    Label14_10 As label:
+        Height: =34
+        Size: =15
+        Text: =UsuariosdeOffice365.MyProfile().JobTitle
+        Width: =254
+        X: =226
+        Y: =612
+        ZIndex: =8
+
+    Button3_3 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Set(_popUpEnviarCorreo, true)
+        Text: ="Aprobar"
+        Visible: =_BotonAprobado
+        X: =40
+        Y: =40
+        ZIndex: =16
+
+    Label11_11 As label:
+        Align: =Align.Center
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =49
+        Size: =20
+        Text: ="Solicitud de Vacaciones"
+        Width: =411
+        X: =488
+        Y: =201
+        ZIndex: =26
+
+    Label17_3 As label:
+        Height: =35
+        Text: =","
+        Width: =12
+        X: =350
+        Y: =106
+        ZIndex: =32
+
+    Label8_9 As label:
+        Height: =35
+        Size: =15
+        Text: =UsuariosdeOffice365.MyProfile().Department
+        Width: =209
+        X: =362
+        Y: =106
+        ZIndex: =33
+
+    Label14_20 As label:
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =34
+        Size: =15
+        Text: =_FechaInicioVacaciones
+        Width: =118
+        X: =310
+        Y: =349
+        ZIndex: =45
+
+    Label14_25 As label:
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Semibold
+        Height: =67
+        Italic: =true
+        Size: =30
+        Text: =User().FullName
+        Width: =487
+        X: =222
+        Y: =545
+        ZIndex: =46
+
+    Label13_26 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =15
+        Text: ="Agradezco una pronta respuesta."
+        Width: =368
+        X: =223
+        Y: =442
+        ZIndex: =62
+
+    Label13_27 As label:
+        Height: =33
+        Size: =15
+        Text: =" la fecha"
+        Width: =98
+        X: =222
+        Y: =350
+        ZIndex: =64
+
+    Label13_34 As label:
+        Height: =33
+        Size: =15
+        Text: =", hasta la fecha"
+        Width: =154
+        X: =432
+        Y: =350
+        ZIndex: =65
+
+    Label14_22 As label:
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =34
+        Size: =15
+        Text: =_FechaFinalVacaciones
+        Width: =118
+        X: =586
+        Y: =350
+        ZIndex: =66
+
+    Label17_4 As label:
+        Height: =35
+        Text: ="."
+        Width: =12
+        X: =709
+        Y: =352
+        ZIndex: =67
+
+    Rectangle3_3 As rectangle:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        BorderThickness: =2
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =509
+        Visible: =_popUpEnviarCorreo
+        Width: =627
+        X: =390
+        Y: =124
+        ZIndex: =68
+
+    TextInput1_6 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Asunto"
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =256
+        ZIndex: =69
+
+    TextInput3_3 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Cuerpo del mail"
+        Height: =130
+        LineHeight: =0
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =314
+        ZIndex: =70
+
+    Button2_6 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |
+            =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
+            Set(_BotonAprobado, false);
+            Set(_popUpEnviarCorreo, false);
+            Permiso.Run(TextInput1_6.Text,TextInput3_3.Text,User().Email,({file:{name:"solicitudVacaciones.pdf",contentBytes:PDF(Vacaciones)}}));
+            Navigate(Screen2);
+        Text: ="Enviar Correo"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =478
+        ZIndex: =71
+
+    Button2_7 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Navigate(Screen2)
+        Text: ="Cancelar"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =539
+        Y: =533
+        ZIndex: =72
+
+    TextInput1_7 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: =User().Email
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =201
+        ZIndex: =73
+
