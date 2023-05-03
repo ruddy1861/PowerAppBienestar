@@ -3426,7 +3426,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13_14",
-      "ParentIndex": 19,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5088,7 +5088,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_5",
-      "ParentIndex": 20,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5364,7 +5364,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14_6",
-      "ParentIndex": 21,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5890,7 +5890,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",

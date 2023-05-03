@@ -60,7 +60,7 @@ ArchivosPdfSinSalario As screen:
     Label13_12 As label:
         Height: =34
         Size: =15
-        Text: ="Actualmente se encuentra vinculado a nuestra compañia desempeñando el cargo "
+        Text: ="Actualmente se encuentra vinculado a nuestra compañia desempeñando el cargo de"
         Width: =829
         X: =263
         Y: =311
@@ -96,6 +96,7 @@ ArchivosPdfSinSalario As screen:
 
     Label16_2 As label:
         Height: =39
+        Size: =15
         Text: =UsuariosdeOffice365.MyProfile().PostalCode
         Width: =211
         X: =806
@@ -112,12 +113,12 @@ ArchivosPdfSinSalario As screen:
         ZIndex: =19
 
     Label13_14 As label:
-        Height: =34
+        Height: =33
         Size: =15
-        Text: ="desde "
-        Width: =76
+        Text: ="desde el"
+        Width: =103
         X: =963
-        Y: =344
+        Y: =345
         ZIndex: =20
 
     Label14_7 As label:
@@ -273,7 +274,7 @@ ArchivosPdfSinSalario As screen:
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
             Set(_BotonAprobado,false);
             Set(_popUpEnviarCorreo, false);
-            pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"cartaLaboral.pdf",contentBytes: PDF(ArchivosPdf)}}));
+            pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"cartaLaboral.pdf",contentBytes: PDF(ArchivosPdfSinSalario)}}));
             Navigate(Screen2);
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
