@@ -203,7 +203,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Height: =23
-            Text: =""
+            Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Cargo)
             Width: =228
             X: =458
             Y: =40
@@ -213,7 +213,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Height: =23
-            Text: =""
+            Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Banco)
             Width: =228
             X: =2
             Y: =104
@@ -223,7 +223,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Height: =23
-            Text: =
+            Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Salario)
             Width: =228
             X: =230
             Y: =104
@@ -233,7 +233,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Height: =23
-            Text: =""
+            Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, DiaPago) 
             Width: =228
             X: =458
             Y: =104
@@ -243,7 +243,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: ="Entrada de texto"
             Height: =23
-            OnSelect: =Set(_VarCedula, Self.AccessibleLabel)
+            OnSelect: =Set(_VarCedula, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -347,6 +347,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_horasTrabajadas, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -360,6 +361,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Devengados, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -373,6 +375,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Deducciones, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -399,6 +402,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_horasTrabajadas, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -412,6 +416,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Devengados, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -425,6 +430,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Deducciones, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -451,6 +457,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_horasTrabajadas, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -464,6 +471,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Devengados, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -477,6 +485,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Deducciones, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -503,6 +512,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_horasTrabajadas, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -516,6 +526,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Devengados, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -529,6 +540,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Deducciones, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -555,6 +567,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_horasTrabajadas, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -568,6 +581,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Devengados, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -581,6 +595,7 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             Default: =""
             Height: =Parent.Height/5
+            OnSelect: =Set(_Deducciones, Self.Text)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -613,7 +628,7 @@ ColillaPago As screen:
             BorderThickness: =2
             Fill: =RGBA(255, 255, 255, 1)
             Height: =45
-            Text: ="Texto"
+            Text: =_horasTrabajadas + _Devengados - _Deducciones
             Width: =171
             X: =515
             ZIndex: =2
