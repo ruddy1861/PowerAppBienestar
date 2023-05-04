@@ -1,6 +1,7 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value)
+    OnStart: |
+        =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value);
     StartScreen: =
 
     Host As hostControl.DefaultHostControlVariant:
