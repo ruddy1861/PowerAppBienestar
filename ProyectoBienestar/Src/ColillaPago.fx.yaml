@@ -194,22 +194,10 @@ ColillaPago As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             Height: =23
-            Text: |-
-                =//LookUp(datosColaboradores2;Identificador="1035228963";Nombre1)
-                Filter(datosColaboradores2, Ced
+            Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
             Width: =228
             Y: =40
             ZIndex: =13
-
-        Label15_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =2
-            Height: =23
-            Text: =
-            Width: =228
-            X: =230
-            Y: =40
-            ZIndex: =14
 
         Label15_2 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -250,6 +238,20 @@ ColillaPago As screen:
             X: =458
             Y: =104
             ZIndex: =18
+
+        TextInput2 As text:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Default: ="Entrada de texto"
+            Height: =23
+            OnSelect: =Set(_VarCedula, Self.AccessibleLabel)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =230
+            X: =228
+            Y: =40
+            ZIndex: =19
 
     Container13_2 As groupContainer.manualLayoutContainer:
         BorderThickness: =2
