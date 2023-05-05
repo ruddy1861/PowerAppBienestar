@@ -1,17 +1,5 @@
 ColillaPago As screen:
 
-    Button3_4 As button:
-        Fill: =RGBA(19, 85, 110, 1)
-        HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |-
-            =//Set(_popUpEnviarCorreo; true);;
-            Navigate(Screen2)
-        Text: ="Aprobar"
-        Visible: =_BotonAprobado
-        X: =40
-        Y: =40
-        ZIndex: =9
-
     colilla As groupContainer.manualLayoutContainer:
         Height: =Parent.Height
         Width: =Parent.Width/2+100
@@ -85,12 +73,13 @@ ColillaPago As screen:
                 Y: =44
                 ZIndex: =5
 
-            TextInput4_6 As text:
+            TextInputCodigocolilla As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =""
                 Fill: =RGBA(19, 85, 110, 1)
                 Height: =44
+                OnSelect: =Set(_VarCodigo, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -100,12 +89,13 @@ ColillaPago As screen:
                 X: =564
                 ZIndex: =6
 
-            TextInput4_7 As text:
+            TextInputMesColilla As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =""
                 Fill: =RGBA(19, 85, 110, 1)
                 Height: =44
+                OnSelect: =Set(_VarMesColilla, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -116,12 +106,13 @@ ColillaPago As screen:
                 Y: =44
                 ZIndex: =7
 
-            TextInput4_8 As text:
+            TextInputAñoColilla As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =""
                 Fill: =RGBA(19, 85, 110, 1)
                 Height: =44
+                OnSelect: =Set(_VarAñoColilla,Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -208,16 +199,17 @@ ColillaPago As screen:
                 Y: =64
                 ZIndex: =6
 
-            Label15 As label:
+            LabelNombreColilla As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
+                OnSelect: =Set(_VarNombre, Self.Text);
                 Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
                 Width: =228
                 Y: =40
                 ZIndex: =13
 
-            Label15_2 As label:
+            LabelCargoColilla As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
@@ -227,7 +219,7 @@ ColillaPago As screen:
                 Y: =40
                 ZIndex: =15
 
-            Label15_3 As label:
+            LabelBancoColilla As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
@@ -257,7 +249,7 @@ ColillaPago As screen:
                 Y: =103
                 ZIndex: =18
 
-            TextInput2 As text:
+            TextInputCedulaColilla As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: ="Entrada de texto"
                 Height: =23
@@ -685,4 +677,29 @@ ColillaPago As screen:
                 Width: =Parent.Width/2
                 X: =343
                 ZIndex: =3
+
+    Button3_4 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =//Set(_popUpEnviarCorreo; true);;
+            Set(_Boton, false);
+            Set(_PdfColilla, PDF(ColillaPago));
+            Set(_Boton, true);
+            Collect(Datos,
+            {
+                FechaCreacion:Now(),
+                NombreUser: LabelNombreColilla,
+                CedulaUser: TextInputCedulaColilla,
+                Mescolilla: TextInputMesColilla,
+                AñoColilla: TextInputAñoColilla,
+                CodigoColilla: TextInputCodigocolilla,
+                ArchivoAdjunto: _PdfColilla
+            });   
+            Navigate(Screen2)
+        Text: ="Aprobar"
+        Visible: =_Boton
+        X: =52
+        Y: =44
+        ZIndex: =12
 

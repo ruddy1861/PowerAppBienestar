@@ -2860,12 +2860,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15.Text"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15.Text",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -2879,7 +2879,7 @@
               "properties": {
                 "member": "Text",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.Label15"
+                "type": "ColillaPago.colilla.Container15.LabelNombreColilla"
               }
             }
           ],
@@ -2901,12 +2901,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_2.Text"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelCargoColilla.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_2.Text",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelCargoColilla.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -2920,7 +2920,7 @@
               "properties": {
                 "member": "Text",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.Label15_2"
+                "type": "ColillaPago.colilla.Container15.LabelCargoColilla"
               }
             }
           ],
@@ -2983,12 +2983,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_3.Text"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelBancoColilla.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_3.Text",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelBancoColilla.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -3002,7 +3002,7 @@
               "properties": {
                 "member": "Text",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.Label15_3"
+                "type": "ColillaPago.colilla.Container15.LabelBancoColilla"
               }
             }
           ],
@@ -4234,19 +4234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInput4_6.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInputCodigocolilla.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInput4_6.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInputCodigocolilla.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container11.TextInput4_6"
+                "type": "ColillaPago.colilla.Container11.TextInputCodigocolilla"
               }
             }
           ],
@@ -4264,19 +4264,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInput4_7.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInputMesColilla.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInput4_7.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInputMesColilla.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container11.TextInput4_7"
+                "type": "ColillaPago.colilla.Container11.TextInputMesColilla"
               }
             }
           ],
@@ -4294,19 +4294,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInput4_8.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInputAñoColilla.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInput4_8.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container11.TextInputAñoColilla.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container11.TextInput4_8"
+                "type": "ColillaPago.colilla.Container11.TextInputAñoColilla"
               }
             }
           ],
@@ -4324,19 +4324,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.TextInputCedulaColilla.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.TextInputCedulaColilla.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.TextInput2"
+                "type": "ColillaPago.colilla.Container15.TextInputCedulaColilla"
               }
             }
           ],
@@ -4954,6 +4954,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "ColillaPago",
+                "type": "ColillaPago.colilla.Container15.LabelNombreColilla"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ColillaPago",
+                "type": "ColillaPago.colilla.Container15.LabelNombreColilla"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App._jsonArregloSelectedHoraFinal"
                 }
               ],
@@ -5055,6 +5115,126 @@
               },
               "properties": {
                 "member": "_totalDias",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._VarNombre"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._VarNombre",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_VarNombre",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._VarMesColilla"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._VarMesColilla",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_VarMesColilla",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._VarAñoColilla"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._VarAñoColilla",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_VarAñoColilla",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._VarCodigo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._VarCodigo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_VarCodigo",
                 "module": "App",
                 "type": "App"
               }

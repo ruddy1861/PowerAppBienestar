@@ -244,8 +244,8 @@ pdfPermisos As screen:
         Height: =509
         Visible: =_popUpEnviarCorreo
         Width: =627
-        X: =390
-        Y: =124
+        X: =387
+        Y: =106
         ZIndex: =55
 
     TextInput1_2 As text:

@@ -1,4 +1,38 @@
 {
+  "032823ee-a3e5-4c6c-8831-6a3a8ab28a90": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "d581bf5f-31bd-4882-ad3b-6535b5451719": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "bfec538c-1c34-4ea3-b413-203d3448bbed"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "d581bf5f-31bd-4882-ad3b-6535b5451719"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "bfec538c-1c34-4ea3-b413-203d3448bbed"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "guardarDatos"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "d581bf5f-31bd-4882-ad3b-6535b5451719"
+    },
+    "dependents": [],
+    "id": "032823ee-a3e5-4c6c-8831-6a3a8ab28a90"
+  },
   "4d7fcff4-6f5f-45c2-9b25-c6b482d89763": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -152,7 +186,9 @@
       "datosColaboradores2"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "032823ee-a3e5-4c6c-8831-6a3a8ab28a90"
+    ],
     "id": "d581bf5f-31bd-4882-ad3b-6535b5451719"
   }
 }
