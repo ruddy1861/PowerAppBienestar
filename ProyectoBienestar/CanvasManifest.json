@@ -128,7 +128,6 @@
   },
   "ScreenOrder": [
     "Screen2",
-    "Screen1",
     "ArchivosPdf",
     "ArchivosPdfSinSalario",
     "pdfPermisos",

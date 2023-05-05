@@ -184,7 +184,6 @@
                         RadiusBottomRight: =100
                         RadiusTopLeft: =100
                         RadiusTopRight: =100
-                        Width: =Parent.Width/1.50
                         X: =10
                         Y: =30
                         ZIndex: =1
