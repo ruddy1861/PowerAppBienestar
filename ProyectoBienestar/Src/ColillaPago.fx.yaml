@@ -643,7 +643,7 @@ ColillaPago As screen:
                 ZIndex: =2
 
             Image11 As image:
-                Height: =75
+                Height: =65
                 ImagePosition: =ImagePosition.Stretch
                 Width: =227
                 X: =28
