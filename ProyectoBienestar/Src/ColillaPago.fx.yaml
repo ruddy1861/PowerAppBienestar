@@ -732,7 +732,7 @@ ColillaPago As screen:
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
             Set(_Resultado, Button3_5.Text);
-            UpdateContext({resultado:Value( TextInput4_10.Text) + TextInput4_12.Text)});
+            UpdateContext({resultado:Value( TextInput4_10.Text) + (TextInput4_12.Text)});
             Set(_Boton, false);
             Set(_PdfColilla, PDF(ColillaPago));
             Set(_Boton, true);
