@@ -5326,36 +5326,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App._Resultado"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App._Resultado",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "_Resultado",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.ruddy"
                 }
               ],
@@ -5410,36 +5380,6 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColillaPago.resultado"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColillaPago.resultado",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "resultado",
-                "module": "ColillaPago",
-                "type": "ColillaPago"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
         }
       ],
       "tool": {

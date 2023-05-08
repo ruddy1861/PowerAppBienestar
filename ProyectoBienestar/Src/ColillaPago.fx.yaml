@@ -636,7 +636,7 @@ ColillaPago As screen:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =30
                 OnSelect: =
-                Text: =
+                Text: =resultado
                 Width: =171
                 X: =515
                 ZIndex: =2
@@ -731,7 +731,6 @@ ColillaPago As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            Set(_Resultado, Button3_5.Text);
             UpdateContext({resultado:Value( TextInput4_10.Text) + (TextInput4_12.Text)});
             Set(_Boton, false);
             Set(_PdfColilla, PDF(ColillaPago));
