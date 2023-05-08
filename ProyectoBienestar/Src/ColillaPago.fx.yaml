@@ -350,10 +350,10 @@ ColillaPago As screen:
 
             TextInput4_10 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
-                Default: =""
+                Default: =valorPagos1 Or valorDedduciones1
                 Format: =TextFormat.Number
                 Height: =Parent.Height/5
-                OnSelect: =Set(valorPagos1, Value(TextFormat))
+                OnSelect: =Set(valorPagos1, TextInput4_10.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -378,11 +378,11 @@ ColillaPago As screen:
 
             TextInput4_12 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
-                Default: =""
+                Default: =
                 Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: |
-                    =Set(valorDedduciones1, Value(TextFormat))
+                    =Set(valorDedduciones1, TextInput4_12.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -635,7 +635,7 @@ ColillaPago As screen:
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =30
-                OnSelect: =resultado
+                OnSelect: =
                 Text: =
                 Width: =171
                 X: =515
@@ -731,8 +731,8 @@ ColillaPago As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            update({result: valorPagos1 - valorDedduciones1});
-            Set(resultado, Button3_5.Text);
+            Set(_Resultado, Button3_5.Text);
+            UpdateContext({resultado:Value( TextInput4_10.Text) + TextInput4_12.Text)});
             Set(_Boton, false);
             Set(_PdfColilla, PDF(ColillaPago));
             Set(_Boton, true);
