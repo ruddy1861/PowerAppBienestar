@@ -351,7 +351,9 @@ ColillaPago As screen:
             TextInput4_10 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos1, Self.text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -377,7 +379,10 @@ ColillaPago As screen:
             TextInput4_12 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: |
+                    =Set(_valorDedduciones1, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -402,7 +407,9 @@ ColillaPago As screen:
             TextInput4_14 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -428,7 +435,9 @@ ColillaPago As screen:
             TextInput4_16 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -441,7 +450,9 @@ ColillaPago As screen:
             TextInput4_17 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -467,7 +478,9 @@ ColillaPago As screen:
             TextInput4_19 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -492,7 +505,9 @@ ColillaPago As screen:
             TextInput4_21 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -530,7 +545,9 @@ ColillaPago As screen:
             TextInput4_24 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -556,7 +573,9 @@ ColillaPago As screen:
             TextInput4_26 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -581,7 +600,9 @@ ColillaPago As screen:
             TextInput4_28 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -614,7 +635,7 @@ ColillaPago As screen:
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =30
-                Text: =
+                Text: =_valorPagos1-_valorDedduciones1
                 Width: =171
                 X: =515
                 ZIndex: =2
