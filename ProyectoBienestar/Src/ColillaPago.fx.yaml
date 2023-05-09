@@ -706,6 +706,15 @@ ColillaPago As screen:
             =//Set(_popUpEnviarCorreo; true);;
             Set(_Boton, false);
             Set(_PdfColilla, GuardarPdfDB.Run(Now(),LabelcodigoColilla.Text,TextInputCedulaColilla.Text,LabelNombreColilla.Text,TextInputMesColilla.Text,TextInputAñoColilla.Text,{file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPago)}}));
+            Patch(colillasPago,Defaults(colillasPago),{
+                ID:  LabelcodigoColilla,
+                NombreUser:  LabelNombreColilla,
+                CedulaUser: TextInputCedulaColilla,
+                MesColilla: TextInputMesColilla,
+                AñoColilla: TextInputAñoColilla, 
+                FechaCreacion: Today()
+            
+            });
             Set(_Boton, true);
             Navigate(Screen2)
         Text: ="Guardar"
@@ -719,8 +728,7 @@ ColillaPago As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            UpdateContext({resultado:Value( TextInput4_10.Text) + (TextInput4_12.Text)});
-            Set(_resultado, Self.Text);
+            UpdateContext({resultado:Value (TextInput4_10.Text + TextInput4_28.Text+ TextInput4_21.Text + TextInput4_17.Text + TextInput4_14.Text) - (TextInput4_12.Text + TextInput4_26.Text + TextInput4_24.Text + TextInput4_19.Text + TextInput4_16.Text)});
             Set(_Boton, false);
             _PdfColilla;
             Set(_Boton, true);

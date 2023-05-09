@@ -5260,36 +5260,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App._resultado"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App._resultado",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "_resultado",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.ruddy"
                 }
               ],
