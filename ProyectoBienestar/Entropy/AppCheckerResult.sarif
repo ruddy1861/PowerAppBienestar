@@ -5230,17 +5230,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App._valorPagos"
+                  "fullyQualifiedName": "App._valorDedduciones"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App._valorPagos",
+                  "fullyQualifiedName": "App._valorDedduciones",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "_valorPagos",
+                "member": "_valorDedduciones",
                 "module": "App",
                 "type": "App"
               }
@@ -5260,17 +5260,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App._valorDedduciones"
+                  "fullyQualifiedName": "App._resultado"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App._valorDedduciones",
+                  "fullyQualifiedName": "App._resultado",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "_valorDedduciones",
+                "member": "_resultado",
                 "module": "App",
                 "type": "App"
               }

@@ -346,10 +346,11 @@ ColillaPago As screen:
 
             TextInput4_10 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
-                Default: =valorPagos1 Or valorDedduciones1
+                Default: =_valorPagos Or valorDedduciones1
                 Format: =TextFormat.Number
                 Height: =Parent.Height/5
-                OnSelect: =Set(valorPagos1, TextInput4_10.Text)
+                OnChange: =
+                OnSelect: =Set(_valorPagos, TextInput4_10.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -377,6 +378,7 @@ ColillaPago As screen:
                 Default: =
                 Format: =TextFormat.Number
                 Height: =Parent.Height/5
+                OnChange: =
                 OnSelect: |
                     =Set(valorDedduciones1, TextInput4_12.Text)
                 RadiusBottomLeft: =0
@@ -718,6 +720,7 @@ ColillaPago As screen:
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
             UpdateContext({resultado:Value( TextInput4_10.Text) + (TextInput4_12.Text)});
+            Set(_resultado, Self.Text);
             Set(_Boton, false);
             _PdfColilla;
             Set(_Boton, true);
@@ -735,6 +738,7 @@ ColillaPago As screen:
             Set(_Boton, false);
             _PdfColilla;
             Set(_Boton, true);
+            Navigate(Screen2)
             
         Text: ="Volver"
         X: =52
