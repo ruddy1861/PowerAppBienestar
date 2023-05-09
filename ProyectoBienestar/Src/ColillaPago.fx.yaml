@@ -720,7 +720,7 @@ ColillaPago As screen:
                 ArchivoAdjunto: _PdfColilla
             });   
             Navigate(Screen2)
-        Text: ="Aprobar"
+        Text: ="Guardar"
         Visible: =_Boton
         X: =52
         Y: =44

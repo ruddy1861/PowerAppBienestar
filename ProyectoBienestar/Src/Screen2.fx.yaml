@@ -588,10 +588,7 @@
                     Button1 As button:
                         Fill: =RGBA(31, 140, 153, 1)
                         HoverFill: =ColorFade(RGBA(19, 85, 110, 1), -20%)
-                        OnSelect: |-
-                            =Navigate(ColillaPago);
-                            Set(_popUpEnviarCorreo, true);
-                            Set(_Boton, true)
+                        OnSelect: =
                         Text: ="Generar"
                         X: =760
                         Y: =140
@@ -654,4 +651,17 @@
                         X: =415
                         Y: =140
                         ZIndex: =9
+
+                    Button1_4 As button:
+                        Fill: =RGBA(31, 140, 153, 1)
+                        HoverFill: =ColorFade(RGBA(19, 85, 110, 1), -20%)
+                        OnSelect: |-
+                            =Navigate(ColillaPago);
+                            Set(_popUpEnviarCorreo, true);
+                            Set(_Boton, true)
+                        Text: ="Crear Colilla"
+                        Visible: =_esContador
+                        X: =760
+                        Y: =200
+                        ZIndex: =10
 
