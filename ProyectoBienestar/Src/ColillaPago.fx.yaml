@@ -735,7 +735,6 @@ ColillaPago As screen:
             _PdfColilla;
             
         Text: ="Volver"
-        Visible: =_Boton
         X: =52
         Y: =199
         ZIndex: =14
