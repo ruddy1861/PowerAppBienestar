@@ -2,7 +2,7 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value);
-        Set(_esContador, User().FullName in ["Usuario Prueba"]);
+        Set(_esContador, User().FullName in ["Usuario Prueba","Ruddy Rodríguez Riaño"]);
     StartScreen: =
 
     Host As hostControl.DefaultHostControlVariant:
