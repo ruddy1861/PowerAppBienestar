@@ -751,6 +751,6 @@ ColillaPago As screen:
             
         Text: ="Volver"
         X: =52
-        Y: =199
+        Y: =213
         ZIndex: =14
 
