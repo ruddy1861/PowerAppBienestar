@@ -732,9 +732,7 @@ ColillaPago As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |+
             =//Set(_popUpEnviarCorreo; true);;
-            Set(_Boton, false);
             _PdfColilla;
-            Set(_Boton, true);
             
         Text: ="Volver"
         Visible: =_Boton
