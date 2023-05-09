@@ -706,16 +706,16 @@ ColillaPago As screen:
             =//Set(_popUpEnviarCorreo; true);;
             Set(_Boton, false);
             Set(_PdfColilla, GuardarPdfDB.Run(Now(),LabelcodigoColilla.Text,TextInputCedulaColilla.Text,LabelNombreColilla.Text,TextInputMesColilla.Text,TextInputAñoColilla.Text,{file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPago)}}));
-            Patch(colillasPago,Defaults(colillasPago),{
-                ID:  LabelcodigoColilla,
-                Title: LabelCargoColilla,
-                NombreUser:  LabelNombreColilla,
-                CedulaUser: TextInputCedulaColilla,
-                MesColilla: TextInputMesColilla,
-                AñoColilla: TextInputAñoColilla, 
+            /*Patch(colillasPago;Defaults(colillasPago);{
+                ID:  LabelcodigoColilla;
+                Title: LabelCargoColilla;
+                NombreUser:  LabelNombreColilla;
+                CedulaUser: TextInputCedulaColilla;
+                MesColilla: TextInputMesColilla;
+                AñoColilla: TextInputAñoColilla; 
                 FechaCreacion: Today()
             
-            });
+            });;*/
             Set(_Boton, true);
             Navigate(Screen2)
         Text: ="Guardar"
