@@ -708,7 +708,7 @@ ColillaPago As screen:
             Set(_PdfColilla, GuardarPdfDB.Run(Now(),LabelcodigoColilla.Text,TextInputCedulaColilla.Text,LabelNombreColilla.Text,TextInputMesColilla.Text,TextInputAñoColilla.Text,{file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPago)}}));
             Patch(colillasPago,Defaults(colillasPago),{
                 ID:  LabelcodigoColilla,
-                Titlle: LabelCargoColilla,
+                Title: LabelCargoColilla,
                 NombreUser:  LabelNombreColilla,
                 CedulaUser: TextInputCedulaColilla,
                 MesColilla: TextInputMesColilla,
