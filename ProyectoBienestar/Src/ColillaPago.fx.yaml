@@ -73,22 +73,6 @@ ColillaPago As screen:
                 Y: =44
                 ZIndex: =5
 
-            TextInputCodigocolilla As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                Default: =""
-                Fill: =RGBA(19, 85, 110, 1)
-                Height: =44
-                OnSelect: =Set(_VarCodigo, Self.Text)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Width: =122
-                X: =564
-                ZIndex: =6
-
             TextInputMesColilla As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
@@ -122,6 +106,18 @@ ColillaPago As screen:
                 X: =564
                 Y: =86
                 ZIndex: =8
+
+            LabelcodigoColilla As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Text: =""
+                Width: =122
+                X: =564
+                ZIndex: =9
 
         Container13 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
@@ -707,18 +703,8 @@ ColillaPago As screen:
         OnSelect: |-
             =//Set(_popUpEnviarCorreo; true);;
             Set(_Boton, false);
-            Set(_PdfColilla, PDF(ColillaPago));
+            Set(_PdfColilla, GuardarPdfDB.Run(Now(),LabelcodigoColilla.Text,TextInputCedulaColilla.Text,LabelNombreColilla.Text,TextInputMesColilla.Text,TextInputAñoColilla.Text,{file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPago)}}));
             Set(_Boton, true);
-            Collect(Datos,
-            {
-                FechaCreacion:Now(),
-                NombreUser: LabelNombreColilla,
-                CedulaUser: TextInputCedulaColilla,
-                Mescolilla: TextInputMesColilla,
-                AñoColilla: TextInputAñoColilla,
-                CodigoColilla: TextInputCodigocolilla,
-                ArchivoAdjunto: _PdfColilla
-            });   
             Navigate(Screen2)
         Text: ="Guardar"
         Visible: =_Boton
@@ -733,11 +719,26 @@ ColillaPago As screen:
             =//Set(_popUpEnviarCorreo; true);;
             UpdateContext({resultado:Value( TextInput4_10.Text) + (TextInput4_12.Text)});
             Set(_Boton, false);
-            Set(_PdfColilla, PDF(ColillaPago));
+            _PdfColilla;
             Set(_Boton, true);
         Text: ="Calcular"
         Visible: =_Boton
         X: =52
         Y: =125
         ZIndex: =13
+
+    Button3_6 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |+
+            =//Set(_popUpEnviarCorreo; true);;
+            Set(_Boton, false);
+            _PdfColilla;
+            Set(_Boton, true);
+            
+        Text: ="Volver"
+        Visible: =_Boton
+        X: =52
+        Y: =199
+        ZIndex: =14
 

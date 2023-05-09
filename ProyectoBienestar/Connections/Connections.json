@@ -33,6 +33,40 @@
     "dependents": [],
     "id": "032823ee-a3e5-4c6c-8831-6a3a8ab28a90"
   },
+  "2bf0af11-b2ae-4bca-989e-698c71e6b599": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "d581bf5f-31bd-4882-ad3b-6535b5451719": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "245b09f1-a34a-4ec7-bc33-18f08f6e452b"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "d581bf5f-31bd-4882-ad3b-6535b5451719"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "245b09f1-a34a-4ec7-bc33-18f08f6e452b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "GuardarPdfDB"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "d581bf5f-31bd-4882-ad3b-6535b5451719"
+    },
+    "dependents": [],
+    "id": "2bf0af11-b2ae-4bca-989e-698c71e6b599"
+  },
   "4d7fcff4-6f5f-45c2-9b25-c6b482d89763": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -82,6 +116,9 @@
     "datasets": {
       "https://bgroupti.sharepoint.com/sites/Bienestar": {
         "dataSources": {
+          "colillasPago": {
+            "tableName": "aea1dafc-3b6c-48e1-8212-bea861c4f0eb"
+          },
           "DB_Bienestar1": {
             "tableName": "c07709aa-3df7-4d32-9a71-097fd86b8009"
           }
@@ -89,7 +126,8 @@
       }
     },
     "dataSources": [
-      "DB_Bienestar1"
+      "DB_Bienestar1",
+      "colillasPago"
     ],
     "dependencies": {},
     "dependents": [],
@@ -187,7 +225,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "032823ee-a3e5-4c6c-8831-6a3a8ab28a90"
+      "032823ee-a3e5-4c6c-8831-6a3a8ab28a90",
+      "2bf0af11-b2ae-4bca-989e-698c71e6b599"
     ],
     "id": "d581bf5f-31bd-4882-ad3b-6535b5451719"
   }
