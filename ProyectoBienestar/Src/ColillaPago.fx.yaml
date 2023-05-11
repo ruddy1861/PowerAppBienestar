@@ -750,6 +750,7 @@ ColillaPago As screen:
             Navigate(Screen2)
             
         Text: ="Volver"
+        Visible: =_Boton
         X: =52
         Y: =213
         ZIndex: =14
