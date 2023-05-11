@@ -805,8 +805,6 @@ ColillaPago As screen:
             Reset(TextInputVD3);
             Reset(TextInput4VD4);
             Reset(TextInputVD5);
-            
-            Navigate(Screen2)
         Text: ="Guardar"
         Visible: =_Boton
         X: =52
