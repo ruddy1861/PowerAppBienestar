@@ -328,7 +328,7 @@ ColillaPago As screen:
                 ZIndex: =4
 
         Container13_3 As groupContainer.manualLayoutContainer:
-            BorderThickness: =2
+            BorderThickness: =3
             Fill: =RGBA(19, 85, 110, 1)
             Height: =160
             Width: =686
@@ -683,6 +683,7 @@ ColillaPago As screen:
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
                 ContentLanguage: =Parent.Width/4
+                FocusedBorderThickness: =2
                 FontWeight: =FontWeight.Semibold
                 Height: =42
                 Size: =15
