@@ -706,42 +706,7 @@ ColillaPago As screen:
         OnSelect: |-
             =//Set(_popUpEnviarCorreo; true);;
             /*Set(_PdfColilla; GuardarPdfDB.Run(Now();LabelcodigoColilla.Text;TextInputCedulaColilla.Text;LabelNombreColilla.Text;TextInputMesColilla.Text;TextInputAñoColilla.Text;{file:{name:"colillaPago.pdf";contentBytes: PDF(ColillaPago)}}));;*/
-            Collect(
-                DatosColillas,
-                {
-                    ID: LabelcodigoColilla,
-                    Cargo: LabelCargoColilla,
-                    NombreUser: LabelNombreColilla,
-                    CedulaUser: TextInputCedulaColilla,
-                    MesColilla: TextInputMesColilla,
-                    AñoColilla: TextInputAñoColilla,
-                    Banco: LabelBancoColilla,
-                    Salario: LabelSalarioColilla,
-                    DiaPago: LabelDiaPagoColilla,
-                    Descripcion1Pagos: TextInputDP1,
-                    Descripcion2Pagos: TextInputDP2,
-                    Descripcion3Pagos: TextInputDP3,
-                    Descripcion4Pagos: TextInputDP4,
-                    Descripcion5Pagos: TextInputDP5,
-                    ValorPago1: TextInputVP1,
-                    ValorPago2: TextInputVP2,
-                    ValorPago3: TextInputVP3,
-                    ValorPago4: TextInputVP4,
-                    ValorPago5: TextInputVP5,
-                    Descripcion1Dedu: TextInputDD1,
-                    Descripcion2Dedu: TextInputDD2,
-                    Descripcion3Dedu: TextInputDD3,
-                    Descripcion4Dedu: TextInputDD4,
-                    Descripcion5Dedu: TextInputDD5,
-                    ValorDedu1: TextInputVD1,
-                    Valor2Dedu: TextInputVD2,
-                    Valor3Dedu: TextInputVD3,
-                    ValorDedu4: TextInput4VD4,
-                    ValorDedu5: TextInputVD5,
-                    TotalPagos: LabelTotalPago,
-                    FechaCreacion: Today()
-                }
-            );
+            
             ForAll(DatosColillas,
             Patch(colillasPago,Defaults(colillasPago),
             {
@@ -817,6 +782,44 @@ ColillaPago As screen:
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
             UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)});
+            
+            
+            Collect(
+                DatosColillas,
+                {
+                    ID: LabelcodigoColilla,
+                    Cargo: LabelCargoColilla,
+                    NombreUser: LabelNombreColilla,
+                    CedulaUser: TextInputCedulaColilla,
+                    MesColilla: TextInputMesColilla,
+                    AñoColilla: TextInputAñoColilla,
+                    Banco: LabelBancoColilla,
+                    Salario: LabelSalarioColilla,
+                    DiaPago: LabelDiaPagoColilla,
+                    Descripcion1Pagos: TextInputDP1,
+                    Descripcion2Pagos: TextInputDP2,
+                    Descripcion3Pagos: TextInputDP3,
+                    Descripcion4Pagos: TextInputDP4,
+                    Descripcion5Pagos: TextInputDP5,
+                    ValorPago1: TextInputVP1,
+                    ValorPago2: TextInputVP2,
+                    ValorPago3: TextInputVP3,
+                    ValorPago4: TextInputVP4,
+                    ValorPago5: TextInputVP5,
+                    Descripcion1Dedu: TextInputDD1,
+                    Descripcion2Dedu: TextInputDD2,
+                    Descripcion3Dedu: TextInputDD3,
+                    Descripcion4Dedu: TextInputDD4,
+                    Descripcion5Dedu: TextInputDD5,
+                    ValorDedu1: TextInputVD1,
+                    Valor2Dedu: TextInputVD2,
+                    Valor3Dedu: TextInputVD3,
+                    ValorDedu4: TextInput4VD4,
+                    ValorDedu5: TextInputVD5,
+                    TotalPagos: LabelTotalPago,
+                    FechaCreacion: Today()
+                }
+            );
         Text: ="Calcular"
         Visible: =_Boton
         X: =52
