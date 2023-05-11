@@ -114,7 +114,7 @@ ColillaPago As screen:
                 Fill: =RGBA(19, 85, 110, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =44
-                Text: =LookUp(colillasPago, NombreUser = User().FullName, ID +1)
+                Text: =_codigo
                 Width: =122
                 X: =564
                 ZIndex: =9

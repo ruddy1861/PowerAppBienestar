@@ -3,6 +3,7 @@ App As appinfo:
     OnStart: |-
         =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value);
         Set(_esContador, User().FullName in ["Usuario Prueba"]);
+        Set(_codigo,LookUp(colillasPago, NombreUser = User().FullName && MesColilla=_VarMesColilla && AñoColilla=_VarAñoColilla, ID))
     StartScreen: =
 
     Host As hostControl.DefaultHostControlVariant:
