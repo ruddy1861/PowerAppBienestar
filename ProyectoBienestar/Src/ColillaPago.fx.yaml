@@ -750,10 +750,9 @@ ColillaPago As screen:
     Button3_5 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |+
+        OnSelect: |-
             =//Set(_popUpEnviarCorreo; true);;
-            UpdateContext({resultado: Value (TextInputVP1.Text + TextInputVP5.Text + TextInputVP4.Text + TextInputVP3.Text + TextInputVP2.Text) - (TextInputVD1.Text + TextInputVD5.Text + TextInput4VD4.Text + TextInputVD3.Text + TextInputVD2.Text)});
-            
+            UpdateContext({resultado:(TextInputVP1+TextInputVP2+TextInputVP3+TextInputVP4+TextInputVP5)-(TextInputVD1+TextInputVD2+TextInputVD3+TextInput4VD4+TextInputVD5)});
         Text: ="Calcular"
         Visible: =_Boton
         X: =52
