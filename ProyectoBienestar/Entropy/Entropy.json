@@ -67,10 +67,10 @@
     "Image1_2": 157,
     "Image1_3": 70,
     "Image10": 7,
-    "Image11": 65,
     "Image7": 199,
     "Image8": 200,
     "Image9": 195,
+    "ImagenFirma": 65,
     "Label1": 235,
     "Label10": 213,
     "Label11": 100,
@@ -245,7 +245,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/11/2023 21:29:13",
+  "HeaderLastSavedDateTimeUTC": "05/11/2023 21:50:43",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "032823ee-a3e5-4c6c-8831-6a3a8ab28a90": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/bfec538c1c344ea3b413203d3448bbed-7cd6f97fb99274d2\"",
@@ -259,6 +259,7 @@
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
+    "20230424_170118": "4ef587b5-df28-4d21-9252-431e7448aadc.jpg",
     "Fondo App": "2f7dd5b7-79b3-43fa-b6bf-2d0ff76f1310.png",
     "Logo 2": "f6789e2e-94dd-42bd-bbed-a1d8ec37010b.png",
     "Logo Final": "6e8e6289-3f7d-43eb-a20d-ad611766561a.png",
@@ -267,6 +268,7 @@
     "Walk": "bb1b3623-66e7-42ea-a982-8cda9e09c291.gif"
   },
   "LocalResourceRootPaths": {
+    "20230424_170118": "https://docserverpwaprodsbr.blob.core.windows.net/32c222c7-5964-40a1-a0ea-2571e13a0dbb-1/resource/94692324-a249-4683-af78-2e51cb14e279.jpg?sv=2018-03-28&sr=b&sig=6HTeH2QayRSIAVVwrPtiHVmSApF%2BSG%2BhxN8QcdRR2D8%3D&spr=https&se=2023-05-12T21%3A46%3A11Z&sp=r",
     "Fondo App": "https://docserverpwaprodsbr.blob.core.windows.net/32c222c7-5964-40a1-a0ea-2571e13a0dbb-1/resource/Assets0Images02f7dd5b7-79b3-43fa-b6bf-2d0ff76f1310.png?sv=2018-03-28&sr=b&sig=IyoRK%2FpikpAqlNrXK1z4uRVdpBh1VcwViA%2B3ljnljRI%3D&spr=https&se=2023-05-12T21%3A42%3A41Z&sp=r",
     "Logo 2": "https://docserverpwaprodsbr.blob.core.windows.net/32c222c7-5964-40a1-a0ea-2571e13a0dbb-1/resource/Assets0Images0f6789e2e-94dd-42bd-bbed-a1d8ec37010b.png?sv=2018-03-28&sr=b&sig=XS6QOtq5JhprIcr5GIW%2BEQI2xv8i9sA7sEo41tNHtZw%3D&spr=https&se=2023-05-12T21%3A42%3A41Z&sp=r",
     "Logo Final": "https://docserverpwaprodsbr.blob.core.windows.net/32c222c7-5964-40a1-a0ea-2571e13a0dbb-1/resource/Assets0Images06e8e6289-3f7d-43eb-a20d-ad611766561a.png?sv=2018-03-28&sr=b&sig=tGQidrfBIQ6TO4jz9BYKFmMGwlf0k0a3uejC%2BwtNw2c%3D&spr=https&se=2023-05-12T21%3A42%3A41Z&sp=r",
@@ -376,10 +378,10 @@
     "Image1_2": {},
     "Image1_3": {},
     "Image10": {},
-    "Image11": {},
     "Image7": {},
     "Image8": {},
     "Image9": {},
+    "ImagenFirma": {},
     "Label1": {},
     "Label10": {},
     "Label11": {},
@@ -620,10 +622,10 @@
     "Image1_2": 116,
     "Image1_3": 145,
     "Image10": 170,
-    "Image11": 228,
     "Image7": 12,
     "Image8": 13,
     "Image9": 8,
+    "ImagenFirma": 228,
     "Label1": 48,
     "Label10": 26,
     "Label11": 61,
@@ -797,6 +799,7 @@
     "Vacaciones": 0
   },
   "ResourcesJsonIndices": {
+    "Image-20230424_170118": 8,
     "Image-Fondo App": 1,
     "Image-Logo 2": 3,
     "Image-Logo Final": 2,

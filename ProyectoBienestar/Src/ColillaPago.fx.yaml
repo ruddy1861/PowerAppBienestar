@@ -655,8 +655,9 @@ ColillaPago As screen:
                 Y: =8
                 ZIndex: =2
 
-            Image11 As image:
+            ImagenFirma As image:
                 Height: =65
+                Image: ='20230424_170118'
                 ImagePosition: =ImagePosition.Stretch
                 Width: =227
                 X: =28
@@ -739,6 +740,33 @@ ColillaPago As screen:
                 TotalPagos: LabelTotalPago,
                 FechaCreacion: Today()
             });
+            Reset(TextInputCedulaColilla);
+            Reset(TextInputMesColilla);
+            Reset(TextInputAñoColilla);
+            Reset(TextInputCedulaColilla);
+            Reset(TextInputMesColilla);
+            Reset(TextInputDP1);
+            Reset(TextInputDP2);
+            Reset(TextInputDP3);
+            Reset(TextInputDP4);
+            Reset(TextInputDP5);
+            Reset(TextInputVP1);
+            Reset(TextInputVP2);
+            Reset(TextInputVP3);
+            Reset(TextInputVP4);
+            Reset(TextInputVP5);
+            Reset(TextInputDD1);
+            Reset(TextInputDD2);
+            Reset(TextInputDP3);
+            Reset(TextInputDP4);
+            Reset(TextInputDD5);
+            Reset(TextInputVD1);
+            Reset(TextInputVD2);
+            Reset(TextInputVD3);
+            Reset(TextInput4VD4);
+            Reset(TextInputVD5);
+            
+            
             Set(_Boton, true);
             Navigate(Screen2)
         Text: ="Guardar"
