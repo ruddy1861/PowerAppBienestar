@@ -705,7 +705,7 @@ ColillaPago As screen:
         OnSelect: |-
             =//Set(_popUpEnviarCorreo; true);;
             Set(_Boton, false);
-            Set(_PdfColilla, GuardarPdfDB.Run(Now(),LabelcodigoColilla.Text,TextInputCedulaColilla.Text,LabelNombreColilla.Text,TextInputMesColilla.Text,TextInputAñoColilla.Text,{file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPago)}}));
+            /*Set(_PdfColilla; GuardarPdfDB.Run(Now();LabelcodigoColilla.Text;TextInputCedulaColilla.Text;LabelNombreColilla.Text;TextInputMesColilla.Text;TextInputAñoColilla.Text;{file:{name:"colillaPago.pdf";contentBytes: PDF(ColillaPago)}}));;*/
             Patch(colillasPago,Defaults(colillasPago),{
                 ID:  LabelcodigoColilla,
                 Cargo: LabelCargoColilla,
@@ -750,10 +750,10 @@ ColillaPago As screen:
     Button3_5 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |
+        OnSelect: |+
             =//Set(_popUpEnviarCorreo; true);;
             UpdateContext({resultado: Value (TextInputVP1.Text + TextInputVP5.Text + TextInputVP4.Text + TextInputVP3.Text + TextInputVP2.Text) - (TextInputVD1.Text + TextInputVD5.Text + TextInput4VD4.Text + TextInputVD3.Text + TextInputVD2.Text)});
-            _PdfColilla;
+            
         Text: ="Calcular"
         Visible: =_Boton
         X: =52
@@ -765,9 +765,6 @@ ColillaPago As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |+
             =//Set(_popUpEnviarCorreo; true);;
-            Set(_Boton, false);
-            _PdfColilla;
-            Set(_Boton, true);
             Navigate(Screen2)
             
         Text: ="Volver"
