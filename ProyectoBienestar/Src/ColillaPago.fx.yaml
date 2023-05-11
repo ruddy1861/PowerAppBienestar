@@ -743,7 +743,7 @@ ColillaPago As screen:
                 FechaCreacion: Today()
             
             }
-            );
+            ));
             
             Reset(TextInputCedulaColilla);
             Reset(TextInputMesColilla);
