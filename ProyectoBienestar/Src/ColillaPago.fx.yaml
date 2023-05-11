@@ -114,7 +114,7 @@ ColillaPago As screen:
                 Fill: =RGBA(19, 85, 110, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =44
-                Text: =""
+                Text: =LookUp(colillasPago, NombreUser = User().FullName, ID +1)
                 Width: =122
                 X: =564
                 ZIndex: =9
@@ -201,8 +201,8 @@ ColillaPago As screen:
                 Height: =23
                 OnSelect: =Set(_VarNombre, Self.Text);
                 Text: |-
-                    =//LookUp(datosColaboradores2; Cedula = _VarCedula; Nombre1)
-                    LookUp(datosColaboradores2, Nombre1 = User().FullName, Nombre1)
+                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
+                    //LookUp(datosColaboradores2; Nombre1 = User().FullName; Nombre1)
                 Width: =228
                 Y: =40
                 ZIndex: =13
@@ -211,7 +211,9 @@ ColillaPago As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Cargo)
+                Text: |-
+                    =//LookUp(datosColaboradores2; Cedula = _VarCedula; Cargo)
+                    //LookUp(datosColaboradores2; Nombre1 = User().FullName; Cargo)
                 Width: =228
                 X: =458
                 Y: =40

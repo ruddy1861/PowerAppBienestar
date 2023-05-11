@@ -2896,12 +2896,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelCargoColilla.Text"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelCargoColilla.Text",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelNombreColilla.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -2915,7 +2915,7 @@
               "properties": {
                 "member": "Text",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.LabelCargoColilla"
+                "type": "ColillaPago.colilla.Container15.LabelNombreColilla"
               }
             }
           ],
