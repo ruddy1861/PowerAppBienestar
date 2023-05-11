@@ -2978,12 +2978,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_5.Text"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelDiaPagoColilla.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_5.Text",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelDiaPagoColilla.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -2997,7 +2997,7 @@
               "properties": {
                 "member": "Text",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.Label15_5"
+                "type": "ColillaPago.colilla.Container15.LabelDiaPagoColilla"
               }
             }
           ],
@@ -3060,12 +3060,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_4.Text"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelSalarioColilla.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container15.Label15_4.Text",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container15.LabelSalarioColilla.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -3079,7 +3079,7 @@
               "properties": {
                 "member": "Text",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container15.Label15_4"
+                "type": "ColillaPago.colilla.Container15.LabelSalarioColilla"
               }
             }
           ],
@@ -4120,19 +4120,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_9.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_9.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_9"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDP1"
               }
             }
           ],
@@ -4150,19 +4150,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_10.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_10.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_10"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVP1"
               }
             }
           ],
@@ -4180,19 +4180,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_11.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_11.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_11"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDD1"
               }
             }
           ],
@@ -4210,19 +4210,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_12.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_12.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_12"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVD1"
               }
             }
           ],
@@ -4240,19 +4240,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_13.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_13.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_13"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDP2"
               }
             }
           ],
@@ -4270,19 +4270,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_14.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_14.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_14"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVP2"
               }
             }
           ],
@@ -4300,19 +4300,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_15.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_15.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_15"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDD2"
               }
             }
           ],
@@ -4330,19 +4330,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_16.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_16.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_16"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVD2"
               }
             }
           ],
@@ -4360,19 +4360,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_20.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_20.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_20"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDP3"
               }
             }
           ],
@@ -4390,19 +4390,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_17.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_17.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_17"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVP3"
               }
             }
           ],
@@ -4420,19 +4420,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_18.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_18.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_18"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDD3"
               }
             }
           ],
@@ -4450,19 +4450,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_19.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_19.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_19"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVD3"
               }
             }
           ],
@@ -4480,19 +4480,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_23.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_23.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_23"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDP4"
               }
             }
           ],
@@ -4510,19 +4510,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_21.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_21.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_21"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVP4"
               }
             }
           ],
@@ -4540,19 +4540,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_22.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_22.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_22"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDD4"
               }
             }
           ],
@@ -4570,19 +4570,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_24.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4VD4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_24.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4VD4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_24"
+                "type": "ColillaPago.colilla.Container13_3.TextInput4VD4"
               }
             }
           ],
@@ -4600,19 +4600,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_27.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_27.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDP5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_27"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDP5"
               }
             }
           ],
@@ -4630,19 +4630,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_28.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_28.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVP5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_28"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVP5"
               }
             }
           ],
@@ -4660,19 +4660,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_25.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_25.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputDD5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_25"
+                "type": "ColillaPago.colilla.Container13_3.TextInputDD5"
               }
             }
           ],
@@ -4690,19 +4690,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_26.AccessibleLabel"
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInput4_26.AccessibleLabel",
+                  "fullyQualifiedName": "ColillaPago.colilla.Container13_3.TextInputVD5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColillaPago",
-                "type": "ColillaPago.colilla.Container13_3.TextInput4_26"
+                "type": "ColillaPago.colilla.Container13_3.TextInputVD5"
               }
             }
           ],
