@@ -239,7 +239,7 @@ ColillaPago As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =24
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, DiaPago) 
+                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, DiaPago)
                 Width: =228
                 X: =458
                 Y: =103
@@ -750,9 +750,9 @@ ColillaPago As screen:
     Button3_5 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |-
+        OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            UpdateContext({resultado:(TextInputVP1+TextInputVP2+TextInputVP3+TextInputVP4+TextInputVP5)-(TextInputVD1+TextInputVD2+TextInputVD3+TextInput4VD4+TextInputVD5)});
+            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)});
         Text: ="Calcular"
         Visible: =_Boton
         X: =52
