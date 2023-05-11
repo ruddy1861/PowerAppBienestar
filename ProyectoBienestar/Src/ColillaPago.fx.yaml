@@ -200,7 +200,9 @@ ColillaPago As screen:
                 BorderThickness: =2
                 Height: =23
                 OnSelect: =Set(_VarNombre, Self.Text);
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
+                Text: |-
+                    =//LookUp(datosColaboradores2; Cedula = _VarCedula; Nombre1)
+                    LookUp(datosColaboradores2, Nombre = User().FullName, Nombre1)
                 Width: =228
                 Y: =40
                 ZIndex: =13
