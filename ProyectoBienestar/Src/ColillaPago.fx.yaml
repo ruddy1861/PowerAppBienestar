@@ -726,6 +726,17 @@ ColillaPago As screen:
                 ValorPago3: TextInputVP3,
                 ValorPago4: TextInputVP4,
                 ValorPago5: TextInputVP5,
+                Descripcion1Dedu: TextInputDD1,
+                Descripcion2Dedu: TextInputDD2,
+                Descripcion3Dedu: TextInputDD3,
+                Descripcion4Dedu: TextInputDD4,
+                Descripcion5Dedu: TextInputDD5,
+                ValorDedu1: TextInputVD1,
+                Valor2Dedu: TextInputVD2,
+                Valor3Dedu: TextInputVD3,
+                ValorDedu4: TextInput4VD4,
+                ValorDedu5: TextInputVD5,
+                TotalPagos: LabelTotalPago,
                 FechaCreacion: Today()
             
             });
