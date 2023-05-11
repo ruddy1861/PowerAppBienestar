@@ -202,7 +202,7 @@ ColillaPago As screen:
                 OnSelect: =Set(_VarNombre, Self.Text);
                 Text: |-
                     =//LookUp(datosColaboradores2; Cedula = _VarCedula; Nombre1)
-                    LookUp(datosColaboradores2, Nombre = User().FullName, Nombre1)
+                    LookUp(datosColaboradores2, Nombre1 = User().FullName, Nombre1)
                 Width: =228
                 Y: =40
                 ZIndex: =13
