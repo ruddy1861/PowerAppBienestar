@@ -245,7 +245,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "05/15/2023 20:33:17",
+  "HeaderLastSavedDateTimeUTC": "05/15/2023 20:39:33",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "032823ee-a3e5-4c6c-8831-6a3a8ab28a90": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/bfec538c1c344ea3b413203d3448bbed-7cd6f97fb99274d2\"",
@@ -280,13 +280,11 @@
   "OrderComponentTemplate": {},
   "OrderDataSource": {
     "colillasPago": 12,
-    "collerrors": 16,
     "colUsuarios": 13,
     "ComboBoxSample": 6,
     "correosColaboradores": 10,
     "CustomGallerySample": 7,
     "datosColaboradores2": 11,
-    "DatosColillas": 15,
     "DB_Bienestar1": 9,
     "diaFestivoColombia": 14,
     "DropDownSample": 8,
