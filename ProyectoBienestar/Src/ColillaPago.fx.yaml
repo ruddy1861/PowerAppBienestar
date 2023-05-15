@@ -351,6 +351,7 @@ ColillaPago As screen:
             TextInputVP1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =_valorPagos Or valorDedduciones1
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnChange: =
                 OnSelect: =Set(_valorPagos, TextInputVP1.Text)
@@ -379,6 +380,7 @@ ColillaPago As screen:
             TextInputVD1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnChange: =
                 OnSelect: |
@@ -407,6 +409,7 @@ ColillaPago As screen:
             TextInputVP2 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
@@ -434,6 +437,7 @@ ColillaPago As screen:
             TextInputVD2 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
@@ -448,6 +452,7 @@ ColillaPago As screen:
             TextInputVP3 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
@@ -475,6 +480,7 @@ ColillaPago As screen:
             TextInputVD3 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
@@ -501,6 +507,7 @@ ColillaPago As screen:
             TextInputVP4 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
@@ -540,6 +547,7 @@ ColillaPago As screen:
             TextInput4VD4 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
@@ -567,6 +575,7 @@ ColillaPago As screen:
             TextInputVD5 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
@@ -593,6 +602,7 @@ ColillaPago As screen:
             TextInputVP5 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
+                Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
