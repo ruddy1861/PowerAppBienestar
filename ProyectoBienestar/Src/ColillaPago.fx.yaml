@@ -107,14 +107,14 @@ ColillaPago As screen:
                 Y: =86
                 ZIndex: =8
 
-            LabelcodigoColilla As label:
+            Label23_3 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
                 Fill: =RGBA(19, 85, 110, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =44
-                Text: =LookUp(colillasPago, CedulaUser  = _VarCedula, ID + 1 )
+                Text: =
                 Width: =122
                 X: =564
                 ZIndex: =9
@@ -715,7 +715,6 @@ ColillaPago As screen:
             ForAll(DatosColillas,
             Patch(colillasPago,Defaults(colillasPago),
             {
-                  ID:  LabelcodigoColilla,
                 Cargo: LabelCargoColilla,
                 NombreUser:  LabelNombreColilla,
                 CedulaUser: TextInputCedulaColilla,
