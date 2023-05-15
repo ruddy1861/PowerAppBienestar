@@ -749,7 +749,13 @@ ColillaPago As screen:
             
             }
             ));
+            ClearCollect(collerrors, Errors(colillasPago, Defaults(colillasPago)));
+            Set(_errores, Concat(collerrors,"columna " & Column & ": "& Message &" "));
             
+            If(IsEmpty(collerrors),
+                   Notify("registro agregado",NotificationType.Success,2000),
+                   Notify(_errores,NotificationType.Error,2000)
+            );
             Reset(TextInputCedulaColilla);
             Reset(TextInputMesColilla);
             Reset(TextInputAñoColilla);
