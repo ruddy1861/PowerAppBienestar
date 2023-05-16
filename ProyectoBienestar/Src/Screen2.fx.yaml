@@ -635,7 +635,7 @@
                         Default: ="0"
                         Fill: =RGBA(241, 244, 249, 1)
                         Height: =42
-                        Items: =["2019","2020","2021","2022","2023","2024"]
+                        Items: =["2013","2019","2020","2021","2022","2023","2024"]
                         OnChange: =Set(_VarAñoColilla, ListAñoColilla.Selected.Value)
                         PressedFill: =RGBA(19, 85, 110, 1)
                         SelectionColor: =RGBA(255, 255, 255, 10)
