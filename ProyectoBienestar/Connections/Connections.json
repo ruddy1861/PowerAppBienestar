@@ -32,8 +32,7 @@
     "dependencies": {},
     "dependents": [
       "c157dfae-bd75-49e7-ad5a-1ff7d00aa96f",
-      "c9edfb0c-d5e0-4fb0-b784-597a6d4deb00",
-      "fc939be2-9f10-4449-8cb9-01057f5248ea"
+      "c9edfb0c-d5e0-4fb0-b784-597a6d4deb00"
     ],
     "id": "66eb3c18-72fa-4ead-ad1a-26a0d6e0b581"
   },
@@ -157,10 +156,7 @@
       "datosColaboradores2"
     ],
     "dependencies": {},
-    "dependents": [
-      "032823ee-a3e5-4c6c-8831-6a3a8ab28a90",
-      "2bf0af11-b2ae-4bca-989e-698c71e6b599"
-    ],
+    "dependents": [],
     "id": "d581bf5f-31bd-4882-ad3b-6535b5451719"
   }
 }

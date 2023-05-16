@@ -201,8 +201,8 @@ ColillaPagoColaborador As screen:
                 Height: =23
                 OnSelect: =Set(_VarNombre, Self.Text);
                 Text: |-
-                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
-                    //LookUp(datosColaboradores2; Nombre1 = User().FullName; Nombre1)
+                    =//LookUp(datosColaboradores2; Cedula = _VarCedula; Nombre1)
+                    LookUp(colillasPago, NombreUser = User().FullName, NombreUser)
                 Width: =228
                 Y: =40
                 ZIndex: =13
@@ -212,7 +212,7 @@ ColillaPagoColaborador As screen:
                 BorderThickness: =2
                 Height: =23
                 Text: |-
-                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Cargo)
+                    =LookUp(colillasPago, CedulaUser = _VarCedula, Cargo)
                     //LookUp(datosColaboradores2; Nombre1 = User().FullName; Cargo)
                 Width: =228
                 X: =458
@@ -223,7 +223,7 @@ ColillaPagoColaborador As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Banco)
+                Text: =LookUp(colillasPago, CedulaUser = _VarCedula, Banco)
                 Width: =228
                 X: =2
                 Y: =104
@@ -251,7 +251,7 @@ ColillaPagoColaborador As screen:
 
             TextInputCedulaColilla_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
-                Default: =""
+                Default: =LookUp(colillasPago, NombreUser = User().FullName, CedulaUser)
                 Height: =23
                 OnSelect: =Set(_VarCedula, Self.Text)
                 RadiusBottomLeft: =0
