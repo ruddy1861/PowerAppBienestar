@@ -73,40 +73,6 @@ ColillaPagoColaborador As screen:
                 Y: =44
                 ZIndex: =5
 
-            TextInputMesColilla_1 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                Default: =""
-                Fill: =RGBA(19, 85, 110, 1)
-                Height: =44
-                OnSelect: =Set(_VarMesColilla, Self.Text)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Width: =122
-                X: =564
-                Y: =44
-                ZIndex: =7
-
-            TextInputAñoColilla_1 As text:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                Default: =""
-                Fill: =RGBA(19, 85, 110, 1)
-                Height: =44
-                OnSelect: =Set(_VarAñoColilla,Self.Text)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Width: =122
-                X: =564
-                Y: =86
-                ZIndex: =8
-
             Label23_5 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -118,6 +84,32 @@ ColillaPagoColaborador As screen:
                 Width: =122
                 X: =564
                 ZIndex: =9
+
+            Label23_8 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Text: =LookUp(colillasPago, AñoColilla = _VarAñoColilla, AñoColilla)
+                Width: =122
+                X: =564
+                Y: =44
+                ZIndex: =10
+
+            Label23_9 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Text: =
+                Width: =122
+                X: =564
+                Y: =88
+                ZIndex: =11
 
         Container13_6 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
@@ -233,7 +225,7 @@ ColillaPagoColaborador As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Salario)
+                Text: =LookUp(colillasPago, CedulaUser = _VarCedula, Salario)
                 Width: =228
                 X: =230
                 Y: =104
@@ -243,7 +235,7 @@ ColillaPagoColaborador As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =24
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, DiaPago)
+                Text: =LookUp(colillasPago, CedulaUser = _VarCedula, DiaPago)
                 Width: =228
                 X: =458
                 Y: =103

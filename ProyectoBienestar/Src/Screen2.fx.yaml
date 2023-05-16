@@ -612,7 +612,7 @@
                         Y: =140
                         ZIndex: =7
 
-                    ComboBox1 As combobox:
+                    ComboBoxAñoColilla As combobox:
                         BorderColor: =RGBA(202, 202, 202, 1)
                         ChevronBackground: =RGBA(56, 96, 178, 0)
                         ChevronDisabledFill: =RGBA(244, 244, 244, 0)
@@ -623,7 +623,8 @@
                         Height: =42
                         InputTextPlaceholder: =""
                         IsSearchable: =false
-                        Items: =["2016","2017","2019","2020","2021","2022","2023"]
+                        Items: =["2019","2020","2021","2022","2023","2024"]
+                        OnChange: =Set(_VarAñoColilla, ComboBoxAñoColilla.Selected.Value)
                         PressedFill: =RGBA(19, 85, 110, 1)
                         SearchFields: =["Value"]
                         SearchItems: =[]
@@ -633,7 +634,7 @@
                         Y: =140
                         ZIndex: =8
 
-                    ComboBox1_1 As combobox:
+                    ComboBoxMescolilla As combobox:
                         BorderColor: =RGBA(202, 202, 202, 1)
                         ChevronBackground: =RGBA(56, 96, 178, 0)
                         ChevronDisabledFill: =RGBA(244, 244, 244, 0)
