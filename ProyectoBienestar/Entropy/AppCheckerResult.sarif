@@ -3714,30 +3714,6 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 7
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 7
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -7342,66 +7318,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ListMesColilla.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ListMesColilla.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ListMesColilla"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ListAñoColilla.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ListAñoColilla.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ListAñoColilla"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.ContainerFormularios.containerColillas.ComboBox1_1.AccessibleLabel"
                 }
               ],
@@ -7672,47 +7588,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App._VarComboAñoColilla"
+                  "fullyQualifiedName": "App.__VarAñoColilla"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App._VarComboAñoColilla",
+                  "fullyQualifiedName": "App.__VarAñoColilla",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "_VarComboAñoColilla",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App._VarCOMBOColilla"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App._VarCOMBOColilla",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "_VarCOMBOColilla",
+                "member": "__VarAñoColilla",
                 "module": "App",
                 "type": "App"
               }
