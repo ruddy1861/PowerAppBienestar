@@ -1,0 +1,851 @@
+ColillaPagoContador As screen:
+
+    colilla As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width/2+100
+        X: =267
+        Y: =12
+        ZIndex: =11
+
+        Container11 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Height: =130
+            Width: =686
+            X: =40
+            ZIndex: =1
+
+            Image10 As image:
+                Height: =130
+                Image: ='Logo Final'
+                Width: =120
+                X: =16
+                ZIndex: =1
+
+            Label19 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =130
+                Size: =20
+                Text: ="Colilla de Pago"
+                Width: =301
+                X: =198
+                ZIndex: =2
+
+            Label23 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Text: ="Codigo"
+                Width: =187
+                X: =499
+                ZIndex: =3
+
+            Label23_1 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Text: ="Año"
+                Width: =187
+                X: =499
+                Y: =86
+                ZIndex: =4
+
+            Label23_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Text: ="Mes"
+                Width: =187
+                X: =499
+                Y: =44
+                ZIndex: =5
+
+            TextInputMesColilla As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =""
+                Fill: =RGBA(19, 85, 110, 1)
+                Height: =44
+                OnSelect: =Set(_VarMesColilla, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Width: =122
+                X: =564
+                Y: =44
+                ZIndex: =7
+
+            TextInputAñoColilla As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =""
+                Fill: =RGBA(19, 85, 110, 1)
+                Height: =44
+                OnSelect: =Set(_VarAñoColilla,Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Width: =122
+                X: =564
+                Y: =86
+                ZIndex: =8
+
+            Label23_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(19, 85, 110, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Text: =
+                Width: =122
+                X: =564
+                ZIndex: =9
+
+        Container13 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Height: =34
+            Width: =686
+            X: =40
+            Y: =130
+            ZIndex: =2
+
+        Container13_1 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Fill: =RGBA(19, 85, 110, 1)
+            Height: =46
+            Width: =686
+            X: =40
+            Y: =164
+            ZIndex: =3
+
+            Label24 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(19, 85, 110, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =44
+                Size: =15
+                Text: ="Datos de Empleado"
+                Width: =384
+                X: =152
+                ZIndex: =1
+
+        Container15 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Height: =140
+            Width: =686
+            X: =40
+            Y: =210
+            ZIndex: =4
+
+            Label28 As label:
+                Text: |-
+                    ="Nombre:"
+                ZIndex: =1
+
+            Label28_1 As label:
+                Text: |-
+                    ="Cargo:"
+                X: =458
+                Y: =1
+                ZIndex: =2
+
+            Label28_2 As label:
+                Text: |-
+                    ="Cedula:"
+                X: =230
+                Y: =1
+                ZIndex: =3
+
+            Label28_3 As label:
+                Text: |-
+                    ="Banco:"
+                Y: =64
+                ZIndex: =4
+
+            Label28_4 As label:
+                Text: |-
+                    ="Salario:"
+                X: =228
+                Y: =63
+                ZIndex: =5
+
+            Label28_5 As label:
+                Text: |-
+                    ="Dia de pago:"
+                X: =458
+                Y: =64
+                ZIndex: =6
+
+            LabelNombreColilla As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Height: =23
+                OnSelect: =Set(_VarNombre, Self.Text);
+                Text: |-
+                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
+                    //LookUp(datosColaboradores2; Nombre1 = User().FullName; Nombre1)
+                Width: =228
+                Y: =40
+                ZIndex: =13
+
+            LabelCargoColilla As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Height: =23
+                Text: |-
+                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Cargo)
+                    //LookUp(datosColaboradores2; Nombre1 = User().FullName; Cargo)
+                Width: =228
+                X: =458
+                Y: =40
+                ZIndex: =15
+
+            LabelBancoColilla As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Height: =23
+                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Banco)
+                Width: =228
+                X: =2
+                Y: =104
+                ZIndex: =16
+
+            LabelSalarioColilla As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Height: =23
+                OnSelect: =Set(_Varsalario, Self.Text)
+                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Salario)
+                Width: =228
+                X: =230
+                Y: =104
+                ZIndex: =17
+
+            LabelDiaPagoColilla As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Height: =24
+                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, DiaPago)
+                Width: =228
+                X: =458
+                Y: =103
+                ZIndex: =18
+
+            TextInputCedulaColilla As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =23
+                OnSelect: =Set(_VarCedula, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =230
+                X: =228
+                Y: =40
+                ZIndex: =19
+
+        Container13_2 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Fill: =RGBA(19, 85, 110, 1)
+            Height: =42
+            Width: =686
+            X: =40
+            Y: =392
+            ZIndex: =5
+
+            Label24_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                ContentLanguage: =Parent.Width/4
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =15
+                Text: ="Descripcion"
+                Width: =173
+                ZIndex: =1
+
+            Label24_2 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                ContentLanguage: =Parent.Width/4
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =15
+                Text: ="Valor"
+                Width: =171
+                X: =173
+                ZIndex: =2
+
+            Label24_3 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                ContentLanguage: =Parent.Width/4
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =15
+                Text: ="Descripcion"
+                Width: =Parent.Width/4
+                X: =344
+                ZIndex: =3
+
+            Label24_4 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                ContentLanguage: =Parent.Width/4
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =15
+                Text: ="Valor"
+                Width: =Parent.Width/4
+                X: =515
+                ZIndex: =4
+
+        Container13_3 As groupContainer.manualLayoutContainer:
+            BorderThickness: =3
+            Fill: =RGBA(19, 85, 110, 1)
+            Height: =160
+            Width: =686
+            X: =40
+            Y: =434
+            ZIndex: =6
+
+            TextInputDP1 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                Y: =4
+                ZIndex: =24
+
+            TextInputVP1 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =_valorPagos Or valorDedduciones1
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnChange: =
+                OnSelect: =Set(_valorPagos, TextInputVP1.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =173
+                Y: =4
+                ZIndex: =25
+
+            TextInputDD1 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =344
+                Y: =4
+                ZIndex: =26
+
+            TextInputVD1 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnChange: =
+                OnSelect: |
+                    =Set(valorDedduciones1, TextInputVD1.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =515
+                Y: =4
+                ZIndex: =27
+
+            TextInputDP2 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                Y: =34
+                ZIndex: =28
+
+            TextInputVP2 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =173
+                Y: =34
+                ZIndex: =29
+
+            TextInputDD2 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =344
+                Y: =34
+                ZIndex: =30
+
+            TextInputVD2 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =515
+                Y: =34
+                ZIndex: =31
+
+            TextInputVP3 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =173
+                Y: =64
+                ZIndex: =32
+
+            TextInputDD3 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =344
+                Y: =64
+                ZIndex: =33
+
+            TextInputVD3 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =515
+                Y: =64
+                ZIndex: =34
+
+            TextInputDP3 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                Y: =64
+                ZIndex: =35
+
+            TextInputVP4 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =173
+                Y: =94
+                ZIndex: =36
+
+            TextInputDD4 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =344
+                Y: =94
+                ZIndex: =37
+
+            TextInputDP4 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                Y: =94
+                ZIndex: =38
+
+            TextInput4VD4 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =515
+                Y: =94
+                ZIndex: =39
+
+            TextInputDD5 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =344
+                Y: =126
+                ZIndex: =40
+
+            TextInputVD5 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorDedduciones, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =515
+                Y: =126
+                ZIndex: =41
+
+            TextInputDP5 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Height: =Parent.Height/5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                Y: =126
+                ZIndex: =42
+
+            TextInputVP5 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =""
+                Format: =TextFormat.Number
+                Height: =Parent.Height/5
+                OnSelect: =Set(_valorPagos, Self.Text)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width/4
+                X: =173
+                Y: =126
+                ZIndex: =43
+
+        Container13_4 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Fill: =RGBA(19, 85, 110, 1)
+            Height: =30
+            Width: =686
+            X: =40
+            Y: =594
+            ZIndex: =7
+
+            Label30 As label:
+                Align: =Align.Right
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =30
+                Size: =15
+                Text: ="Total de pago"
+                Width: =465
+                ZIndex: =1
+
+            LabelTotalPago As label:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =30
+                OnSelect: =
+                Text: =resultado
+                Width: =171
+                X: =515
+                ZIndex: =2
+
+        Container17 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            ContentLanguage: =
+            Height: =122
+            Width: =686
+            X: =40
+            Y: =624
+            ZIndex: =8
+
+            Label32_1 As label:
+                Text: |-
+                    ="Autorizado por:"
+                X: =28
+                Y: =8
+                ZIndex: =2
+
+            ImagenFirma As image:
+                Height: =65
+                Image: ='20230424_170118'
+                ImagePosition: =ImagePosition.Stretch
+                Width: =227
+                X: =28
+                Y: =48
+                ZIndex: =3
+
+        Container13_5 As groupContainer.manualLayoutContainer:
+            BorderThickness: =2
+            Fill: =RGBA(19, 85, 110, 1)
+            Height: =42
+            Width: =686
+            X: =40
+            Y: =350
+            ZIndex: =9
+
+            Label24_5 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                ContentLanguage: =Parent.Width/4
+                FocusedBorderThickness: =2
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =15
+                Text: ="Pagos"
+                Width: =Parent.Width/2
+                ZIndex: =1
+
+            Label24_7 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                ContentLanguage: =Parent.Width/4
+                FontWeight: =FontWeight.Semibold
+                Height: =42
+                Size: =15
+                Text: ="Deducciones"
+                Width: =Parent.Width/2
+                X: =343
+                ZIndex: =3
+
+    Button3_4 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =//Set(_popUpEnviarCorreo; true);;
+            /*Set(_PdfColilla; GuardarPdfDB.Run(Now();LabelcodigoColilla.Text;TextInputCedulaColilla.Text;LabelNombreColilla.Text;TextInputMesColilla.Text;TextInputAñoColilla.Text;{file:{name:"colillaPago.pdf";contentBytes: PDF(ColillaPago)}}));;*/
+            
+            Patch(colillasPago,Defaults(colillasPago),
+            {
+                Cargo: LabelCargoColilla.Text,
+                NombreUser:  LabelNombreColilla.Text,
+                CedulaUser: TextInputCedulaColilla.Text,
+                MesColilla: TextInputMesColilla.Text,
+                AñoColilla: TextInputAñoColilla.Text, 
+                Banco: LabelBancoColilla.Text,
+                Salario: LabelSalarioColilla.Text,
+                DiaPago: LabelDiaPagoColilla.Text,
+                Descripcion1Pagos: TextInputDP1.Text,
+                Descripcion2Pagos: TextInputDP2.Text,
+                Descripcion3Pagos: TextInputDP3.Text,
+                Descripcion4Pagos: TextInputDP4.Text,
+                Descripcion5Pagos: TextInputDP5.Text,
+                ValorPago1: Value(TextInputVP1.Text),
+                ValorPago2: Value(TextInputVP2.Text),
+                ValorPago3: Value(TextInputVP3.Text),
+                ValorPago4: Value(TextInputVP4.Text),
+                ValorPago5: Value(TextInputVP5.Text),
+                Descripcion1Dedu: TextInputDD1.Text,
+                Descripcion2Dedu: TextInputDD2.Text,
+                Descripcion3Dedu: TextInputDD3.Text,
+                Descripcion4Dedu: TextInputDD4.Text,
+                Descripcion5Dedu: TextInputDD5.Text,
+                ValorDedu1: Value(TextInputVD1.Text),
+                Valor2Dedu: Value(TextInputVD2.Text),
+                Valor3Dedu: Value(TextInputVD3.Text),
+                ValorDedu4: Value(TextInput4VD4.Text),
+                ValorDedu5: Value(TextInputVD5.Text),
+                TotalPagos: Value(LabelTotalPago.Text),
+                FechaCreacion: Today()
+            
+            }
+            );
+            /*ClearCollect(collerrors; Errors(colillasPago; Defaults(colillasPago)));;
+            Set(_errores; Concat(collerrors;"columna " & Column & ": "& Message &" "));;
+            
+            If(IsEmpty(collerrors);
+                   Notify("registro agregado";NotificationType.Success;2000);
+                   Notify(_errores;NotificationType.Error;2000)
+            );;*/
+            Reset(TextInputCedulaColilla);
+            Reset(TextInputMesColilla);
+            Reset(TextInputAñoColilla);
+            Reset(TextInputCedulaColilla);
+            Reset(TextInputMesColilla);
+            Reset(TextInputDP1);
+            Reset(TextInputDP2);
+            Reset(TextInputDP3);
+            Reset(TextInputDP4);
+            Reset(TextInputDP5);
+            Reset(TextInputVP1);
+            Reset(TextInputVP2);
+            Reset(TextInputVP3);
+            Reset(TextInputVP4);
+            Reset(TextInputVP5);
+            Reset(TextInputDD1);
+            Reset(TextInputDD2);
+            Reset(TextInputDD3);
+            Reset(TextInputDD4);
+            Reset(TextInputDD5);
+            Reset(TextInputVD1);
+            Reset(TextInputVD2);
+            Reset(TextInputVD3);
+            Reset(TextInput4VD4);
+            Reset(TextInputVD5);
+        Text: ="Guardar"
+        Visible: =_Boton
+        X: =52
+        Y: =44
+        ZIndex: =12
+
+    Button3_5 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |
+            =//Set(_popUpEnviarCorreo; true);;
+            Set(ValorSalario ,LookUp(colillasPago, Salario = Value(LabelSalarioColilla.Text));
+            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)+ ValorSalario});
+            
+            
+            /*Collect(
+                DatosColillas;
+                {
+                    Cargo: LabelCargoColilla;
+                    NombreUser: LabelNombreColilla;
+                    CedulaUser: TextInputCedulaColilla;
+                    MesColilla: TextInputMesColilla;
+                    AñoColilla: TextInputAñoColilla;
+                    Banco: LabelBancoColilla;
+                    Salario: LabelSalarioColilla;
+                    DiaPago: LabelDiaPagoColilla;
+                    Descripcion1Pagos: TextInputDP1;
+                    Descripcion2Pagos: TextInputDP2;
+                    Descripcion3Pagos: TextInputDP3;
+                    Descripcion4Pagos: TextInputDP4;
+                    Descripcion5Pagos: TextInputDP5;
+                    ValorPago1: TextInputVP1;
+                    ValorPago2: TextInputVP2;
+                    ValorPago3: TextInputVP3;
+                    ValorPago4: TextInputVP4;
+                    ValorPago5: TextInputVP5;
+                    Descripcion1Dedu: TextInputDD1;
+                    Descripcion2Dedu: TextInputDD2;
+                    Descripcion3Dedu: TextInputDD3;
+                    Descripcion4Dedu: TextInputDD4;
+                    Descripcion5Dedu: TextInputDD5;
+                    ValorDedu1: TextInputVD1;
+                    Valor2Dedu: TextInputVD2;
+                    Valor3Dedu: TextInputVD3;
+                    ValorDedu4: TextInput4VD4;
+                    ValorDedu5: TextInputVD5;
+                    TotalPagos: LabelTotalPago;
+                    FechaCreacion: Today()
+                }
+            );;*/
+        Text: ="Calcular"
+        Visible: =_Boton
+        X: =52
+        Y: =125
+        ZIndex: =13
+
+    Button3_6 As button:
+        Fill: =RGBA(19, 85, 110, 1)
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |+
+            =//Set(_popUpEnviarCorreo; true);;
+            Navigate(Screen2)
+            
+        Text: ="Volver"
+        Visible: =_Boton
+        X: =52
+        Y: =213
+        ZIndex: =14
+

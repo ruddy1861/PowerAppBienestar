@@ -1,27 +1,27 @@
-ColillaPago As screen:
+ColillaPago_1 As screen:
 
-    colilla As groupContainer.manualLayoutContainer:
+    colilla_1 As groupContainer.manualLayoutContainer:
         Height: =Parent.Height
         Width: =Parent.Width/2+100
         X: =267
         Y: =12
         ZIndex: =11
 
-        Container11 As groupContainer.manualLayoutContainer:
+        Container11_1 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Height: =130
             Width: =686
             X: =40
             ZIndex: =1
 
-            Image10 As image:
+            Image10_1 As image:
                 Height: =130
                 Image: ='Logo Final'
                 Width: =120
                 X: =16
                 ZIndex: =1
 
-            Label19 As label:
+            Label19_1 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -35,7 +35,7 @@ ColillaPago As screen:
                 X: =198
                 ZIndex: =2
 
-            Label23 As label:
+            Label23_4 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
@@ -47,7 +47,7 @@ ColillaPago As screen:
                 X: =499
                 ZIndex: =3
 
-            Label23_1 As label:
+            Label23_7 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
@@ -60,7 +60,7 @@ ColillaPago As screen:
                 Y: =86
                 ZIndex: =4
 
-            Label23_2 As label:
+            Label23_6 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
@@ -73,7 +73,7 @@ ColillaPago As screen:
                 Y: =44
                 ZIndex: =5
 
-            TextInputMesColilla As text:
+            TextInputMesColilla_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =""
@@ -90,7 +90,7 @@ ColillaPago As screen:
                 Y: =44
                 ZIndex: =7
 
-            TextInputAñoColilla As text:
+            TextInputAñoColilla_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =""
@@ -107,7 +107,7 @@ ColillaPago As screen:
                 Y: =86
                 ZIndex: =8
 
-            Label23_3 As label:
+            Label23_5 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
@@ -119,7 +119,7 @@ ColillaPago As screen:
                 X: =564
                 ZIndex: =9
 
-        Container13 As groupContainer.manualLayoutContainer:
+        Container13_6 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Height: =34
             Width: =686
@@ -127,7 +127,7 @@ ColillaPago As screen:
             Y: =130
             ZIndex: =2
 
-        Container13_1 As groupContainer.manualLayoutContainer:
+        Container13_7 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Fill: =RGBA(19, 85, 110, 1)
             Height: =46
@@ -136,7 +136,7 @@ ColillaPago As screen:
             Y: =164
             ZIndex: =3
 
-            Label24 As label:
+            Label24_6 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(19, 85, 110, 1)
                 Color: =RGBA(255, 255, 255, 1)
@@ -148,7 +148,7 @@ ColillaPago As screen:
                 X: =152
                 ZIndex: =1
 
-        Container15 As groupContainer.manualLayoutContainer:
+        Container15_1 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Height: =140
             Width: =686
@@ -156,46 +156,46 @@ ColillaPago As screen:
             Y: =210
             ZIndex: =4
 
-            Label28 As label:
+            Label28_6 As label:
                 Text: |-
                     ="Nombre:"
                 ZIndex: =1
 
-            Label28_1 As label:
+            Label28_8 As label:
                 Text: |-
                     ="Cargo:"
                 X: =458
                 Y: =1
                 ZIndex: =2
 
-            Label28_2 As label:
+            Label28_7 As label:
                 Text: |-
                     ="Cedula:"
                 X: =230
                 Y: =1
                 ZIndex: =3
 
-            Label28_3 As label:
+            Label28_10 As label:
                 Text: |-
                     ="Banco:"
                 Y: =64
                 ZIndex: =4
 
-            Label28_4 As label:
+            Label28_9 As label:
                 Text: |-
                     ="Salario:"
                 X: =228
                 Y: =63
                 ZIndex: =5
 
-            Label28_5 As label:
+            Label28_11 As label:
                 Text: |-
                     ="Dia de pago:"
                 X: =458
                 Y: =64
                 ZIndex: =6
 
-            LabelNombreColilla As label:
+            LabelNombreColilla_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
@@ -207,7 +207,7 @@ ColillaPago As screen:
                 Y: =40
                 ZIndex: =13
 
-            LabelCargoColilla As label:
+            LabelCargoColilla_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
@@ -219,7 +219,7 @@ ColillaPago As screen:
                 Y: =40
                 ZIndex: =15
 
-            LabelBancoColilla As label:
+            LabelBancoColilla_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
@@ -229,7 +229,7 @@ ColillaPago As screen:
                 Y: =104
                 ZIndex: =16
 
-            LabelSalarioColilla As label:
+            LabelSalarioColilla_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
@@ -239,7 +239,7 @@ ColillaPago As screen:
                 Y: =104
                 ZIndex: =17
 
-            LabelDiaPagoColilla As label:
+            LabelDiaPagoColilla_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =24
@@ -249,7 +249,7 @@ ColillaPago As screen:
                 Y: =103
                 ZIndex: =18
 
-            TextInputCedulaColilla As text:
+            TextInputCedulaColilla_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =23
@@ -263,7 +263,7 @@ ColillaPago As screen:
                 Y: =40
                 ZIndex: =19
 
-        Container13_2 As groupContainer.manualLayoutContainer:
+        Container13_9 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Fill: =RGBA(19, 85, 110, 1)
             Height: =42
@@ -272,7 +272,7 @@ ColillaPago As screen:
             Y: =392
             ZIndex: =5
 
-            Label24_1 As label:
+            Label24_10 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -285,7 +285,7 @@ ColillaPago As screen:
                 Width: =173
                 ZIndex: =1
 
-            Label24_2 As label:
+            Label24_11 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -299,7 +299,7 @@ ColillaPago As screen:
                 X: =173
                 ZIndex: =2
 
-            Label24_3 As label:
+            Label24_12 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -313,7 +313,7 @@ ColillaPago As screen:
                 X: =344
                 ZIndex: =3
 
-            Label24_4 As label:
+            Label24_13 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -324,10 +324,10 @@ ColillaPago As screen:
                 Size: =15
                 Text: ="Valor"
                 Width: =Parent.Width/4
-                X: =515
+                X: =514.5
                 ZIndex: =4
 
-        Container13_3 As groupContainer.manualLayoutContainer:
+        Container13_10 As groupContainer.manualLayoutContainer:
             BorderThickness: =3
             Fill: =RGBA(19, 85, 110, 1)
             Height: =160
@@ -336,7 +336,7 @@ ColillaPago As screen:
             Y: =434
             ZIndex: =6
 
-            TextInputDP1 As text:
+            TextInputDP1_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -348,13 +348,13 @@ ColillaPago As screen:
                 Y: =4
                 ZIndex: =24
 
-            TextInputVP1 As text:
+            TextInputVP1_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =_valorPagos Or valorDedduciones1
                 Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnChange: =
-                OnSelect: =Set(_valorPagos, TextInputVP1.Text)
+                OnSelect: =Set(_valorPagos, TextInputVP1_1.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -364,7 +364,7 @@ ColillaPago As screen:
                 Y: =4
                 ZIndex: =25
 
-            TextInputDD1 As text:
+            TextInputDD1_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -377,24 +377,24 @@ ColillaPago As screen:
                 Y: =4
                 ZIndex: =26
 
-            TextInputVD1 As text:
+            TextInputVD1_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =
                 Format: =TextFormat.Number
                 Height: =Parent.Height/5
                 OnChange: =
                 OnSelect: |
-                    =Set(valorDedduciones1, TextInputVD1.Text)
+                    =Set(valorDedduciones1, TextInputVD1_1.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =515
+                X: =514.5
                 Y: =4
                 ZIndex: =27
 
-            TextInputDP2 As text:
+            TextInputDP2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -406,7 +406,7 @@ ColillaPago As screen:
                 Y: =34
                 ZIndex: =28
 
-            TextInputVP2 As text:
+            TextInputVP2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -421,7 +421,7 @@ ColillaPago As screen:
                 Y: =34
                 ZIndex: =29
 
-            TextInputDD2 As text:
+            TextInputDD2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -434,7 +434,7 @@ ColillaPago As screen:
                 Y: =34
                 ZIndex: =30
 
-            TextInputVD2 As text:
+            TextInputVD2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -445,11 +445,11 @@ ColillaPago As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =515
+                X: =514.5
                 Y: =34
                 ZIndex: =31
 
-            TextInputVP3 As text:
+            TextInputVP3_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -464,7 +464,7 @@ ColillaPago As screen:
                 Y: =64
                 ZIndex: =32
 
-            TextInputDD3 As text:
+            TextInputDD3_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -477,7 +477,7 @@ ColillaPago As screen:
                 Y: =64
                 ZIndex: =33
 
-            TextInputVD3 As text:
+            TextInputVD3_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -488,11 +488,11 @@ ColillaPago As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =515
+                X: =514.5
                 Y: =64
                 ZIndex: =34
 
-            TextInputDP3 As text:
+            TextInputDP3_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -504,7 +504,7 @@ ColillaPago As screen:
                 Y: =64
                 ZIndex: =35
 
-            TextInputVP4 As text:
+            TextInputVP4_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -519,7 +519,7 @@ ColillaPago As screen:
                 Y: =94
                 ZIndex: =36
 
-            TextInputDD4 As text:
+            TextInputDD4_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -532,7 +532,7 @@ ColillaPago As screen:
                 Y: =94
                 ZIndex: =37
 
-            TextInputDP4 As text:
+            TextInputDP4_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -544,7 +544,7 @@ ColillaPago As screen:
                 Y: =94
                 ZIndex: =38
 
-            TextInput4VD4 As text:
+            TextInput4VD4_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -555,11 +555,11 @@ ColillaPago As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =515
+                X: =514.5
                 Y: =94
                 ZIndex: =39
 
-            TextInputDD5 As text:
+            TextInputDD5_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -572,7 +572,7 @@ ColillaPago As screen:
                 Y: =126
                 ZIndex: =40
 
-            TextInputVD5 As text:
+            TextInputVD5_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -583,11 +583,11 @@ ColillaPago As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =515
+                X: =514.5
                 Y: =126
                 ZIndex: =41
 
-            TextInputDP5 As text:
+            TextInputDP5_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Height: =Parent.Height/5
@@ -599,7 +599,7 @@ ColillaPago As screen:
                 Y: =126
                 ZIndex: =42
 
-            TextInputVP5 As text:
+            TextInputVP5_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
@@ -614,7 +614,7 @@ ColillaPago As screen:
                 Y: =126
                 ZIndex: =43
 
-        Container13_4 As groupContainer.manualLayoutContainer:
+        Container13_11 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Fill: =RGBA(19, 85, 110, 1)
             Height: =30
@@ -623,7 +623,7 @@ ColillaPago As screen:
             Y: =594
             ZIndex: =7
 
-            Label30 As label:
+            Label30_1 As label:
                 Align: =Align.Right
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =30
@@ -632,7 +632,7 @@ ColillaPago As screen:
                 Width: =465
                 ZIndex: =1
 
-            LabelTotalPago As label:
+            LabelTotalPago_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
@@ -643,7 +643,7 @@ ColillaPago As screen:
                 X: =515
                 ZIndex: =2
 
-        Container17 As groupContainer.manualLayoutContainer:
+        Container17_1 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             ContentLanguage: =
             Height: =122
@@ -652,14 +652,14 @@ ColillaPago As screen:
             Y: =624
             ZIndex: =8
 
-            Label32_1 As label:
+            Label32_2 As label:
                 Text: |-
                     ="Autorizado por:"
                 X: =28
                 Y: =8
                 ZIndex: =2
 
-            ImagenFirma As image:
+            ImagenFirma_1 As image:
                 Height: =65
                 Image: ='20230424_170118'
                 ImagePosition: =ImagePosition.Stretch
@@ -668,7 +668,7 @@ ColillaPago As screen:
                 Y: =48
                 ZIndex: =3
 
-        Container13_5 As groupContainer.manualLayoutContainer:
+        Container13_8 As groupContainer.manualLayoutContainer:
             BorderThickness: =2
             Fill: =RGBA(19, 85, 110, 1)
             Height: =42
@@ -677,7 +677,7 @@ ColillaPago As screen:
             Y: =350
             ZIndex: =9
 
-            Label24_5 As label:
+            Label24_8 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -691,7 +691,7 @@ ColillaPago As screen:
                 Width: =Parent.Width/2
                 ZIndex: =1
 
-            Label24_7 As label:
+            Label24_9 As label:
                 Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
@@ -705,7 +705,7 @@ ColillaPago As screen:
                 X: =343
                 ZIndex: =3
 
-    Button3_4 As button:
+    Button3_7 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
@@ -714,7 +714,7 @@ ColillaPago As screen:
             
             Patch(colillasPago,Defaults(colillasPago),
             {
-                Cargo: LabelCargoColilla.Text,
+                Cargo: LabelCargoColilla_1.Text,
                 NombreUser:  LabelNombreColilla.Text,
                 CedulaUser: TextInputCedulaColilla.Text,
                 MesColilla: TextInputMesColilla.Text,
@@ -785,12 +785,12 @@ ColillaPago As screen:
         Y: =44
         ZIndex: =12
 
-    Button3_5 As button:
+    Button3_8 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)});
+            UpdateContext({resultado: (TextInputVP1_1 + TextInputVP2_1 + TextInputVP3_1 + TextInputVP4_1 + TextInputVP5_1) - (TextInputVD1_1 + TextInputVD2_1 + TextInputVD3_1 + TextInput4VD4_1+TextInputVD5_1)});
             
             
             /*Collect(
@@ -834,7 +834,7 @@ ColillaPago As screen:
         Y: =125
         ZIndex: =13
 
-    Button3_6 As button:
+    Button3_9 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |+

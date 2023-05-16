@@ -656,7 +656,7 @@
                         Fill: =RGBA(31, 140, 153, 1)
                         HoverFill: =ColorFade(RGBA(19, 85, 110, 1), -20%)
                         OnSelect: |-
-                            =Navigate(ColillaPago);
+                            =Navigate(ColillaPagoContador);
                             Set(_popUpEnviarCorreo, true);
                             Set(_Boton, true)
                         Text: ="Crear Colilla"
