@@ -657,8 +657,8 @@ ColillaPagoColaborador As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =Set(_popUpEnviarCorreo, true);
-            Reset(ComboBoxAñoColilla);
-            Reset(ComboBoxMescolilla)
+            Reset(ListAñoColilla);
+            Reset(ListMesColilla)
         Text: ="Aprobar"
         Visible: =_BotonAprobado
         X: =40
