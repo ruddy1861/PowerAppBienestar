@@ -3930,7 +3930,7 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 1526,
+                  "charOffset": 1524,
                   "snippet": {
                     "text": ""
                   }
@@ -3971,7 +3971,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 82,
+                  "charOffset": 81,
                   "snippet": {
                     "text": "="
                   }
@@ -3996,46 +3996,6 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColillaPagoContador.Button3_5.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColillaPagoContador.Button3_5.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 298,
-                  "snippet": {
-                    "text": "ValorSalario"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ColillaPagoContador",
-                "type": "ColillaPagoContador.Button3_5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ValorSalario"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
         },
         {
           "locations": [

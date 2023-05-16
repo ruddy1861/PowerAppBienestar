@@ -791,8 +791,8 @@ ColillaPagoContador As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            Set(ValorSalario ,LookUp(colillasPago, Salario = Value(LabelSalarioColilla.Text));
-            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)+ ValorSalario});
+            Set(_Varsalario ,LookUp(colillasPago, Salario = Value(LabelSalarioColilla.Text));
+            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)+ _Varsalario});
             
             
             /*Collect(
