@@ -1,4 +1,4 @@
-ColillaPago_1 As screen:
+ColillaPagoColaborador As screen:
 
     colilla_1 As groupContainer.manualLayoutContainer:
         Height: =Parent.Height
@@ -324,7 +324,7 @@ ColillaPago_1 As screen:
                 Size: =15
                 Text: ="Valor"
                 Width: =Parent.Width/4
-                X: =514.5
+                X: =515
                 ZIndex: =4
 
         Container13_10 As groupContainer.manualLayoutContainer:
@@ -352,7 +352,7 @@ ColillaPago_1 As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =_valorPagos Or valorDedduciones1
                 Format: =TextFormat.Number
-                Height: =Parent.Height/5
+                Height: =28
                 OnChange: =
                 OnSelect: =Set(_valorPagos, TextInputVP1_1.Text)
                 RadiusBottomLeft: =0
@@ -367,7 +367,7 @@ ColillaPago_1 As screen:
             TextInputDD1_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
-                Height: =Parent.Height/5
+                Height: =28
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -381,7 +381,7 @@ ColillaPago_1 As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =
                 Format: =TextFormat.Number
-                Height: =Parent.Height/5
+                Height: =28
                 OnChange: =
                 OnSelect: |
                     =Set(valorDedduciones1, TextInputVD1_1.Text)
@@ -390,7 +390,7 @@ ColillaPago_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =514.5
+                X: =515
                 Y: =4
                 ZIndex: =27
 
@@ -403,14 +403,14 @@ ColillaPago_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                Y: =34
+                Y: =32
                 ZIndex: =28
 
             TextInputVP2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
-                Height: =Parent.Height/5
+                Height: =34
                 OnSelect: =Set(_valorPagos, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -418,35 +418,35 @@ ColillaPago_1 As screen:
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
                 X: =173
-                Y: =34
+                Y: =32
                 ZIndex: =29
 
             TextInputDD2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
-                Height: =Parent.Height/5
+                Height: =34
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
                 X: =344
-                Y: =34
+                Y: =32
                 ZIndex: =30
 
             TextInputVD2_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
                 Format: =TextFormat.Number
-                Height: =Parent.Height/5
+                Height: =32
                 OnSelect: =Set(_valorDedduciones, Self.Text)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =514.5
-                Y: =34
+                X: =515
+                Y: =32
                 ZIndex: =31
 
             TextInputVP3_1 As text:
@@ -488,19 +488,20 @@ ColillaPago_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =514.5
+                X: =
                 Y: =64
                 ZIndex: =34
 
             TextInputDP3_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
-                Height: =Parent.Height/5
+                Height: =30
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
+                X: =515
                 Y: =64
                 ZIndex: =35
 
@@ -555,7 +556,7 @@ ColillaPago_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =514.5
+                X: =515
                 Y: =94
                 ZIndex: =39
 
@@ -583,19 +584,20 @@ ColillaPago_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
-                X: =514.5
+                X: =
                 Y: =126
                 ZIndex: =41
 
             TextInputDP5_1 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 Default: =""
-                Height: =Parent.Height/5
+                Height: =32
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Width: =Parent.Width/4
+                X: =515
                 Y: =126
                 ZIndex: =42
 
@@ -638,7 +640,7 @@ ColillaPago_1 As screen:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =30
                 OnSelect: =
-                Text: =resultado
+                Text: =""
                 Width: =171
                 X: =515
                 ZIndex: =2
@@ -708,142 +710,83 @@ ColillaPago_1 As screen:
     Button3_7 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |-
-            =//Set(_popUpEnviarCorreo; true);;
-            /*Set(_PdfColilla; GuardarPdfDB.Run(Now();LabelcodigoColilla.Text;TextInputCedulaColilla.Text;LabelNombreColilla.Text;TextInputMesColilla.Text;TextInputAñoColilla.Text;{file:{name:"colillaPago.pdf";contentBytes: PDF(ColillaPago)}}));;*/
-            
-            Patch(colillasPago,Defaults(colillasPago),
-            {
-                Cargo: LabelCargoColilla_1.Text,
-                NombreUser:  LabelNombreColilla.Text,
-                CedulaUser: TextInputCedulaColilla.Text,
-                MesColilla: TextInputMesColilla.Text,
-                AñoColilla: TextInputAñoColilla.Text, 
-                Banco: LabelBancoColilla.Text,
-                Salario: LabelSalarioColilla.Text,
-                DiaPago: LabelDiaPagoColilla.Text,
-                Descripcion1Pagos: TextInputDP1.Text,
-                Descripcion2Pagos: TextInputDP2.Text,
-                Descripcion3Pagos: TextInputDP3.Text,
-                Descripcion4Pagos: TextInputDP4.Text,
-                Descripcion5Pagos: TextInputDP5.Text,
-                ValorPago1: Value(TextInputVP1.Tex)t,
-                ValorPago2: TextInputVP2.Text,
-                ValorPago3: TextInputVP3.Text,
-                ValorPago4: TextInputVP4.Text,
-                ValorPago5: TextInputVP5.Text,
-                Descripcion1Dedu: TextInputDD1.Text,
-                Descripcion2Dedu: TextInputDD2.Text,
-                Descripcion3Dedu: TextInputDD3.Text,
-                Descripcion4Dedu: TextInputDD4.Text,
-                Descripcion5Dedu: TextInputDD5.Text,
-                ValorDedu1: Value(TextInputVD1.Text),
-                Valor2Dedu: Value(TextInputVD2.Text),
-                Valor3Dedu: Value(TextInputVD3.Text,
-                ValorDedu4: Value(TextInput4VD4.Text),
-                ValorDedu5: Value(TextInputVD5.Text),
-                TotalPagos: LabelTotalPago.Text,
-                FechaCreacion: Today()
-            
-            }
-            );
-            /*ClearCollect(collerrors; Errors(colillasPago; Defaults(colillasPago)));;
-            Set(_errores; Concat(collerrors;"columna " & Column & ": "& Message &" "));;
-            
-            If(IsEmpty(collerrors);
-                   Notify("registro agregado";NotificationType.Success;2000);
-                   Notify(_errores;NotificationType.Error;2000)
-            );;*/
-            Reset(TextInputCedulaColilla);
-            Reset(TextInputMesColilla);
-            Reset(TextInputAñoColilla);
-            Reset(TextInputCedulaColilla);
-            Reset(TextInputMesColilla);
-            Reset(TextInputDP1);
-            Reset(TextInputDP2);
-            Reset(TextInputDP3);
-            Reset(TextInputDP4);
-            Reset(TextInputDP5);
-            Reset(TextInputVP1);
-            Reset(TextInputVP2);
-            Reset(TextInputVP3);
-            Reset(TextInputVP4);
-            Reset(TextInputVP5);
-            Reset(TextInputDD1);
-            Reset(TextInputDD2);
-            Reset(TextInputDD3);
-            Reset(TextInputDD4);
-            Reset(TextInputDD5);
-            Reset(TextInputVD1);
-            Reset(TextInputVD2);
-            Reset(TextInputVD3);
-            Reset(TextInput4VD4);
-            Reset(TextInputVD5);
-        Text: ="Guardar"
-        Visible: =_Boton
-        X: =52
-        Y: =44
+        OnSelect: =Set(_popUpEnviarCorreo, true)
+        Text: ="Aprobar"
+        Visible: =_BotonAprobado
+        X: =40
+        Y: =40
         ZIndex: =12
 
-    Button3_8 As button:
+    Rectangle3_4 As rectangle:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        BorderThickness: =2
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =509
+        Visible: =_popUpEnviarCorreo
+        Width: =627
+        X: =390
+        Y: =124
+        ZIndex: =13
+
+    TextInput1_8 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Asunto"
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =256
+        ZIndex: =14
+
+    TextInput3_4 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: ="Cuerpo del mail"
+        Height: =130
+        LineHeight: =0
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =314
+        ZIndex: =15
+
+    Button2_8 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
-            =//Set(_popUpEnviarCorreo; true);;
-            UpdateContext({resultado: (TextInputVP1_1 + TextInputVP2_1 + TextInputVP3_1 + TextInputVP4_1 + TextInputVP5_1) - (TextInputVD1_1 + TextInputVD2_1 + TextInputVD3_1 + TextInput4VD4_1+TextInputVD5_1)});
-            
-            
-            /*Collect(
-                DatosColillas;
-                {
-                    Cargo: LabelCargoColilla;
-                    NombreUser: LabelNombreColilla;
-                    CedulaUser: TextInputCedulaColilla;
-                    MesColilla: TextInputMesColilla;
-                    AñoColilla: TextInputAñoColilla;
-                    Banco: LabelBancoColilla;
-                    Salario: LabelSalarioColilla;
-                    DiaPago: LabelDiaPagoColilla;
-                    Descripcion1Pagos: TextInputDP1;
-                    Descripcion2Pagos: TextInputDP2;
-                    Descripcion3Pagos: TextInputDP3;
-                    Descripcion4Pagos: TextInputDP4;
-                    Descripcion5Pagos: TextInputDP5;
-                    ValorPago1: TextInputVP1;
-                    ValorPago2: TextInputVP2;
-                    ValorPago3: TextInputVP3;
-                    ValorPago4: TextInputVP4;
-                    ValorPago5: TextInputVP5;
-                    Descripcion1Dedu: TextInputDD1;
-                    Descripcion2Dedu: TextInputDD2;
-                    Descripcion3Dedu: TextInputDD3;
-                    Descripcion4Dedu: TextInputDD4;
-                    Descripcion5Dedu: TextInputDD5;
-                    ValorDedu1: TextInputVD1;
-                    Valor2Dedu: TextInputVD2;
-                    Valor3Dedu: TextInputVD3;
-                    ValorDedu4: TextInput4VD4;
-                    ValorDedu5: TextInputVD5;
-                    TotalPagos: LabelTotalPago;
-                    FechaCreacion: Today()
-                }
-            );;*/
-        Text: ="Calcular"
-        Visible: =_Boton
-        X: =52
-        Y: =125
-        ZIndex: =13
+            =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
+            Set(_BotonAprobado, false);
+            Set(_popUpEnviarCorreo, false);
+            pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPagoColaborador)}}));
+            Navigate(Screen2);
+        Text: ="Enviar Correo"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =478
+        ZIndex: =16
 
-    Button3_9 As button:
+    Button2_9 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |+
-            =//Set(_popUpEnviarCorreo; true);;
-            Navigate(Screen2)
-            
-        Text: ="Volver"
-        Visible: =_Boton
-        X: =52
-        Y: =213
-        ZIndex: =14
+        OnSelect: =Navigate(Screen2)
+        Text: ="Cancelar"
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =539
+        Y: =533
+        ZIndex: =17
+
+    TextInput1_9 As text:
+        BorderColor: =RGBA(19, 85, 110, 1)
+        Default: =User().Email
+        Height: =42
+        Visible: =_popUpEnviarCorreo
+        Width: =328
+        X: =537
+        Y: =201
+        ZIndex: =18
 
