@@ -92,7 +92,7 @@ ColillaPagoColaborador As screen:
                 Fill: =RGBA(19, 85, 110, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =44
-                Text: =LookUp(colillasPago, MesColilla = _VarCOMBOColilla && NombreUser = User().FullName, MesColilla)
+                Text: =LookUp(colillasPago, MesColilla = _VarMesColilla && NombreUser = User().FullName, MesColilla)
                 Width: =122
                 X: =564
                 Y: =44
@@ -105,7 +105,7 @@ ColillaPagoColaborador As screen:
                 Fill: =RGBA(19, 85, 110, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =42
-                Text: =LookUp(colillasPago, AñoColilla = _VarComboAñoColilla && NombreUser = User().FullName, AñoColilla)
+                Text: =LookUp(colillasPago, AñoColilla = _VarAñoColilla && NombreUser = User().FullName, AñoColilla)
                 Width: =122
                 X: =564
                 Y: =88

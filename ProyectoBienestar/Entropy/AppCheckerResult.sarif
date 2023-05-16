@@ -7672,6 +7672,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App._VarComboAñoColilla"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._VarComboAñoColilla",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_VarComboAñoColilla",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._VarCOMBOColilla"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._VarCOMBOColilla",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_VarCOMBOColilla",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.ruddy"
                 }
               ],
