@@ -706,7 +706,7 @@ ColillaPagoColaborador As screen:
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
             Set(_BotonAprobado, false);
             Set(_popUpEnviarCorreo, false);
-            pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPagoColaborador)}}));
+            pdfcl.Run(User().Email,TextInput1_8.Text,TextInput3_4.Text,({file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPagoColaborador)}}));
             Navigate(Screen2);
             Reset(ComboBox1);
             Reset(ComboBox1_2)

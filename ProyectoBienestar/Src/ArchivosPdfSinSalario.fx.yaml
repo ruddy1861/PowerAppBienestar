@@ -274,7 +274,7 @@ ArchivosPdfSinSalario As screen:
             =//Office365Outlook.SendEmailV2(Dropdown1.Selected.Mail;TextInput1.Text;TextInput3.Text);;
             Set(_BotonAprobado,false);
             Set(_popUpEnviarCorreo, false);
-            pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"cartaLaboral.pdf",contentBytes: PDF(ArchivosPdfSinSalario)}}));
+            pdfcl.Run(User().Email,TextInput1_1.Text,TextInput3_1.Text,({file:{name:"cartaLaboral.pdf",contentBytes: PDF(ArchivosPdfSinSalario)}}));
             Navigate(Screen2);
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
