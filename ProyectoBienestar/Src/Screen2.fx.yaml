@@ -647,21 +647,24 @@
                         Y: =146
                         ZIndex: =13
 
-                    ComboBox1_1 As combobox:
+                    ComboBox1_2 As combobox:
                         BorderColor: =RGBA(19, 85, 110, 1)
                         ChevronBackground: =RGBA(31, 140, 153, 1)
                         ChevronHoverBackground: =ColorFade(RGBA(31, 140, 153, 1), -20%)
+                        DefaultSelectedItems: =
                         DisplayFields: =["Value"]
                         Height: =34
-                        InputTextPlaceholder: ="Buscar "
+                        InputTextPlaceholder: ="Buscar"
                         Items: =["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
-                        OnChange: =Set(__VarAñoColilla, ComboBox1_1.Selected.Value)
+                        NoSelectionText: ="Año"
+                        OnChange: =Set(_VarMesColilla, ComboBox1_2.Selected.Value)
+                        OnSelect: =
                         PressedFill: =RGBA(19, 85, 110, 1)
                         SearchFields: =["Value"]
-                        SearchItems: =Search(["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],ComboBox1_1.SearchText,"Value")
+                        SearchItems: =Search(["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],ComboBox1_2.SearchText,"Value")
                         SelectionFill: =RGBA(31, 140, 153, 1)
-                        Width: =166
-                        X: =415
+                        Width: =167
+                        X: =403
                         Y: =146
-                        ZIndex: =14
+                        ZIndex: =15
 

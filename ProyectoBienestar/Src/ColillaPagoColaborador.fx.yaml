@@ -658,7 +658,7 @@ ColillaPagoColaborador As screen:
         OnSelect: |-
             =Set(_popUpEnviarCorreo, true);
             Reset(ComboBox1);
-            Reset(ComboBox1_1)
+            Reset(ComboBox1_2)
         Text: ="Aprobar"
         Visible: =_BotonAprobado
         X: =40
