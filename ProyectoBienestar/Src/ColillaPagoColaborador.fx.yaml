@@ -655,10 +655,8 @@ ColillaPagoColaborador As screen:
     Button3_7 As button:
         Fill: =RGBA(19, 85, 110, 1)
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |-
+        OnSelect: |
             =Set(_popUpEnviarCorreo, true);
-            Reset(ComboBox1);
-            Reset(ComboBox1_2)
         Text: ="Aprobar"
         Visible: =_BotonAprobado
         X: =40
@@ -710,6 +708,8 @@ ColillaPagoColaborador As screen:
             Set(_popUpEnviarCorreo, false);
             pdfcl.Run(User().Email,TextInput1.Text,TextInput3.Text,({file:{name:"colillaPago.pdf",contentBytes: PDF(ColillaPagoColaborador)}}));
             Navigate(Screen2);
+            Reset(ComboBox1);
+            Reset(ComboBox1_2)
         Text: ="Enviar Correo"
         Visible: =_popUpEnviarCorreo
         Width: =328
