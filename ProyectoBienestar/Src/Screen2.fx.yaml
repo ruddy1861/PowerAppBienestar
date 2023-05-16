@@ -664,3 +664,24 @@
                         Y: =140
                         ZIndex: =12
 
+                    ComboBox1 As combobox:
+                        DisplayFields: =["Value"]
+                        Items: =["2013","2019","2020","2021","2022","2023","2024"]
+                        OnChange: =Set(_VarComboAñoColilla, ComboBox1.Selected.Value)
+                        OnSelect: =
+                        SearchFields: =["Value"]
+                        SearchItems: =Search(["2013","2019","2020","2021","2022","2023","2024"],ComboBox1.SearchText,"Value")
+                        X: =110
+                        Y: =240
+                        ZIndex: =13
+
+                    ComboBox1_1 As combobox:
+                        DisplayFields: =["Value"]
+                        Items: =["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+                        OnChange: =Set(_VarCOMBOColilla, ComboBox1_1.Selected.Value)
+                        SearchFields: =["Value"]
+                        SearchItems: =Search(["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],ComboBox1_1.SearchText,"Value")
+                        X: =475
+                        Y: =240
+                        ZIndex: =14
+
