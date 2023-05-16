@@ -3881,127 +3881,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColillaPagoContador.colilla.Container13_4.LabelTotalPago.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColillaPagoContador.colilla.Container13_4.LabelTotalPago.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "resultado"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "ColillaPagoContador",
-                "type": "ColillaPagoContador.colilla.Container13_4.LabelTotalPago"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "resultado"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColillaPagoContador.Button3_5.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColillaPagoContador.Button3_5.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charOffset": 1524,
-                  "snippet": {
-                    "text": ""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ColillaPagoContador",
-                "type": "ColillaPagoContador.Button3_5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Eof",
-              "ParenClose"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColillaPagoContador.Button3_5.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColillaPagoContador.Button3_5.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 81,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "ColillaPagoContador",
-                "type": "ColillaPagoContador.Button3_5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text",
-              "Number"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ColillaPago_1.colilla_1.Container15_1.LabelNombreColilla_1.Text"
                 }
               ],
@@ -4241,7 +4120,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4278,7 +4157,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4314,7 +4193,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperandExpected",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4351,7 +4230,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4388,7 +4267,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4429,7 +4308,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4466,7 +4345,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4502,7 +4381,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperandExpected",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4539,7 +4418,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4576,7 +4455,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4617,7 +4496,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4654,7 +4533,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4690,7 +4569,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperandExpected",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4727,7 +4606,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4764,7 +4643,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4805,7 +4684,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4842,7 +4721,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4878,7 +4757,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperandExpected",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4915,7 +4794,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4952,7 +4831,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -4993,7 +4872,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -5030,7 +4909,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5066,7 +4945,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperandExpected",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5103,7 +4982,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5140,7 +5019,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5181,7 +5060,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -5218,7 +5097,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5254,7 +5133,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperandExpected",
-          "ruleIndex": 4
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5291,7 +5170,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5328,7 +5207,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5365,7 +5244,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5402,7 +5281,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5439,7 +5318,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5476,7 +5355,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5513,7 +5392,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5550,7 +5429,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5587,7 +5466,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5624,7 +5503,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5661,7 +5540,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5698,7 +5577,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5735,7 +5614,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5772,7 +5651,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5809,7 +5688,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5846,7 +5725,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5883,7 +5762,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5920,7 +5799,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -5957,7 +5836,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5994,7 +5873,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6031,7 +5910,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6068,7 +5947,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6105,7 +5984,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6142,7 +6021,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6179,7 +6058,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6216,7 +6095,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6253,7 +6132,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6290,7 +6169,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6327,7 +6206,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6364,7 +6243,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6401,7 +6280,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6438,7 +6317,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6475,7 +6354,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6512,7 +6391,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6549,7 +6428,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6586,7 +6465,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6623,7 +6502,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6660,7 +6539,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6697,7 +6576,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6734,7 +6613,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6771,7 +6650,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6808,7 +6687,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6845,7 +6724,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6882,7 +6761,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6919,7 +6798,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6956,7 +6835,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -6993,7 +6872,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7030,7 +6909,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7067,7 +6946,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7104,7 +6983,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7141,7 +7020,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7178,7 +7057,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7215,7 +7094,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7252,7 +7131,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7289,7 +7168,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7326,7 +7205,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7363,7 +7242,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7400,7 +7279,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7437,7 +7316,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7474,7 +7353,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7511,7 +7390,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7552,7 +7431,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -7593,7 +7472,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -7634,7 +7513,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -7671,7 +7550,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7711,7 +7590,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -7788,7 +7667,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7825,7 +7704,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7862,7 +7741,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7899,7 +7778,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7936,7 +7815,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -7973,7 +7852,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8010,7 +7889,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8047,7 +7926,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8084,7 +7963,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8121,7 +8000,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8158,7 +8037,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8195,7 +8074,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8232,7 +8111,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8269,7 +8148,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8306,7 +8185,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8343,7 +8222,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8380,7 +8259,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8417,7 +8296,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8454,7 +8333,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8491,7 +8370,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8528,7 +8407,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8565,7 +8444,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8602,7 +8481,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8639,7 +8518,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8676,7 +8555,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8713,7 +8592,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8750,7 +8629,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8787,7 +8666,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8824,7 +8703,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8861,7 +8740,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8901,7 +8780,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -12079,23 +11958,6 @@
               }
             },
             {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrExpectedFound-Ex-Fnd",
               "messageStrings": {
                 "issue": {
@@ -12171,6 +12033,23 @@
                 "componentType": "app",
                 "howToFix": [
                   "Remove or replace the unexpected characters."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",

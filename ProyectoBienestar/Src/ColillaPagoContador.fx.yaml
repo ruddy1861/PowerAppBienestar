@@ -721,7 +721,7 @@ ColillaPagoContador As screen:
                 MesColilla: TextInputMesColilla.Text,
                 AñoColilla: TextInputAñoColilla.Text, 
                 Banco: LabelBancoColilla.Text,
-                Salario: LabelSalarioColilla.Text,
+                Salario:LabelSalarioColilla.Text,
                 DiaPago: LabelDiaPagoColilla.Text,
                 Descripcion1Pagos: TextInputDP1.Text,
                 Descripcion2Pagos: TextInputDP2.Text,
@@ -791,8 +791,7 @@ ColillaPagoContador As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =//Set(_popUpEnviarCorreo; true);;
-            Set(_Varsalario ,LookUp(colillasPago, Salario = Value(LabelSalarioColilla.Text));
-            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)+ _Varsalario});
+            UpdateContext({resultado: (TextInputVP1 + TextInputVP2 + TextInputVP3 + TextInputVP4 + TextInputVP5) - (TextInputVD1 + TextInputVD2 + TextInputVD3 + TextInput4VD4+TextInputVD5)});
             
             
             /*Collect(
