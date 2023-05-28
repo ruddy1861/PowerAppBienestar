@@ -1,0 +1,489 @@
+Screen1 As screen:
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =368
+        Items: =Filter(colillasPago, MesColilla=_VarMes & AñoColilla = _VarAño)
+        Width: =1221
+        X: =40
+        Y: =197
+        ZIndex: =1
+
+        Título_Columna2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Título"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Título
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        AñoColilla_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="AñoColilla"
+            FieldName: ="A_x00f1_oColilla"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.AñoColilla
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        CedulaUser_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="CedulaUser"
+            FieldName: ="CedulaUser"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.CedulaUser
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        NombreUser_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="NombreUser"
+            FieldName: ="NombreUser"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.NombreUser
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        FechaCreacion_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="FechaCreacion"
+            FieldName: ="FechaCreacion"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.FechaCreacion
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        MesColilla_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="MesColilla"
+            FieldName: ="MesColilla"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.MesColilla
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Banco_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Banco"
+            FieldName: ="Banco"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Banco
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        Salario_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Salario"
+            FieldName: ="Salario"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.Salario
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+        DiaPago_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="DiaPago"
+            FieldName: ="DiaPago"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.DiaPago
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =9
+
+        Descripcion1Pagos_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion1Pagos"
+            FieldName: ="Descripcion1Pagos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.Descripcion1Pagos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+        ValorPago1_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorPago1"
+            FieldName: ="ValorPago1"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.ValorPago1
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =11
+
+        Descripcion2Pagos_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion2Pagos"
+            FieldName: ="Descripcion2Pagos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.Descripcion2Pagos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+        ValorPago2_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorPago2"
+            FieldName: ="ValorPago2"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: =ThisItem.ValorPago2
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =13
+
+        Descripcion3Pagos_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion3Pagos"
+            FieldName: ="Descripcion3Pagos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.Descripcion3Pagos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =14
+
+        ValorPago3_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorPago3"
+            FieldName: ="ValorPago3"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =15
+            Text: =ThisItem.ValorPago3
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =15
+
+        Descripcion4Pagos_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion4Pagos"
+            FieldName: ="Descripcion4Pagos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =16
+            Text: =ThisItem.Descripcion4Pagos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =16
+
+        ValorPago4_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorPago4"
+            FieldName: ="ValorPago4"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =17
+            Text: =ThisItem.ValorPago4
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =17
+
+        Descripcion5Pagos_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion5Pagos"
+            FieldName: ="Descripcion5Pagos"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =18
+            Text: =ThisItem.Descripcion5Pagos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =18
+
+        ValorPago5_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorPago5"
+            FieldName: ="ValorPago5"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =19
+            Text: =ThisItem.ValorPago5
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =19
+
+        TotalPagos_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="TotalPagos"
+            FieldName: ="TotalPagos"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =20
+            Text: =ThisItem.TotalPagos
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =20
+
+        Firma_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Firma"
+            FieldName: ="Firma"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =21
+            Text: =ThisItem.Firma
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =21
+
+        Descripcion1Dedu_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion1Dedu"
+            FieldName: ="Descripcion1Dedu"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =22
+            Text: =ThisItem.Descripcion1Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =22
+
+        ValorDedu1_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorDedu1"
+            FieldName: ="ValorDedu1"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =23
+            Text: =ThisItem.ValorDedu1
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =23
+
+        Descripcion2Dedu_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion2Dedu"
+            FieldName: ="Descripcion2Dedu"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =24
+            Text: =ThisItem.Descripcion2Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =24
+
+        Valor2Dedu_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Valor2Dedu"
+            FieldName: ="Valor2Dedu"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =25
+            Text: =ThisItem.Valor2Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =25
+
+        Descripcion3Dedu_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion3Dedu"
+            FieldName: ="Descripcion3Dedu"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =26
+            Text: =ThisItem.Descripcion3Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =26
+
+        Valor3Dedu_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Valor3Dedu"
+            FieldName: ="Valor3Dedu"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =27
+            Text: =ThisItem.Valor3Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
+
+        Descripcion4Dedu_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion4Dedu"
+            FieldName: ="Descripcion4Dedu"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =28
+            Text: =ThisItem.Descripcion4Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =28
+
+        ValorDedu4_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorDedu4"
+            FieldName: ="ValorDedu4"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =29
+            Text: =ThisItem.ValorDedu4
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =29
+
+        Descripcion5Dedu_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Descripcion5Dedu"
+            FieldName: ="Descripcion5Dedu"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =30
+            Text: =ThisItem.Descripcion5Dedu
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =30
+
+        ValorDedu5_Columna1 As dataTableColumn.numberColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ValorDedu5"
+            FieldName: ="ValorDedu5"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =31
+            Text: =ThisItem.ValorDedu5
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =31
+
+        Cargo_Columna1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Cargo"
+            FieldName: ="Cargo"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =32
+            Text: =ThisItem.Cargo
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =32
+
+        "'Datos adjuntos_Columna2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Datos adjuntos"
+            FieldName: ="{Attachments}"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =33
+            Text: =ThisItem.'Datos adjuntos'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =33
+
+    Dropdown1 As dropdown:
+        Items: =["2013","2019","2020","2021","2022","2023","2024"]
+        OnChange: =Set(_VarAño, ComboBox1.Selected.Value)
+        X: =287
+        Y: =56
+        ZIndex: =2
+
+    Dropdown2 As dropdown:
+        Items: =["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","diciembre"]
+        OnChange: =Set(_VarMes, ComboBox1.Selected.Value)
+        X: =692
+        Y: =56
+        ZIndex: =3
+
