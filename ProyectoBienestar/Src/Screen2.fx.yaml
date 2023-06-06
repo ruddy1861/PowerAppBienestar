@@ -46,7 +46,7 @@
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
-                Width: =Parent.Width/2
+                Width: =Parent.Width/3+200
                 ZIndex: =1
 
                 Container8 As groupContainer.manualLayoutContainer:
@@ -81,26 +81,38 @@
                         Width: =Parent.Width
                         ZIndex: =1
 
-                Image7 As image:
-                    Height: =Parent.Height
-                    Image: ='Logo 2'
-                    PaddingBottom: =5
-                    PaddingLeft: =5
-                    PaddingRight: =5
-                    PaddingTop: =5
-                    Width: =Parent.Width/4
-                    ZIndex: =2
+                Container8_1 As groupContainer.manualLayoutContainer:
+                    FillPortions: =0
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =100
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =Parent.Width/2
+                    ZIndex: =4
 
-                Image8 As image:
-                    AlignInContainer: =AlignInContainer.Center
-                    Height: =Parent.Height
-                    Image: ='Logo Final'
-                    PaddingBottom: =5
-                    PaddingLeft: =5
-                    PaddingRight: =5
-                    PaddingTop: =5
-                    Width: =Parent.Width/4
-                    ZIndex: =3
+                    Image7 As image:
+                        Height: =Parent.Height
+                        Image: ='Logo 2'
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        Width: =116
+                        X: =37
+                        ZIndex: =1
+
+                    Image8 As image:
+                        Height: =Parent.Height
+                        Image: ='Logo Final'
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        Width: =129
+                        X: =164
+                        ZIndex: =2
 
             Container3 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -110,7 +122,7 @@
                 LayoutMinWidth: =100
                 LayoutMode: =LayoutMode.Auto
                 LayoutWrap: =true
-                Width: =Parent.Width/8
+                Width: =Parent.Width/3-200
                 ZIndex: =2
 
             Container4 As groupContainer.horizontalAutoLayoutContainer:
@@ -119,7 +131,7 @@
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutWrap: =true
-                Width: =Parent.Width/2
+                Width: =Parent.Width/3
                 ZIndex: =3
 
                 Container5 As groupContainer.verticalAutoLayoutContainer:
@@ -143,7 +155,7 @@
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =30
-                        Size: =15
+                        Size: =If(Value(Label15.TabIndex)>1000,20,15)
                         Text: =User().FullName
                         Width: =Parent.Width
                         ZIndex: =1
@@ -155,7 +167,7 @@
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =15
+                        Size: =If(Value(Label15.TabIndex)>1000,20,15)
                         Text: =UsuariosdeOffice365.MyProfile().JobTitle
                         Width: =Parent.Width
                         ZIndex: =2
@@ -669,7 +681,7 @@
                         ZIndex: =15
 
     Label15 As label:
-        Text: ="Texto"
+        Text: =""
         Y: =728
         ZIndex: =2
 
