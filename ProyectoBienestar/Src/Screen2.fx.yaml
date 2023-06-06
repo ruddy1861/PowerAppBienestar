@@ -251,8 +251,7 @@
                         Text: |-
                             ="Solicita un periodo de vacaciones seleccionando los tiempos de inicio y final, esta solicitud será enviada al área administrativa para aprobación.
                             ***Recuerda siempre hablar con tu líder antes de montar una solicitud de vacaciones."
-                        Width: =952
-                        X: =40
+                        Width: =883
                         Y: =20
                         ZIndex: =1
 
@@ -278,7 +277,7 @@
                                 {Dia:"Día de Navidad",FechaFestivo:"25/12/2023"});
                                 Set(_FechaInicioVacaciones, Self.SelectedDate)
                         Width: =131
-                        X: =184
+                        X: =124
                         Y: =158
                         ZIndex: =2
 
@@ -290,7 +289,7 @@
                             Set(_BotonAprobado,true);
                             Set(_popUpEnviarCorreo,false);
                         Text: ="Generar"
-                        X: =762
+                        X: =670
                         Y: =158
                         ZIndex: =3
 
@@ -301,7 +300,7 @@
                         IconFill: =RGBA(161, 161, 161, 1)
                         OnSelect: = Set(_FechaFinalVacaciones, Self.SelectedDate)
                         Width: =131
-                        X: =351
+                        X: =303
                         Y: =158
                         ZIndex: =4
 
@@ -316,26 +315,26 @@
                                 diaFestivoColombia,
                                     DateValue(FechaFestivo) >=DatePicker4_1.SelectedDate,
                                     DateValue(FechaFestivo) <=DatePicker4_2.SelectedDate)
-                        X: =547
+                        X: =482
                         Y: =158
                         ZIndex: =5
 
                     Label12 As label:
                         Text: ="Fecha de Inicio"
                         Width: =131
-                        X: =184
+                        X: =124
                         Y: =118
                         ZIndex: =6
 
                     Label12_1 As label:
                         Text: ="Total dias"
-                        X: =547
+                        X: =482
                         Y: =118
                         ZIndex: =7
 
                     Label12_2 As label:
                         Text: ="Fecha Final"
-                        X: =351
+                        X: =326
                         Y: =118
                         ZIndex: =8
 
@@ -382,8 +381,7 @@
                         Text: |-
                             ="Solicita un permiso seleccionando el espacio de tiempo y el motivo, se enviará un correo al área administrativa para que aprueben tu solicitud.
                             ***Recuerda siempre hablar con tu líder antes de crear una solicitud de permiso."
-                        Width: =947
-                        X: =40
+                        Width: =883
                         Y: =28
                         ZIndex: =1
 
@@ -447,7 +445,7 @@
                             Set(_BotonAprobado,true);
                             Set(_popUpEnviarCorreo,false);
                         Text: ="Generar"
-                        X: =737
+                        X: =582
                         Y: =251
                         ZIndex: =10
 
@@ -555,7 +553,7 @@
                         Height: =61
                         Text: ="Genera una carta laboral en formato PDF con fecha actual y la recibirás en tu correo corporativo. "
                         Width: =801
-                        X: =110
+                        X: =56
                         Y: =40
                         ZIndex: =1
 
@@ -568,8 +566,8 @@
                             Set(_BotonAprobado, true);
                             
                         Text: ="Generar"
-                        X: =430
-                        Y: =204
+                        X: =376
+                        Y: =201
                         ZIndex: =2
 
                     CheckboxSalario As checkbox:
@@ -579,7 +577,7 @@
                         Text: |
                             ="Incluir Salario"
                         Width: =160
-                        X: =430
+                        X: =376
                         Y: =127
                         ZIndex: =3
 
@@ -599,8 +597,8 @@
                         Height: =69
                         Text: ="Selecciona el mes correspondiente a la colilla de pago que deseas solicitar y esta será enviada a tu correo corporativo."
                         Width: =762
-                        X: =130
-                        Y: =20
+                        X: =88
+                        Y: =18
                         ZIndex: =1
 
                     Button1 As button:
@@ -611,7 +609,7 @@
                             Set(_popUpEnviarCorreo,false);
                             Navigate(ColillaPagoColaborador);
                         Text: ="Generar"
-                        X: =760
+                        X: =657
                         Y: =140
                         ZIndex: =3
 
@@ -640,8 +638,8 @@
                             Set(_Boton, true)
                         Text: ="Crear Colilla"
                         Visible: =_Admin
-                        X: =760
-                        Y: =200
+                        X: =657
+                        Y: =204
                         ZIndex: =10
 
                     ComboBox1 As combobox:
@@ -685,6 +683,11 @@
                         X: =403
                         Y: =146
                         ZIndex: =15
+
+            Label18 As label:
+                Fill: =RGBA(255, 255, 0, 1)
+                Text: ="Texto"
+                ZIndex: =3
 
     Label15 As label:
         Text: =""
