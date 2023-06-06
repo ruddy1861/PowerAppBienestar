@@ -621,7 +621,7 @@
                             Set(_popUpEnviarCorreo, true);
                             Set(_Boton, true)
                         Text: ="Crear Colilla"
-                        Visible: =_esContador
+                        Visible: =_Admin
                         X: =760
                         Y: =200
                         ZIndex: =10

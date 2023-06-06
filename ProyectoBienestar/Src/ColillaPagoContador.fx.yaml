@@ -205,7 +205,7 @@ ColillaPagoContador As screen:
                 Height: =23
                 OnSelect: =Set(_VarNombre, Self.Text);
                 Text: |-
-                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Nombre1)
+                    =//LookUp(datosColaboradores2; Cedula = _VarCedula; Nombre1)
                     //LookUp(datosColaboradores2; Nombre1 = User().FullName; Nombre1)
                 Width: =228
                 Y: =40
@@ -216,7 +216,7 @@ ColillaPagoContador As screen:
                 BorderThickness: =2
                 Height: =23
                 Text: |-
-                    =LookUp(datosColaboradores2, Cedula = _VarCedula, Cargo)
+                    =//LookUp(datosColaboradores2; Cedula = _VarCedula; Cargo)
                     //LookUp(datosColaboradores2; Nombre1 = User().FullName; Cargo)
                 Width: =228
                 X: =458
@@ -227,7 +227,7 @@ ColillaPagoContador As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =23
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Banco)
+                Text: =//LookUp(datosColaboradores2; Cedula = _VarCedula; Banco)
                 Width: =228
                 X: =2
                 Y: =104
@@ -238,7 +238,7 @@ ColillaPagoContador As screen:
                 BorderThickness: =2
                 Height: =23
                 OnSelect: =Set(_Varsalario, Self.Text)
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, Salario)
+                Text: =//LookUp(datosColaboradores2; Cedula = _VarCedula; Salario)
                 Width: =228
                 X: =230
                 Y: =104
@@ -248,7 +248,7 @@ ColillaPagoContador As screen:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =2
                 Height: =24
-                Text: =LookUp(datosColaboradores2, Cedula = _VarCedula, DiaPago)
+                Text: =//LookUp(datosColaboradores2; Cedula = _VarCedula; DiaPago)
                 Width: =228
                 X: =458
                 Y: =103
@@ -851,57 +851,4 @@ ColillaPagoContador As screen:
         X: =52
         Y: =213
         ZIndex: =14
-
-    Button3_8 As button:
-        Fill: =RGBA(19, 85, 110, 1)
-        HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |+
-            =//Set(_popUpEnviarCorreo; true);;
-            Patch(colillasPago,LookUp(colillasPago, AñoColilla = _VarAñoColilla && MesColilla = _VarMesColilla && ID = _VarID),
-            {
-                Cargo: LabelCargoColilla.Text,
-                NombreUser:  LabelNombreColilla.Text,
-                CedulaUser: TextInputCedulaColilla.Text,
-                MesColilla: TextInputMesColilla.Text,
-                AñoColilla: TextInputAñoColilla.Text, 
-                Banco: LabelBancoColilla.Text,
-                Salario:LabelSalarioColilla.Text,
-                DiaPago: LabelDiaPagoColilla.Text,
-                Descripcion1Pagos: TextInputDP1.Text,
-                Descripcion2Pagos: TextInputDP2.Text,
-                Descripcion3Pagos: TextInputDP3.Text,
-                Descripcion4Pagos: TextInputDP4.Text,
-                Descripcion5Pagos: TextInputDP5.Text,
-                ValorPago1: Value(TextInputVP1.Text),
-                ValorPago2: Value(TextInputVP2.Text),
-                ValorPago3: Value(TextInputVP3.Text),
-                ValorPago4: Value(TextInputVP4.Text),
-                ValorPago5: Value(TextInputVP5.Text),
-                Descripcion1Dedu: TextInputDD1.Text,
-                Descripcion2Dedu: TextInputDD2.Text,
-                Descripcion3Dedu: TextInputDD3.Text,
-                Descripcion4Dedu: TextInputDD4.Text,
-                Descripcion5Dedu: TextInputDD5.Text,
-                ValorDedu1: Value(TextInputVD1.Text),
-                Valor2Dedu: Value(TextInputVD2.Text),
-                Valor3Dedu: Value(TextInputVD3.Text),
-                ValorDedu4: Value(TextInput4VD4.Text),
-                ValorDedu5: Value(TextInputVD5.Text),
-                TotalPagos: Value(LabelTotalPago.Text),
-                FechaCreacion: Today()
-            
-            }
-            );
-            Navigate(Screen2)
-            
-        Text: ="Actualizar"
-        Visible: |-
-            =
-            
-            
-            
-            true
-        X: =52
-        Y: =285
-        ZIndex: =15
 

@@ -2,7 +2,8 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =ClearCollect(colUsuarios,UsuariosdeOffice365.SearchUserV2().value);
-        Set(_esContador, User().FullName in ["Usuario Prueba"]);
+        Set(_Admin, LookUp(correosColaboradores,correo = User().Email && Título = "Admin", true));
+        
         Set(_codigo,LookUp(colillasPago, NombreUser = User().FullName && MesColilla=_VarMesColilla && AñoColilla=_VarAñoColilla, ID))
     StartScreen: =
 

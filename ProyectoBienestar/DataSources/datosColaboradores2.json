@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-04-03T17:26:12.5400000Z",
+      "LastChangedTimeString": "2023-06-01T21:29:20.7990000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -23,7 +23,6 @@
       "{TriggerWindowEndToken}": "Token de fin de ventana de desencadenador",
       "{TriggerWindowStartToken}": "Token de inicio de ventana de desencadenador",
       "{VersionNumber}": "Número de versión",
-      "A_x00f1_oPago": "AñoPago",
       "Author": "Creado por",
       "Author#Claims": "Creado por Claims",
       "Banco": "Banco",
@@ -32,12 +31,10 @@
       "contrato": "contrato",
       "Correo": "Correo",
       "Created": "Creado",
-      "DiaPago": "DiaPago",
       "Editor": "Modificado por",
       "Editor#Claims": "Modificado por Claims",
       "ID": "ID",
       "inicioContrato": "inicioContrato",
-      "MesPago": "MesPago",
       "Modified": "Modificado",
       "N_x00b0_Cedula": "Cedula",
       "OData__ColorTag": "Etiqueta de color",
