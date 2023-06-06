@@ -342,7 +342,7 @@
                         Fill: =RGBA(19, 85, 110, 1)
                         HoverFill: =ColorFade(RGBA(31, 140, 153, 1), 0)
                         OnSelect: =Set(_ideseccion,ThisItem.ide)
-                        Size: =14
+                        Size: =If(Value(Label15.TabIndex)>1000,20,15)
                         Text: =ThisItem.seccion
                         Width: =Parent.TemplateWidth
                         Y: =10
