@@ -126,7 +126,7 @@
                 LayoutMinWidth: =100
                 LayoutMode: =LayoutMode.Auto
                 LayoutWrap: =true
-                Width: =Parent.Width/3-200
+                Width: =If(Value(Label15.TabIndex)>1000,Parent.Width/2+200,Parent.Width/3-400)
                 ZIndex: =2
 
             Container4 As groupContainer.horizontalAutoLayoutContainer:
