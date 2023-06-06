@@ -74,7 +74,7 @@
                         Font: =Font.Arial
                         FontWeight: =FontWeight.Bold
                         Height: =If(Value(Label15.TabIndex)>1000,150,100)
-                        PaddingBottom: =70
+                        PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
@@ -126,7 +126,7 @@
                 LayoutMinWidth: =100
                 LayoutMode: =LayoutMode.Auto
                 LayoutWrap: =true
-                Width: =If(Value(Label15.TabIndex)>1000,Parent.Width/2+200,Parent.Width/3-400)
+                Width: =If(Value(Label15.TabIndex)>1000,Parent.Width/3+200,Parent.Width/3-400)
                 ZIndex: =2
 
             Container4 As groupContainer.horizontalAutoLayoutContainer:
