@@ -50,7 +50,9 @@
                 ZIndex: =1
 
                 Container8 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(19, 85, 110, 1)
                     FillPortions: =0
+                    Height: =If(Value(Label15.TabIndex)>1000,250,200)
                     LayoutMinHeight: =100
                     LayoutMinWidth: =100
                     RadiusBottomLeft: =10
@@ -71,18 +73,20 @@
                         FocusedBorderThickness: =2
                         Font: =Font.Arial
                         FontWeight: =FontWeight.Bold
-                        Height: =100
+                        Height: =If(Value(Label15.TabIndex)>1000,150,100)
                         PaddingBottom: =70
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =If(Value(Label15.TabIndex)>1000,60,50)
-                        Text: ="                                  Bienestar"
+                        Size: =If(Value(Label15.TabIndex)>1000,50,50)
+                        Text: ="Bienestar"
+                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         ZIndex: =1
 
                 Container8_1 As groupContainer.manualLayoutContainer:
                     FillPortions: =0
+                    Height: =If(Value(Label15.TabIndex)>1000,250,200)
                     LayoutMinHeight: =100
                     LayoutMinWidth: =100
                     RadiusBottomLeft: =10
@@ -93,24 +97,24 @@
                     ZIndex: =4
 
                     Image7 As image:
-                        Height: =Parent.Height
+                        Height: =If(Value(Label15.TabIndex)>1000,150,100)
                         Image: ='Logo 2'
                         PaddingBottom: =5
                         PaddingLeft: =5
                         PaddingRight: =5
                         PaddingTop: =5
-                        Width: =116
+                        Width: =If(Value(Label15.TabIndex)>1000,150,100)
                         X: =37
                         ZIndex: =1
 
                     Image8 As image:
-                        Height: =Parent.Height
+                        Height: =If(Value(Label15.TabIndex)>1000,150,100)
                         Image: ='Logo Final'
                         PaddingBottom: =5
                         PaddingLeft: =5
                         PaddingRight: =5
                         PaddingTop: =5
-                        Width: =129
+                        Width: =If(Value(Label15.TabIndex)>1000,150,100)
                         X: =164
                         ZIndex: =2
 
@@ -136,6 +140,7 @@
 
                 Container5 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
+                    Height: =If(Value(Label15.TabIndex)>1000,200,150)
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutJustifyContent: =LayoutJustifyContent.End
@@ -155,7 +160,7 @@
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =30
-                        Size: =If(Value(Label15.TabIndex)>1000,20,15)
+                        Size: =If(Value(Label15.TabIndex)>1000,20,14)
                         Text: =User().FullName
                         Width: =Parent.Width
                         ZIndex: =1
@@ -175,7 +180,7 @@
                 Container6 As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.Center
                     FillPortions: =0
-                    Height: =Parent.Height
+                    Height: =If(Value(Label15.TabIndex)>1000,200,150)
                     LayoutMinHeight: =100
                     LayoutMinWidth: =0
                     PaddingBottom: =4
@@ -189,13 +194,14 @@
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =4
                         Fill: =RGBA(0, 0, 0, 1)
-                        Height: =Parent.Height/1.5
+                        Height: =If(Value(Label15.TabIndex)>1000,150,100)
                         Image: =User().Image
                         ImagePosition: =ImagePosition.Fill
                         RadiusBottomLeft: =100
                         RadiusBottomRight: =100
                         RadiusTopLeft: =100
                         RadiusTopRight: =100
+                        Width: =If(Value(Label15.TabIndex)>1000,150,100)
                         X: =10
                         Y: =30
                         ZIndex: =1
@@ -220,12 +226,12 @@
                 BorderThickness: =2
                 ContentLanguage: =
                 FillPortions: =0
-                Height: =Parent.Height/2+200
+                Height: =If(Value(Label15.TabIndex)>1000,Parent.Width/2-100,Parent.Width/2-200)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Visible: |
                     =true
-                Width: =Parent.Width/2*1.5
+                Width: =If(Value(Label15.TabIndex)>1000,Parent.Width/2+400,Parent.Width/2+200)
                 X: =1000
                 ZIndex: =2
 
