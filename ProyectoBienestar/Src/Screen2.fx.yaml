@@ -80,7 +80,6 @@
                         PaddingTop: =0
                         Size: =If(Value(Label15.TabIndex)>1000,50,50)
                         Text: ="Bienestar"
-                        VerticalAlign: =VerticalAlign.Top
                         Width: =Parent.Width
                         ZIndex: =1
 

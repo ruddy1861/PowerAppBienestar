@@ -11421,7 +11421,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "VerticalAlign.Middle",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "VerticalAlign",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
