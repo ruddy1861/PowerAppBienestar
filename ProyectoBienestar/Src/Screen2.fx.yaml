@@ -81,7 +81,7 @@
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =If(Value(Label15.TabIndex)>1000,20,15)
+                        Size: =If(Value(Label15.TabIndex)>1000,60,30)
                         Text: ="Bienestar"
                         Width: =Parent.Width
                         Wrap: =false
@@ -687,11 +687,6 @@
                         X: =403
                         Y: =146
                         ZIndex: =15
-
-            Label18 As label:
-                Fill: =RGBA(255, 255, 0, 1)
-                Text: ="Texto"
-                ZIndex: =3
 
     Label15 As label:
         Text: =""
